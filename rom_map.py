@@ -5,7 +5,10 @@ with open("The Sword of Kumdor.hdm", "rb") as f:
     rom = f.read()
 
 rom = memoryview(rom)
-patched = bytearray(rom)
+
+# For text insertion, work off the tutorial.py output:
+with open("tutorial/output.hdm", "rb") as f:
+    patched = bytearray(f.read())
 
 def at(start, bs):
     assert rom[start:start+len(bs)] == bs
@@ -173,5 +176,6 @@ padding(0xd8f80, 0x134000, b"\xe5")
 assert len(rom) == 0x134000
 
 
+# Write a ROM with inserted text:
 with open("patched.hdm", "wb") as f:
     f.write(patched)
