@@ -1,9 +1,11 @@
 import struct
+import os.path
 
 with open("The Sword of Kumdor.hdm", "rb") as f:
     rom = f.read()
 
 rom = memoryview(rom)
+patched = bytearray(rom)
 
 def at(start, bs):
     assert rom[start:start+len(bs)] == bs
@@ -13,8 +15,21 @@ def padding(start, stop, byte):
 
 def strings(name, start, stop):
     ss = bytes(rom[start:stop]).rstrip(b" U\xe5\0").split(b"\0")
-    for i, s in enumerate(ss):
-        print(f"{name}_{i:02x}:", repr(s.decode("shift-jis")))
+    if not os.path.exists(f"text/{name}.py"):
+        lines = ["["]
+        for i, s in enumerate(ss):
+            text = s.decode("shift-jis")
+            lines.append(f"    {text!r},  # {i:02x} = {text!r}")
+        lines.append("]")
+        with open(f"text/{name}.py", "w") as f:
+            f.write("\n".join(lines) + "\n")
+    else:
+        code = open(f"text/{name}.py").read()
+        translation = eval(code)
+        enc = ("\0".join(translation) + "\0").encode("shift-jis")
+        if len(enc) > stop - start:
+            raise ValueError(f"translations too long! {name}: {len(enc)} > {stop - start}")
+        patched[start: start+len(enc)] = enc
 
 def u32(i):
     return struct.unpack("<L", rom[i:i+4])[0]
@@ -37,14 +52,13 @@ save2 = rom[0xC800:0xD000]
 save3 = rom[0xD000:0xD800]
 save4 = rom[0xD800:0xE000]
 
-print("Save 1 spice:", u32(0xC000 + 0x20))
+# print("Save 1 spice:", u32(0xC000 + 0x20))
 
 padding(0x0E000, 0x10000, b"\xe5")
 
 title_data = rom[0x10000:0x13000]
 gfx_maybe = rom[0x14000:0x35000]
 # protagonist at 0x28000
-# title screen data (format???) at 0x2c000
 
 padding(0x35000, 0x40000, b"\xe5")
 
@@ -56,7 +70,7 @@ map_out = rom[0x44000:0x48000]
 
 # Story text
 at(0x48000, "A.P.(ポーラ暦)405年".encode("shift-jis"))
-
+strings("intr", 0x48000, 0x491f0)
 padding(0x491F0, 0x49800, b"U")
 
 # Typing data
@@ -82,6 +96,15 @@ strings("twn2", 0x56000, 0x574f0)
 
 at(0x58000, b"TWN03 MAP")
 map_town3 = rom[0x58000:0x5c000]
+strings("twn3", 0x5c000, 0x5d6f0)
+strings("twn4", 0x5e000, 0x5faf0)
+
+at(0x60000, b"MAP:TWN04/06")
+strings("twn5", 0x64000, 0x656f0)
+strings("twn6", 0x66000, 0x66af0)
+at(0x68000, b"MAP TOWN 07")
+
+strings("twn7", 0x66000, 0x66af0)
 
 
 def onebpp(bs, width=64, height=64):
@@ -112,15 +135,16 @@ def show(matrix):
     for row in matrix:
         print("".join("\x1b[%dm%s\x1b[0m" % ([40, 102,107,103,101,106,105,104][x],"  ") for x in row))
 
-start = 0x10000
-w = 64
-h = 64
-for i in range(2000):
-    addr = start + i * w*h//8
-    print(f"0x{addr:05x}")
-    show(onebpp(rom[addr:], w, h))
-    input()
-exit()
+if False: # I was looking for sprites
+    start = 0x10000
+    w = 64
+    h = 64
+    for i in range(2000):
+        addr = start + i * w*h//8
+        print(f"0x{addr:05x}")
+        show(onebpp(rom[addr:], w, h))
+        input()
+
 # 0xc0000:0xcd800 = monster data
 ptr = 0xc0000
 for i in range(27):
@@ -147,3 +171,7 @@ for i in range(9):
 assert ptr == 0xd9000
 padding(0xd8f80, 0x134000, b"\xe5")
 assert len(rom) == 0x134000
+
+
+with open("patched.hdm", "wb") as f:
+    f.write(patched)
