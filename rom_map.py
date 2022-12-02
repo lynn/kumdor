@@ -32,6 +32,8 @@ def strings(name, start, stop):
         enc = ("\0".join(translation) + "\0").encode("shift-jis")
         if len(enc) > stop - start:
             raise ValueError(f"translations too long! {name}: {len(enc)} > {stop - start}")
+        else:
+            print(f"ok: {name}: {len(enc)} <= {stop - start}")
         patched[start: start+len(enc)] = enc
 
 def u32(i):
