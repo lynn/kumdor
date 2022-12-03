@@ -119,7 +119,6 @@ strings("twn5", 0x64000, 0x656f0)
 strings("twn6", 0x66000, 0x66af0)
 at(0x68000, b"MAP TOWN 07")
 
-strings("twn7", 0x66000, 0x66af0)
 
 
 def onebpp(bs, width=64, height=64):
