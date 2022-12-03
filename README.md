@@ -2,6 +2,9 @@
 
 Tools and scripts for translating PC-98 game "The Sword of Kumdor" into English.
 
+![image](https://user-images.githubusercontent.com/16232127/205412881-681a7126-2d11-433f-a680-b4c623e60bfd.png)
+
+
 ## Files
 
 * `The Sword of Kumdor.HDM` is the original disk image.
