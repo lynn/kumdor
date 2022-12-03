@@ -1,5 +1,6 @@
 import struct
 import os.path
+import textwrap
 
 with open("The Sword of Kumdor.hdm", "rb") as f:
     rom = f.read()
@@ -7,7 +8,8 @@ with open("The Sword of Kumdor.hdm", "rb") as f:
 rom = memoryview(rom)
 
 # For text insertion, work off the tutorial.py output:
-with open("tutorial/output.hdm", "rb") as f:
+source = "saved.hdm" if os.path.exists("saved.hdm") else "tutorial/output.hdm"
+with open(source, "rb") as f:
     patched = bytearray(f.read())
 
 def at(start, bs):
@@ -15,6 +17,14 @@ def at(start, bs):
 
 def padding(start, stop, byte):
     assert rom[start:stop] == byte * (stop-start)
+
+def wrap(text: str):
+    if text.startswith("~"):
+        text = text[1:].replace("\x15", "\n")
+        text = textwrap.fill(text, width=40)
+        return text.replace("\n", "\x15")
+    else:
+        return text
 
 def strings(name, start, stop):
     ss = bytes(rom[start:stop]).rstrip(b" U\xe5\0").split(b"\0")
@@ -28,7 +38,7 @@ def strings(name, start, stop):
             f.write("\n".join(lines) + "\n")
     else:
         code = open(f"text/{name}.py").read()
-        translation = eval(code)
+        translation = [wrap(s) for s in eval(code)]
         enc = ("\0".join(translation) + "\0").encode("shift-jis")
         if len(enc) > stop - start:
             raise ValueError(f"translations too long! {name}: {len(enc)} > {stop - start}")
@@ -153,7 +163,7 @@ if False: # I was looking for sprites
 # 0xc0000:0xcd800 = monster data
 ptr = 0xc0000
 for i in range(27):
-    print(i, bytes(rom[ptr+2:ptr+16]).rstrip(b"\0").decode("ascii"), bytes(rom[ptr+0x70:ptr+0x7e]).rstrip(b"\0").decode("shift-jis"))
+    #print(i, bytes(rom[ptr+2:ptr+16]).rstrip(b"\0").decode("ascii"), bytes(rom[ptr+0x70:ptr+0x7e]).rstrip(b"\0").decode("shift-jis"))
     red   = onebpp(bytes(rom[ptr+0x200:ptr+0x400]))
     green = onebpp(bytes(rom[ptr+0x400:ptr+0x600]))
     blue  = onebpp(bytes(rom[ptr+0x600:ptr+0x800]))
@@ -170,14 +180,22 @@ padding(0xcd800, 0xd0000, b"\xe5")
 # bosses???
 ptr = 0xd0000
 for i in range(9):
-    print(i, bytes(rom[ptr+2:ptr+14]).rstrip(b"\0").decode("ascii"), bytes(rom[ptr+0x70:ptr+0x7e]).rstrip(b"\0").decode("shift-jis"))
+    #print(i, bytes(rom[ptr+2:ptr+14]).rstrip(b"\0").decode("ascii"), bytes(rom[ptr+0x70:ptr+0x7e]).rstrip(b"\0").decode("shift-jis"))
     ptr += 0x1000
 
 assert ptr == 0xd9000
 padding(0xd8f80, 0x134000, b"\xe5")
 assert len(rom) == 0x134000
 
+def write(addr, text):
+    if isinstance(text, str):
+        text = text.encode("shift-jis")
+    patched[addr:addr+len(text)] = text
+
+write(0x13270, "Talk/Look\rItems\rSpell\rKeyboard\rScore\rSystem\0")
 
 # Write a ROM with inserted text:
-with open("patched.hdm", "wb") as f:
+out_path = "patched.hdm"
+with open(out_path, "wb") as f:
     f.write(patched)
+    print(f"Wrote {out_path}.")
