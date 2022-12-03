@@ -169,8 +169,10 @@ class Group:
     def encode(self) -> bytes:
         return self.magic + b"".join(l.encode() for l in self.lines) + b"\x00\xc0"
 
+
 CYAN = "#00c0ff"
 GREEN = "#00ff00"
+
 
 class Sketch:
     mousedown: bool = False
@@ -194,6 +196,7 @@ class Sketch:
         self.lines = []
         self.groups = []
         self.done = False
+        self.text = None
         self.next_group()
 
     def line(self, x, y, dx, dy, fill=None):
@@ -227,7 +230,7 @@ class Sketch:
             for line in line_data:
                 segments = []
                 if "magic" in line:
-                    magic = bytes([0x96 if b==0x98 else b for b in line["magic"]])
+                    magic = bytes([0x96 if b == 0x98 else b for b in line["magic"]])
                     self.process_magic(magic)
                     self.lines.append(MagicLine(magic))
                 else:
@@ -239,6 +242,8 @@ class Sketch:
                         y += dy
                         segments.append(Segment(dx, dy, obj))
                     self.lines.append(Line(x0, y0, segments))
+
+        self.report()
 
     def save_group(self):
         magic = bytes(self.group_rom[0:5])
@@ -262,17 +267,18 @@ class Sketch:
             for s in last.segments:
                 canvas.delete(s.obj)
             break
+        self.report()
+
 
     def process_magic(self, magic):
         print(magic)
         if magic[4] == 0x01:
             print("RED")
             self.pen = "#ff6000"
-        elif magic[3] == 0x5b:
+        elif magic[3] == 0x5B:
             self.pen = GREEN
         else:
             self.pen = CYAN
-
 
     def key(self, event):
         if event.char == "j" and not self.done:
@@ -323,15 +329,25 @@ class Sketch:
                 self.x = newx
                 self.y = newy
         if not down and self.mousedown:
-            if not self.segments: # dot
+            if not self.segments:  # dot
                 obj = self.line(self.x, self.y, 2, 0)
                 self.segments.append(Segment(2, 0, obj))
             self.lines.append(Line(self.x0, self.y0, self.segments))
-            print(
-                f"{sum(len(l.encode()) for l in self.lines)} / {len(self.group_rom)}"
-            )
+            self.report()
             self.segments = []
             self.mousedown = False
+
+    def report(self):
+        if self.text: canvas.delete(self.text)
+        self.text = canvas.create_text(
+            10,
+            10,
+            anchor="nw",
+            text=f"Page {self.group_num}, size: {sum(len(l.encode()) for l in self.lines)} / {len(self.group_rom)}",
+            fill="white",
+            font="Helvetica 15",
+        )
+
 
 
 # add to window and show
