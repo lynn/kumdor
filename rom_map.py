@@ -1,4 +1,5 @@
 import struct
+import json
 import os.path
 import textwrap
 
@@ -32,7 +33,10 @@ def strings(name, start, stop):
         lines = ["["]
         for i, s in enumerate(ss):
             text = s.decode("shift-jis")
-            lines.append(f"    {text!r},  # {i:02x} = {text!r}")
+            text_r = json.dumps(text, ensure_ascii=False)
+            if i > 0: lines.append("")
+            lines.append(f"    # {i:02x} = {text_r}")
+            lines.append(f"    {text_r},")
         lines.append("]")
         with open(f"text/{name}.py", "w") as f:
             f.write("\n".join(lines) + "\n")
@@ -159,10 +163,48 @@ if False: # I was looking for sprites
         show(onebpp(rom[addr:], w, h))
         input()
 
+def write(addr, text):
+    if isinstance(text, str):
+        text = text.encode("shift-jis")
+    patched[addr:addr+len(text)] = text
+
 # 0xc0000:0xcd800 = monster data
 ptr = 0xc0000
-for i in range(27):
+
+monsters = [
+    "Regular Slime",
+    "Ay",
+    "Dee",
+    "Eff",
+    "Jay",
+    "Kay",
+    "Ell",
+    "Semicolo",
+    "Plus",
+    "Arr",
+    "Wye",
+    "Yew",
+    "Zee",
+    "Queueue",
+    "Iye",
+    "Atsine",
+    "Eckxs",
+    "Cee",
+    "Slash",
+    "Vee",
+    "Emm",
+    "7even",
+    "1ne",
+    "Zero",
+    "Hyphen",
+    "Bracket",
+    "Asterisk",
+]
+assert len(monsters) == 27
+
+for i, name in enumerate(monsters):
     #print(i, bytes(rom[ptr+2:ptr+16]).rstrip(b"\0").decode("ascii"), bytes(rom[ptr+0x70:ptr+0x7e]).rstrip(b"\0").decode("shift-jis"))
+    write(ptr + 0x70, name + "\0")
     red   = onebpp(bytes(rom[ptr+0x200:ptr+0x400]))
     green = onebpp(bytes(rom[ptr+0x400:ptr+0x600]))
     blue  = onebpp(bytes(rom[ptr+0x600:ptr+0x800]))
@@ -178,18 +220,16 @@ padding(0xcd800, 0xd0000, b"\xe5")
 
 # bosses???
 ptr = 0xd0000
-for i in range(9):
-    #print(i, bytes(rom[ptr+2:ptr+14]).rstrip(b"\0").decode("ascii"), bytes(rom[ptr+0x70:ptr+0x7e]).rstrip(b"\0").decode("shift-jis"))
+bosses = "Hidama Bou Senju Kasumi Uzumaneki Modoki Oonetsu Ishime Ryuu".split()
+assert len(bosses) == 9
+for i, name in enumerate(bosses):
+    # print(i, bytes(rom[ptr+2:ptr+14]).rstrip(b"\0").decode("ascii"), bytes(rom[ptr+0x70:ptr+0x7e]).rstrip(b"\0").decode("shift-jis"))
+    write(ptr + 0x70, name + "\0")
     ptr += 0x1000
 
 assert ptr == 0xd9000
 padding(0xd8f80, 0x134000, b"\xe5")
 assert len(rom) == 0x134000
-
-def write(addr, text):
-    if isinstance(text, str):
-        text = text.encode("shift-jis")
-    patched[addr:addr+len(text)] = text
 
 write(0x13270, "Talk/Look\rItems\rSpell\rKeyboard\rScore\rSystem\0")
 
