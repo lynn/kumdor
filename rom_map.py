@@ -233,6 +233,10 @@ assert len(rom) == 0x134000
 
 write(0x13270, "Talk/Look\rItems\rSpell\rKeyboard\rScore\rSystem\0")
 
+# Patch out the copy protection check in the final dungeon.
+at(0xB85AE, b"\x75\x03")     # jnz $+5
+write(0xB85AE, b"\x90\x90")  # nop / nop
+
 # Write a ROM with inserted text:
 out_path = "patched.hdm"
 with open(out_path, "wb") as f:
