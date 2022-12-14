@@ -1,6 +1,7 @@
 import sys
 
-with open("The Sword of Kumdor.hdm", "rb") as f:
+#with open("The Sword of Kumdor.hdm", "rb") as f:
+with open("saved.hdm", "rb") as f:
     rom = f.read()
 
 rom = bytearray(rom)
@@ -12,7 +13,7 @@ val = int(val, 16)
 rom[0x10:0x30] = f"{start:5x}-{stop:5x}".rjust(32).encode("ascii")
 import random
 
-rom[start] = val
+rom[start:stop] = bytes([val]) * (stop - start)
 
 # 2c000: magic
 # 2c005: u16 x
@@ -25,6 +26,6 @@ rom[start] = val
 # 2c021-2c022: 0i8 0i8 (end of line)
 
 
-
 with open("corrupt.hdm", "wb") as f:
     f.write(rom)
+print(f"Wrote corrupt.hdm with rom[{start:5x}:{stop:5x}] = {val:2x}")

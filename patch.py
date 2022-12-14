@@ -87,6 +87,26 @@ title_data = rom[0x10000:0x13000]
 gfx_maybe = rom[0x14000:0x35000]
 # protagonist at 0x28000
 
+title_bmp = rom[0x2B000:0x2BB94]
+
+# from PIL import Image
+# from sprite_view import onebpp
+# data = b"".join(bytes([r * 255 for r in row]) for row in onebpp(title_bmp, 312, 76))
+# im = Image.frombytes("L", (312, 76), data)
+# im.show()
+
+from PIL import Image
+from PIL import ImageFont
+from PIL import ImageDraw
+
+img = Image.new("1", (312, 76), 1)
+draw = ImageDraw.Draw(img)
+font = ImageFont.truetype("C:\\Windows\\Fonts\\lucon.ttf", 14)
+draw.text((312 // 2, 20), "~ Master the Blind Touch ~", 0, font=font, anchor="ms")
+big = ImageFont.truetype("C:\\Windows\\Fonts\\timesbi.ttf", 40)
+draw.text((312 // 2, 45), "Sword of Kumdor", 0, font=big, anchor="mm")
+patched[0x2B000:0x2BB94] = img.tobytes()
+
 padding(0x35000, 0x40000, b"\xe5")
 
 check(0x40000, b"MAP SOLFACE")
