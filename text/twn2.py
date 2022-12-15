@@ -1,7 +1,7 @@
 [
     '00',  # 00 = '00'
-    "Hey.",  # 01 = 'へい。'
-    "Thank you.",  # 02 = 'スパイスいただきます。'
+    "That'll be ",  # 01 = 'へい。'
+    " spice.",  # 02 = 'スパイスいただきます。'
     "Changed your mind?",  # 03 = 'え、買わないの?'
     "You don't have enough spice.",  # 04 = 'スパイスが足りませんけど。'
     "Uh, you're carrying too much.",  # 05 = 'ちょっと、持ち物が多いようですね。'
@@ -16,13 +16,13 @@
     '',  # 0e = '0E'
     '',  # 0f = '0F'
     '',  # 10 = '10'
-    "~Those hands have popped up in our rooms… Oh well. We don't get much guests, anyway.",  # 11 = '部屋に、例の手が生えてきちゃってね…\x15どうせ客が少ないからいいけどさ。'
+    "~Those hands have popped up in our rooms. Oh well, we don't get much guests, anyway.",  # 11 = '部屋に、例の手が生えてきちゃってね…\x15どうせ客が少ないからいいけどさ。'
     "~Want a room? It's 10 spice per night.",  # 12 = 'お泊まりになります? 10スパイスですけど。'
     "Please use the second room to your left.",  # 13 = 'じゃ、左手から行って−\x152番目の部屋を使ってください。'
     "Ah, it's the second room.",  # 14 = '2番目の部屋ですよ。'
 
     # 15 = "以前はダイビング用品を扱っていたんだがね。\u0015ちっとも売れなくなっちゃって…\u0015キーショップを始めたんだよ。"
-    "~This used to be a diving equipment shop. That stuff doesn't sell at all anymore... so I pivoted to a keyshop.",
+    "~This used to be a diving equipment store. That stuff doesn't sell at all anymore, so it pivoted to a keyshop.",
 
     # 16 = "名物のレイクダイビングが出来ないと\u0015ルチュも活気が無いね。"
     "~Rtyu is pretty boring if you can't go lake-diving.",
@@ -37,10 +37,10 @@
     "~From here, you can only go west to the villages of Ghu and Qwey.",
 
     # 1a = "ソルフェスから、ケムリ苔の買付けに\u0015来たんですがね…。"
-    "~We came here from Solface to buy smokemoss, but then...",
+    "~We came here from Solface to buy smokemoss, but...",
 
     # 1b = "帰る前に、こいつがレイクダイビングを\u0015やっていこうなんて言い出すから…。"
-    "~This guy insisted on going lake diving before we go home.",
+    "~Well, *you* insisted on going lake diving before we go home!",
 
     # 1c = "ひとのせいにするなよ。"
     "~Hey, don't blame me!",
@@ -52,7 +52,7 @@
     "~To dive in the lake, you'd need the RTYU, GH, and QWE keys. Well, you're probably not that big of a fan.",
 
     # 1f = "チャトフィッシュと云う珍し魚がいてね。\u0015いつも、クムの木とお喋りをしているんだ。\u0015もう、一匹も見かけなくなったけどね。"
-    "~The rare and legendary \"chatfish\" used to talk to the keytrees... But recently they've up and disappeared.",
+    "~The rare and legendary \"chatfish\" used to talk to the keytrees. But recently they've totally disappeared.",
 
     # 20 = "20"
     "20",
@@ -212,10 +212,10 @@
     "\u0018\u0017This robot is broken.",
 
     # 54 = "ドリームポイント ドリームポイント…"
-    "DREAMPOINT, DREAMPOINT...",
+    "DREAMPOINT... DREAMPOINT...",
 
     # 55 = "剣と盾の店です… が、誰も買ってくれない。\u0011\u0015え、他の村ではキーを売ってる?\u0015キーって、あのキーボードのキーですか?"
-    "~This is an armory... but nobody buys our wares anymore.\x11 What, they sell keys everywhere now? Keyboard keys?",
+    "~This is an armory... but nobody buys our wares anymore.\x11 What, they sell keys everywhere now? Like, keyboard keys?",
 
     # 56 = "キーショップに衣替えしました。"
     "~I've entered the key business.",
@@ -239,7 +239,7 @@
     "~The guys at the Rtyu diving school can teach you how to operate an Aqualung.",
 
     # 5d = "やっとクムドールの取材が終わった。\u0015明日は地球に帰れるぞ。\u0011\u0015何 宇宙船は全部ストップしてる? 本当かい。"
-    "I finally finished my report on Kumdor.\x15I'm going back to Earth tomorrow!\x11\x15What? All spaceships, grounded? Uh-oh.",
+    "I finally finished my report on Kumdor.\x15I'm going back to Earth tomorrow!\x11\x15What? All spaceships grounded? Come on.",
 
     # 5e = "レイクダイビングなんてつまらないから\u0015私たちはパパ抜きで霧の谷へハイキングに\u0015行くのよ。…ロマンチックでしょ。"
     "~We don't care for lake diving, so we're going hiking in the Mist Valley without dad. How romantic.",
@@ -254,13 +254,13 @@
     "The Mist Valley is north of the lake.",
 
     # 62 = "霧が出ると、まるで…\u0015ミルクの中を歩いているようなんですって。"
-    "~When the mist comes out, it's like you're walking around in milk.",
+    "~When the mist comes out, it's like you're walking around in milk!",
 
     # 63 = "いらっしゃい。\u0015どうです、クムドールは…\u0015のどかで平和な、いい惑星でしょう。"
-    "~Welcome! How do you like Kumdor? Isn't it a quiet, peaceful planet??",
+    "~Welcome! How do you like Kumdor? Isn't it a quiet, peaceful planet?",
 
     # 64 = "お泊まりは 10スパイスですが…"
-    "It's 10 spice to stay the night.",
+    "Care to rest up for 10 spice?",
 
     # 65 = "ありがとうございます。"
     "Thank you.",
@@ -275,7 +275,7 @@
     "Here you go.",
 
     # 69 = "オカネ オカネ!"
-    "MONEY, MONEY!",
+    "NEED MONEY.",
 
     # 6a = "変な夢を見ちゃったなあ、ははは。"
     "I had a crazy dream, haha.",
@@ -305,10 +305,10 @@
     "The boss is on the 2nd floor.",
 
     # 73 = "それは… 鯨のスリッパか!\u0015不思議な事があるもんだ。"
-    "~Are those... whale slippers?! Will wonders never cease!",
+    "~Are those... whale slippers?! Will wonders never cease.",
 
     # 74 = "チャトフィッシュ?\u0011\u0015ウチは置いてないよ。"
-    "~Chatfish? We don't carry that.",
+    "~Chatfish? No, we don't carry that.",
 
     # 75 = "\u0011\u0015えっ。チャトフィッシュを欲しいって?"
     "\u0011\u0015You're after some chatfish?",
@@ -323,13 +323,13 @@
     "~Backspace? Sorry, we don't have it. Maybe if you look around east of the village...",
 
     # 79 = "BSキーは必要さ。\u0015せっかく魔獣をやっつけても\u0015ミスタイプがあると、やられ損だもん。"
-    "~A Backspace key is vital. You'll be cooked if you make typos while you're beating up monsters.",
+    "~A Backspace key is vital. When you're facing one of those monsters, one typo could make the difference!",
 
     # 7a = "どうやったら呪文を使えるかって?\u0011\u0015オレは信じないぜ、そんな非科学的な事。"
-    "You want to know how to cast spells?\x11\x15I don't buy that unscientific nonsense.",
+    "You want to know how to \"cast spells\"?\x11\x15I don't buy that unscientific nonsense.",
 
     # 7b = "そう言えば、非科学的な奴が一人\u0015イオーパの製材所にいたっけ。"
-    "~That reminds me: there's an unscientific kinda guy at the sawmill in Iopa.",
+    "~Speaking of: there's an unscientific kinda guy at the sawmill in Iopa.",
 
     # 7c = "安い物から順に揃えるのが…\u0011\u0015正しいキーの買い方と言えるね。"
     "The right way to buy keys is...\x11\x15work your way up from the cheapest ones.",

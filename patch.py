@@ -9,16 +9,24 @@ with open("The Sword of Kumdor.hdm", "rb") as f:
 rom = memoryview(rom)
 
 # For text insertion, work off the tutorial.py output:
-source = "saved.hdm" if os.path.exists("saved.hdm") else "tutorial/output.hdm"
+saved = os.path.exists("saved.hdm")
+source = "saved.hdm" if saved else "tutorial/output.hdm"
+
 with open(source, "rb") as f:
     patched = bytearray(f.read())
 
 
-def check(start, bs):
+def check(start: int, bs: bytes):
     assert rom[start : start + len(bs)] == bs
 
 
-def padding(start, stop, byte):
+def write(start: int, text: bytes | str):
+    if isinstance(text, str):
+        text = text.encode("shift-jis")
+    patched[start : start + len(text)] = text
+
+
+def padding(start: int, stop: int, byte):
     assert rom[start:stop] == byte * (stop - start)
 
 
@@ -31,7 +39,7 @@ def wrap(text: str):
         return text
 
 
-def strings(name, start, stop):
+def strings(name: str, start: int, stop: int):
     ss = bytes(rom[start:stop]).rstrip(b" U\xe5\0").split(b"\0")
     if not os.path.exists(f"text/{name}.py"):
         lines = ["["]
@@ -58,8 +66,8 @@ def strings(name, start, stop):
         patched[start : start + len(enc)] = enc
 
 
-def u32(i):
-    return struct.unpack("<L", rom[i : i + 4])[0]
+def u32(addr: int):
+    return struct.unpack("<L", rom[addr : addr + 4])[0]
 
 
 # There's a 512b custom boot sector that starts with a JMP instruction:
@@ -81,6 +89,10 @@ save4 = rom[0xD800:0xE000]
 
 # print("Save 1 spice:", u32(0xC000 + 0x20))
 
+# Give myself a bunch of money when testing.
+if saved:
+    write(0xC020, struct.pack("<L", 100000))
+
 padding(0x0E000, 0x10000, b"\xe5")
 
 title_data = rom[0x10000:0x13000]
@@ -97,9 +109,10 @@ title_bmp = rom[0x2B000:0x2BB94]
 
 try:
     from PIL import Image, ImageFont, ImageDraw
+
     img = Image.new("1", (312, 76), 1)
     draw = ImageDraw.Draw(img)
-    font = ImageFont.truetype("C:\\Windows\\Fonts\\lucon.ttf", 14)
+    font = ImageFont.truetype("C:\\Windows\\Fonts\\lucon.ttf", 15)
     draw.text((312 // 2, 20), "~ Master the Blind Touch ~", 0, font=font, anchor="ms")
     big = ImageFont.truetype("C:\\Windows\\Fonts\\timesbi.ttf", 40)
     draw.text((312 // 2, 45), "Sword of Kumdor", 0, font=big, anchor="mm")
@@ -150,12 +163,6 @@ check(0x60000, b"MAP:TWN04/06")
 strings("twn5", 0x64000, 0x656F0)
 strings("twn6", 0x66000, 0x66AF0)
 check(0x68000, b"MAP TOWN 07")
-
-
-def write(addr, text):
-    if isinstance(text, str):
-        text = text.encode("shift-jis")
-    patched[addr : addr + len(text)] = text
 
 
 # 0xc0000:0xcd800 = monster data
