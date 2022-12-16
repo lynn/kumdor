@@ -1,6 +1,6 @@
 [
     # 00 = "00"
-    "00",
+    "",
 
     # 01 = "全部で、ええと…\u0015"
     "That'll be...\u0015",
@@ -39,16 +39,16 @@
     "ミド 早ク 帰レルト イイネ。",
 
     # 0d = "0D"
-    "0D",
+    "",
 
     # 0e = "0E"
-    "0E",
+    "",
 
     # 0f = "0F"
-    "0F",
+    "",
 
     # 10 = "10"
-    "10",
+    "",
 
     # 11 = "何度か試したんだが−\u0015どうしても霧の谷から北へは\u0015抜けられないんだ。"
     "~I've tried countless times, but I can't find my way north out of the Mist Valley.",
@@ -69,160 +69,160 @@
     "~That guy's been saying weird stuff ever since his kids got attacked by the monsters.",
 
     # 17 = "奥さんはヨゴンナ町の病院に\u0015入院中だって言うし…\u0015気の毒に。"
-    "奥さんはヨゴンナ町の病院に\u0015入院中だって言うし…\u0015気の毒に。",
+    "~His wife is apparently in the Fivetown hospital, too... The poor guy.",
 
     # 18 = "ヨゴンナ町って言ったら−\u0015あの霧の谷を越えなきゃ\u0015行けないじゃないか。"
-    "ヨゴンナ町って言ったら−\u0015あの霧の谷を越えなきゃ\u0015行けないじゃないか。",
+    "~Speaking of Fivetown--we can't go there with that Mist Valley in the way.",
 
     # 19 = "水晶の磁石?\u0011 何ですか、それは。\u0015普通の磁石なら、霧の谷から東に行った\u0015洞窟でよく見かけるけど。"
-    "水晶の磁石?\u0011 何ですか、それは。\u0015普通の磁石なら、霧の谷から東に行った\u0015洞窟でよく見かけるけど。",
+    "~A crystal compass?\u0011 What's that? A regular compass, you might find in the cave east of the Mist Valley.",
 
     # 1a = "西の方にある町?\u0015ああ、製材所の事か。もう切る木が無いから−\u0015誰もいないだろう。"
-    "西の方にある町?\u0015ああ、製材所の事か。もう切る木が無いから−\u0015誰もいないだろう。",
+    "~A town west of here? Oh, you mean the sawmill. They're out of trees to log, so nobody's there anymore.",
 
     # 1b = "ねえ、イオーパの公園が新しくなったんだよ。\u0015手が喋ったりして、前より面白いんだ。"
-    "ねえ、イオーパの公園が新しくなったんだよ。\u0015手が喋ったりして、前より面白いんだ。",
+    "~The Iopa park got a makeover... Those talking hands sure are a fresh twist.",
 
     # 1c = "製材所の方がもっとすごいもーん。"
-    "製材所の方がもっとすごいもーん。",
+    "~The sawmill is way cooler!",
 
     # 1d = "いい村でしょ、イオーパは。\u0015何も無いけど、まあ−\u0015ゆっくりしてってください。"
-    "いい村でしょ、イオーパは。\u0015何も無いけど、まあ−\u0015ゆっくりしてってください。",
+    "~Isn't Iopa nice? Okay, there's not much to see, but... it's relaxing.",
 
     # 1e = "15スパイスですけど、お泊まり?"
-    "15スパイスですけど、お泊まり?",
+    "Stay a night for 15spc?",
 
     # 1f = "まいどー。"
-    "まいどー。",
+    "Thanks.",
 
     # 20 = "20"
-    "20",
+    "",
 
     # 21 = "キーショップですよー。"
-    "キーショップですよー。",
+    "Get your keys here!",
 
     # 22 = "異変のおかげで、ボロもうけじゃないか。"
-    "異変のおかげで、ボロもうけじゃないか。",
+    "~You guys must be raking it in with this anomaly stuff.",
 
     # 23 = "………\u0015ド リ ー ム ポ イ ン ト 。"
-    "………\u0015ド リ ー ム ポ イ ン ト 。",
+    "………\x15DREAM, POINT.",
 
     # 24 = "チャトフィッシュの佃煮が食べたいわ。"
-    "チャトフィッシュの佃煮が食べたいわ。",
+    "I'm dying for some chatfish soup.",
 
     # 25 = "らっしゃい、らっしゃい。"
-    "らっしゃい、らっしゃい。",
+    "Come on in, friend.",
 
     # 26 = "あのー、カゴは戻しといてください。"
-    "あのー、カゴは戻しといてください。",
+    "Please return your basket.",
 
     # 27 = "あ、向こうから入ってください。"
-    "あ、向こうから入ってください。",
+    "Ah, please enter the other way.",
 
     # 28 = "あの、出る時は向こうです。"
-    "あの、出る時は向こうです。",
+    "Ah, the exit is on the other side.",
 
     # 29 = "ここは、イオーパ村って言うんですよ。"
-    "ここは、イオーパ村って言うんですよ。",
+    "This village is called Iopa.",
 
     # 2a = "\u0018跳び降りた。"
-    "\u0018跳び降りた。",
+    "\u0018Jumped down.",
 
     # 2b = "\u0018何か落ちている。拾いますか?"
-    "\u0018何か落ちている。拾いますか?",
+    "\u0018Something's here. Take it?",
 
     # 2c = "\u0018風見タヌキを手に入れた。"
-    "\u0018風見タヌキを手に入れた。",
+    "\u0018Got a whithervane.",
 
     # 2d = "えっ、リターンキーは置いてませんよ。\u0011\u00154,5,6,7キーならあるけど。"
-    "えっ、リターンキーは置いてませんよ。\u0011\u00154,5,6,7キーならあるけど。",
+    "Ah, we don't sell the Enter key.\u0011\u0015But we have 4, 5, 6 and 7!",
 
     # 2e = "呪文を唱えるには まず呪文書、\u0015そしてリターンキーが必要だ。"
-    "呪文を唱えるには まず呪文書、\u0015そしてリターンキーが必要だ。",
+    "~To cast a spell, you need a scroll and an Enter key.",
 
     # 2f = "と言う事が判ったんだが…\u0015どちらもまだ、実物を見た事が無いんだ。"
-    "と言う事が判ったんだが…\u0015どちらもまだ、実物を見た事が無いんだ。",
+    "~I haven't seen either of those in person yet, though.",
 
     # 30 = "30"
-    "30",
+    "",
 
     # 31 = "私達、ヨゴンナから避難して来たんです。"
-    "私達、ヨゴンナから避難して来たんです。",
+    "We evacuated here from Fivetown.",
 
     # 32 = "熱くて、あんなとこに居られないよ。"
-    "熱くて、あんなとこに居られないよ。",
+    "I can't stand staying in that heat.",
 
     # 33 = "クムドールに火山があったとは\u0015知らなかった。"
-    "クムドールに火山があったとは\u0015知らなかった。",
+    "~I didn't even know Kumdor had volcanoes.",
 
     # 34 = "さて、どこかに泊めて貰わなきゃ。"
-    "さて、どこかに泊めて貰わなきゃ。",
+    "~We'll have to find a place to sleep.",
 
     # 35 = "真っ赤に焼けた溶岩が\u0015町のすぐ脇に流れてきましてね。"
-    "真っ赤に焼けた溶岩が\u0015町のすぐ脇に流れてきましてね。",
+    "~Red-hot lava came flowing right beside our town.",
 
     # 36 = "こないだ見たのは予知夢だったんだ。\u0015火山が爆発する夢を見たんだよ。"
-    "こないだ見たのは予知夢だったんだ。\u0015火山が爆発する夢を見たんだよ。",
+    "~I dreamed about the volcano erupting. It must've been a vision!",
 
     # 37 = "母ちゃん。のどが乾いたよ。"
-    "母ちゃん。のどが乾いたよ。",
+    "~Mom, I'm thirsty.",
 
     # 38 = "さあ、炊出しですよ。\u0015あなたも避難民?"
-    "さあ、炊出しですよ。\u0015あなたも避難民?",
+    "~We're distributing food.\u0015Are you an evacuee?",
 
     # 39 = "\u0018おにぎりを貰った。"
-    "\u0018おにぎりを貰った。",
+    "\u0018Got an onigiri.",
 
     # 3a = "ダメよ、一人で五つも食べちゃ。\u0015ちゃんと数えてるんだから。"
-    "ダメよ、一人で五つも食べちゃ。\u0015ちゃんと数えてるんだから。",
+    "~No, you can't have five. I'm keeping count, you know!",
 
     # 3b = "もう荷物がいっぱいよ。"
-    "もう荷物がいっぱいよ。",
+    "You're holding too much.",
 
     # 3c = "もう、全員避難したのかしら。"
-    "もう、全員避難したのかしら。",
+    "Has everyone safely evacuated?",
 
     # 3d = "入院中のおばさんが一人、\u0015どうしても来たくないって言うんだよ。\u0015置いて来ちゃったけど、大丈夫かな。"
-    "入院中のおばさんが一人、\u0015どうしても来たくないって言うんだよ。\u0015置いて来ちゃったけど、大丈夫かな。",
+    "~Only Grandma insisted on staying behind in her hospital bed. I hope she's okay...",
 
     # 3e = "そう言えば、おかしな事に−\u0015あの部屋だけ熱くならなかったような…"
-    "そう言えば、おかしな事に−\u0015あの部屋だけ熱くならなかったような…",
+    "~Come to think of it, why wasn't her room sweltering like everywhere else?",
 
     # 3f = "ああ、子供を魔獣に食われちゃったショックで\u0015変な事言うおばさんだろ。"
-    "ああ、子供を魔獣に食われちゃったショックで\u0015変な事言うおばさんだろ。",
+    "~She's just an old lady who went loopy after those monsters ate her kid.",
 
     # 40 = "40"
-    "40",
+    "",
 
     # 41 = "でも、おかしいね。\u0015あの人の子供がいなくなったのは−\u0015魔獣が現われる前じゃなかったかい?"
-    "でも、おかしいね。\u0015あの人の子供がいなくなったのは−\u0015魔獣が現われる前じゃなかったかい?",
+    "~It doesn't add up, though. Didn't her kid go missing *before* the monsters showed up?",
 
     # 42 = "町会所が騒がしいようだけど\u0015何かあったのかい?"
-    "町会所が騒がしいようだけど\u0015何かあったのかい?",
+    "~What a clamor from the town hall! What's going on there?",
 
     # 43 = "今度は火山か。\u0015次から次へと、おかしな事ばかり起こるねえ。"
-    "今度は火山か。\u0015次から次へと、おかしな事ばかり起こるねえ。",
+    "~Now a volcano! It's one strange event after the other.",
 
     # 44 = "教室が使えないから\u0015学校はずっと休みなんだよ。\u0015ボク勉強したいなあ。"
-    "教室が使えないから\u0015学校はずっと休みなんだよ。\u0015ボク勉強したいなあ。",
+    "~We can't use the classrooms, so school is out. I wanna learn though.",
 
     # 45 = "私、校長です。\u0015最近ヒマでねえ。"
-    "私、校長です。\u0015最近ヒマでねえ。",
+    "~I'm the principal. Yeah... not much work lately.",
 
     # 46 = "ミドはあなたに憧れていました。そして−\u0015自分も銀河一のキーボード使いに\u0015なるんだと言って…。"
-    "ミドはあなたに憧れていました。そして−\u0015自分も銀河一のキーボード使いに\u0015なるんだと言って…。",
+    "~My Mido always admired you. He said he'd become the best typist in the galaxy one day...",
 
     # 47 = "ああ、私がもう少し元気なら…\u0015鯨のスリッパをはいて、\u0015溶岩を渡って行ってあげるんだけど。"
-    "ああ、私がもう少し元気なら…\u0015鯨のスリッパをはいて、\u0015溶岩を渡って行ってあげるんだけど。",
+    "~If I were just a bit healthier, I'd put on whale slippers, cross the lava, and visit him.",
 
     # 48 = "ワタクシ 看護ロボット デス。"
-    "ワタクシ 看護ロボット デス。",
+    "I AM A NURSE ROBOT.",
 
     # 49 = "鯨のスリッパ?\u0015そんな物があるかどうか存じませんが−"
-    "鯨のスリッパ?\u0015そんな物があるかどうか存じませんが−",
+    "~Whale slippers? I've never heard of those, but--",
 
     # 4a = "ルチュ村のマーケットの経営者が\u0015銀河中の珍しいスリッパを\u0015集めてるっていう噂がありましたね。"
-    "ルチュ村のマーケットの経営者が\u0015銀河中の珍しいスリッパを\u0015集めてるっていう噂がありましたね。",
+    "~The boss of the market in Rtyu collects rare slippers from all over the galaxy.",
 
     # 4b = "王室から派遣され調査員ですが…\u0015えっ、あなたが"
     "王室から派遣され調査員ですが…\u0015えっ、あなたが",
