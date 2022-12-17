@@ -225,265 +225,265 @@
     "~The boss of the market in Rtyu collects rare slippers from all over the galaxy.",
 
     # 4b = "王室から派遣され調査員ですが…\u0015えっ、あなたが"
-    "王室から派遣され調査員ですが…\u0015えっ、あなたが",
+    "I'm investigator sent by the palace...\u0015Wait, aren't you ",
 
     # 4c = "様ですか。\u0015無事、クムドールへ来られていたんですね。"
-    "様ですか。\u0015無事、クムドールへ来られていたんですね。",
+    "?!\u0015So you made it to Kumdor after all!",
 
     # 4d = "しかし困った…\u0015何とかあの溶岩を渡れる方法は\u0015無いものだろうか。"
-    "しかし困った…\u0015何とかあの溶岩を渡れる方法は\u0015無いものだろうか。",
+    "~I'm in a real pickle, though... Is there really no way to cross that lava?",
 
     # 4e = "鯨のスリッパなんて−\u0015まさかと思ってました。\u0015本当にあったんですね。"
-    "鯨のスリッパなんて−\u0015まさかと思ってました。\u0015本当にあったんですね。",
+    "~I can't believe whale slippers really do exist after all.",
 
     # 4f = "お願いします。早く宮殿に行って−\u0015"
-    "お願いします。早く宮殿に行って−\u0015",
+    "Please head for the palace, ",
 
     # 50 = "50"
     "50",
 
     # 51 = "様の力を\u0015クムドールのために貸してあげてください。"
-    "様の力を\u0015クムドールのために貸してあげてください。",
+    "!\x15Lend your powers to Kumdor!",
 
     # 52 = "溶岩を見に行って来たけど−\u0015熱くて近寄れなかった。"
-    "溶岩を見に行って来たけど−\u0015熱くて近寄れなかった。",
+    "~I came here to see the lava, but it's too hot to get any closer.",
 
     # 53 = "落ちたら大変だよ。"
-    "落ちたら大変だよ。",
+    "~Imagine falling here...",
 
     # 54 = "鯨のスリッパ? さあ…\u0015ホテルに宿泊している調査員とかいう方には\u0015聞いてみました?"
-    "鯨のスリッパ? さあ…\u0015ホテルに宿泊している調査員とかいう方には\u0015聞いてみました?",
+    "~Whale slippers? Hmm... have you asked that investigator who's staying in the hotel?",
 
     # 55 = "ブブム町です。\u0015ヨゴンナから避難して来た方は−\u0015町会所に行ってくださいね。"
-    "ブブム町です。\u0015ヨゴンナから避難して来た方は−\u0015町会所に行ってくださいね。",
+    "~This is Vybnym. Evacuees from Fivetown, please head to the town hall.",
 
     # 56 = "部屋が足らなくなりそうだな。"
-    "部屋が足らなくなりそうだな。",
+    "We're gonna run out of rooms...",
 
     # 57 = "一泊 20スパイスです。"
-    "一泊 20スパイスです。",
+    "It's 20spc per night.",
 
     # 58 = "手前の部屋へどうぞ。"
-    "手前の部屋へどうぞ。",
+    "It's the room right ahead.",
 
     # 59 = "大変な世の中になりましたねえ。"
-    "大変な世の中になりましたねえ。",
+    "Boy, what a world this is, eh?",
 
     # 5a = "ア 鯨ノ スリッパダ\u0011 イイナ。"
-    "ア 鯨ノ スリッパダ\u0011 イイナ。",
+    "WOW. WHALE SLIPPERS. SO STYLISH.",
 
     # 5b = "みんなミドは死んでしまったと言うんです。\u0015え \u0011あなたが"
-    "みんなミドは死んでしまったと言うんです。\u0015え \u0011あなたが",
+    "Everyone says Mido's dead...\u0015Wait, \u0011are you ",
 
     # 5c = "さん?\u0011\u0015ミドがここにいたら良かったのに。"
-    "さん?\u0011\u0015ミドがここにいたら良かったのに。",
+    "?\u0011\u0015If only Mido were here...",
 
     # 5d = "クムドールクウコウ? \u0011ニ? \u0011ヨウコソ?"
-    "クムドールクウコウ? \u0011ニ? \u0011ヨウコソ?",
+    "WELCOME? TO? KUMDOR AIRPORT?",
 
     # 5e = "キカイ ウゴカナイ ビビッ\u0015クウコウ オヤスミ ビッ ビッ。"
-    "キカイ ウゴカナイ ビビッ\u0015クウコウ オヤスミ ビッ ビッ。",
+    "SHIPS NOT MOVING, BLIBLIP.\u0015AIRPORT SLEEPYTIME BEEP BIP.",
 
     # 5f = "シゴト シタイ。\u0015ヒマデ シニソーダ。"
-    "シゴト シタイ。\u0015ヒマデ シニソーダ。",
+    "I WANNA WORK.\x15I'M SO BORED IT'S KILLIN' ME.",
 
     # 60 = "60"
     "60",
 
     # 61 = "I O P @キーについて…"
-    "I O P @キーについて…",
+    "About the IOP@ keys...",
 
     # 62 = "Iは、"
-    "Iは、",
+    "To type I, ",
 
     # 63 = "Kに置いてある右手の中指を使って打つ。\u0015"
-    "Kに置いてある右手の中指を使って打つ。\u0015",
+    "move your right middle finger\u0015away from K.",
 
     # 64 = "（iを打て）"
-    "（iを打て）",
+    " (press i)",
 
     # 65 = "Oは、"
-    "Oは、",
+    "To type O, ",
 
     # 66 = "Lに置いてある右手の薬指を使って打つ。\u0015"
-    "Lに置いてある右手の薬指を使って打つ。\u0015",
+    "move your right ring finger\u0015away from L.",
 
     # 67 = "（oを打て）"
-    "（oを打て）",
+    " (press o)",
 
     # 68 = "Pは、"
-    "Pは、",
+    "To type P, ",
 
     # 69 = ";に置いてある右手の小指を使って打つ。\u0015"
-    ";に置いてある右手の小指を使って打つ。\u0015",
+    "move your right pinky\u0015away from ;.",
 
     # 6a = "（pを打て）"
-    "（pを打て）",
+    " (press p)",
 
     # 6b = "@も、"
-    "@も、",
+    "Similarly, to type @, ",
 
     # 6c = "（@を打て）"
-    "（@を打て）",
+    " (press @)",
 
     # 6d = "以上。"
-    "以上。",
+    "That is all.",
 
     # 6e = "Z X Cキーについて…"
-    "Z X Cキーについて…",
+    "About the ZXC keys...",
 
     # 6f = "Zは、Aに置いてある左手の小指を使って打つ。\u0015（zを打て）"
-    "Zは、Aに置いてある左手の小指を使って打つ。\u0015（zを打て）",
+    "To type Z, move your left pinky\x15down from A. (press z)",
 
     # 70 = "70"
     "70",
 
-    # 71 = "Xは、Sに置いてある左手の薬指を使って打つ。\u0015（xを打て）"
-    "Xは、Sに置いてある左手の薬指を使って打つ。\u0015（xを打て）",
+    # 71 = "To type X, move your left pinky down from S. (press （)）"
+    "To type X, move your left ring finger\x15down from S. (press x)",
 
-    # 72 = "Cは、Dに置いてある左手の中指を使って打つ。\u0015（cを打て）"
-    "Cは、Dに置いてある左手の中指を使って打つ。\u0015（cを打て）",
+    # 72 = "To type C, move your left pinky down from D. (press （)）"
+    "To type C, move your left middle finger\x15down from D. (press c)",
 
     # 73 = ", . /キーと< > ?キーについて…"
-    ", . /キーと< > ?キーについて…",
+    "About the ,./ and <>? keys...",
 
     # 74 = ",は、"
-    ",は、",
+    "To type a comma, ",
 
     # 75 = "（,を打て）"
-    "（,を打て）",
+    " (press ,)",
 
     # 76 = ".は、"
-    ".は、",
+    "To type a period, ",
 
     # 77 = "（.を打て）"
-    "（.を打て）",
+    " (press .)",
 
     # 78 = "/は、"
-    "/は、",
+    "To type /, ",
 
     # 79 = "（/を打て）"
-    "（/を打て）",
+    " (press .)",
 
     # 7a = "又、<は"
-    "又、<は",
+    "To type <, ",
 
     # 7b = "左手の小指でSHIFTキーを押しながら\u0015"
-    "左手の小指でSHIFTキーを押しながら\u0015",
+    "hold Left Shift and\u0015",
 
     # 7c = "（<を打て）"
-    "（<を打て）",
+    " (type <)",
 
     # 7d = ">も、"
-    ">も、",
+    "To type >,",
 
     # 7e = "（>を打て）"
-    "（>を打て）",
+    " (type >)",
 
     # 7f = "?も、"
-    "?も、",
+    "To type ?,",
 
     # 80 = "80"
     "80",
 
     # 81 = "（?を打て）"
-    "（?を打て）",
+    " (type ?)",
 
     # 82 = "V B N Mキーについて…"
-    "V B N Mキーについて…",
+    "About the VBNM keys...",
 
     # 83 = "Vは"
-    "Vは",
+    "To type V, ",
 
     # 84 = "Fに置いてある左手の人差指を使って打つ。\u0015"
-    "Fに置いてある左手の人差指を使って打つ。\u0015",
+    "move your left index finger\x15away from F.",
 
     # 85 = "（vを打て）"
-    "（vを打て）",
+    " (press v)",
 
     # 86 = "Bも"
-    "Bも",
+    "Similarly, for B, ",
 
     # 87 = "（bを打て）"
-    "（bを打て）",
+    " (press b)",
 
     # 88 = "Nは"
-    "Nは",
+    "To type N, ",
 
     # 89 = "Jに置いてある右手の人差指を使って打つ。\u0015"
-    "Jに置いてある右手の人差指を使って打つ。\u0015",
+    "move your right index finger\x15away from J.",
 
     # 8a = "（nを打て）"
-    "（nを打て）",
+    " (press n)",
 
     # 8b = "Mも"
-    "Mも",
+    "Similarly, for M, ",
 
     # 8c = "（mを打て）"
-    "（mを打て）",
+    " (press m)",
 
     # 8d = "4 5 6 7キーについて…"
-    "4 5 6 7キーについて…",
+    "About the 4567 keys...",
 
     # 8e = "4は"
-    "4は",
+    "To type 4, ",
 
     # 8f = "（4を打て）"
-    "（4を打て）",
+    " (press 4)",
 
     # 90 = "90"
     "90",
 
     # 91 = "5も"
-    "5も",
+    "Similarly, for 5, ",
 
     # 92 = "（5を打て）"
-    "（5を打て）",
+    " (press 5)",
 
     # 93 = "6は"
-    "6は",
+    "To type 6, ",
 
     # 94 = "（6を打て）"
-    "（6を打て）",
+    " (press 6)",
 
     # 95 = "7も"
-    "7も",
+    "Similarly, for 7, ",
 
     # 96 = "（7を打て）"
-    "（7を打て）",
+    " (press 7)",
 
     # 97 = "$ % & 'キーについて…"
-    "$ % & 'キーについて…",
+    "About $%&'...",
 
     # 98 = "$は"
-    "$は",
+    "To type $",
 
     # 99 = "右手の小指でSHIFTキーを押しながら\u0015"
-    "右手の小指でSHIFTキーを押しながら\u0015",
+    ", hold Right Shift and\u0015",
 
     # 9a = "（$を打て）"
-    "（$を打て）",
+    " (type $)",
 
     # 9b = "%も"
-    "%も",
+    "Similarly, for %",
 
     # 9c = "（%を打て）"
-    "（%を打て）",
+    " (type %)",
 
     # 9d = "&は"
-    "&は",
+    "To type &",
 
     # 9e = "（&を打て）"
-    "（&を打て）",
+    " (type &)",
 
     # 9f = "'は"
-    "'は",
+    "Similarly, for '",
 
     # a0 = "A0"
-    "A0",
+    "",
 
     # a1 = "（'を打て）"
-    "（'を打て）",
+    " (type ')",
 
     # a2 = "リターンキーは…"
     "リターンキーは…",
