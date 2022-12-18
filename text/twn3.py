@@ -51,13 +51,13 @@
     "",
 
     # 11 = "何度か試したんだが−\u0015どうしても霧の谷から北へは\u0015抜けられないんだ。"
-    "~I've tried countless times, but I can't find my way north out of the Mist Valley.",
+    "~I've tried countless times, but I can't find my way north out of that fog valley.",
 
     # 12 = "北に進んでるつもりが、いつの間にか\u0015もとの場所に戻っちゃうんだよ。"
     "~I tried to go north, but before I knew it, I'd ended up back where I started.",
 
     # 13 = "時には、東や西に出ちまう事もあるけど…\u0015どういう訳か北へは行けないね。"
-    "~Sometimes you'll end up to the west or east, but for some reason you just can't go north.",
+    "~Sometimes you'll end up west or east, but for some reason you just can't go north.",
 
     # 14 = "水晶の磁石があれば…\u0011\u0015そんなもんある訳ないって?"
     "If you had a crystal compass...\u0011\u0015What? Isn't that a thing?",
@@ -66,22 +66,22 @@
     "It... is a thing.\u0011\u0015But I dunno where you'd find one.",
 
     # 16 = "あのおっさん、子供を魔獣にやられてから\u0015言う事がちょっとおかしいんだ。"
-    "~That guy's been saying weird stuff ever since his kids got attacked by the monsters.",
+    "~That old guy's been saying weird stuff ever since his kid got done in by the monsters.",
 
     # 17 = "奥さんはヨゴンナ町の病院に\u0015入院中だって言うし…\u0015気の毒に。"
-    "~His wife is apparently in the Fivetown hospital, too... The poor guy.",
+    "~His wife is apparently in the Fivetown hospital, too... The poor man.",
 
     # 18 = "ヨゴンナ町って言ったら−\u0015あの霧の谷を越えなきゃ\u0015行けないじゃないか。"
-    "~Speaking of Fivetown--we can't go there with that Mist Valley in the way.",
+    "~Speaking of Fivetown... we can't go there with that fog valley in the way.",
 
     # 19 = "水晶の磁石?\u0011 何ですか、それは。\u0015普通の磁石なら、霧の谷から東に行った\u0015洞窟でよく見かけるけど。"
-    "~A crystal compass?\u0011 What's that? A regular compass, you might find in the cave east of the Mist Valley.",
+    "~A crystal compass?\u0011 What's that? A regular compass, you might find in the cave east of the fog valley.",
 
     # 1a = "西の方にある町?\u0015ああ、製材所の事か。もう切る木が無いから−\u0015誰もいないだろう。"
     "~A town west of here? Oh, you mean the sawmill. They're out of trees to log, so nobody's there anymore.",
 
     # 1b = "ねえ、イオーパの公園が新しくなったんだよ。\u0015手が喋ったりして、前より面白いんだ。"
-    "~The Iopa park got a makeover... Those talking hands sure are a fresh twist.",
+    "~The Iopa park is all new! It has these cool talking hands now!",
 
     # 1c = "製材所の方がもっとすごいもーん。"
     "~The sawmill is way cooler!",
@@ -99,7 +99,7 @@
     "",
 
     # 21 = "キーショップですよー。"
-    "Get your keys here!",
+    "Get your keys here.",
 
     # 22 = "異変のおかげで、ボロもうけじゃないか。"
     "~You guys must be raking it in with this anomaly stuff.",

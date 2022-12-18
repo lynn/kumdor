@@ -242,7 +242,7 @@
     "I finally finished my report on Kumdor.\x15I'm going back to Earth tomorrow!\x11\x15What? All spaceships grounded? Come on.",
 
     # 5e = "レイクダイビングなんてつまらないから\u0015私たちはパパ抜きで霧の谷へハイキングに\u0015行くのよ。…ロマンチックでしょ。"
-    "~We don't care for lake diving, so we're going hiking in the Mist Valley without dad. How romantic.",
+    "~We don't care for lake diving, so we're going hiking in the fog valley without dad. How romantic.",
 
     # 5f = "何ですって、クムの木が石になっちゃった?\u0015そんなマンガみたいな話、信じられないわ。"
     "~\"Petrified keytrees\"? Oh, please. You read too many comic books.",
@@ -251,7 +251,7 @@
     "60",
 
     # 61 = "霧の谷は、湖の北にあるんだよ。"
-    "The Mist Valley is north of the lake.",
+    "The fog valley is north of the lake.",
 
     # 62 = "霧が出ると、まるで…\u0015ミルクの中を歩いているようなんですって。"
     "~When the mist comes out, it's like you're walking around in milk!",

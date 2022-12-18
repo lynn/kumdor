@@ -27,7 +27,7 @@
     'The egg vanishes.\x18',  # 19 = '卵は消えてしまった。\x18'
     'You crack the egg.\x18',  # 1a = '卵を割った。\x18'
     'Your life force runs out.\x18',  # 1b = '命が尽きた。\x18'
-    'Game Over',  # 1c = '[RESTART]'
+    '[RESTART]',  # 1c = '[RESTART]'
     '\x18There\'s text written here. Read it?',  # 1d = '\x18文字が書いてある。読みますか?'
     '\x18You start reading.',  # 1e = '\x18それを読んだ。'
     '~\x18You are frozen in place as your life force starts draining away.',  # 1f = '\x18足がすくみ、命が吸い取られてゆく。'
