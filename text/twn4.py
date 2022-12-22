@@ -213,19 +213,19 @@
     "~Dr. Tamao is doing research at Usuka Memorial Park? That makes sense...\x15The keytrees are in good shape there.",
 
     # 47 = "え タマオ博士が−\u0015クムの木と話せる薬を完成したんですか?\u0011\u0015\u0017（メモを渡した。）"
-    "~Huh? Dr. Tamao developed a medicine that lets you talk to keytrees!?\x11\x15\x17(Handed over the notes.)",
+    "~Huh? Dr. Tamao developed a drug that lets you talk to keytrees!?\x11\x15\x17(Handed over the notes.)",
 
     # 48 = "これを調合すればいいんですね…。\u0011\u0015ちょうど今、一個分の材料がありますから\u0015さっそく試作してみましょう。"
-    "~We should synthesize this recipe...\u0011\u0015We have everything on hand for one vial,\u0015so I'll make a trial dose right away.",
+    "~We have everything on hand for one vial,\u0015so I'll make a trial dose right away.",
 
     # 49 = "これでいいのかな…。\u0011\u0015出来ました、メモの配合通りです。薬の名前−\u0015「タマオリン」と言うのはどうですか。"
-    "~This should do the trick...\u0011\u0015There, just what the doctor ordered.\u0015I call it... \"Tamaorin\"!",
+    "~Let's see...\u0011\u0015There, just what the doctor ordered.\u0015I call it: \"Tamaorin\"!",
 
     # 4a = "これは提供しますが、材料が高価なので\u0015次からは実費で 500スパイス程かかりますよ。\u0011\u0015\u0017（タマオリンを受け取った。）"
-    "You can have this one for free, but the\u0015subsequent doses will be 500 spice.\u0011\u0015\u0017(Obtained Tamaorin.)",
+    "You can have this one for free, but\u0015other doses will be 500 spice.\u0011\u0015\u0017(Obtained Tamaorin.)",
 
     # 4b = "今、材料を集めさせてますから…。"
-    "I'm having the ingredients gathered...",
+    "We're gathering the ingredients.",
 
     # 4c = "4C"
     "4C",
@@ -273,7 +273,7 @@
     "~First, my whole village sinks into a lake. Then I evacuate here, and a volcano erupts! I can't get a break.",
 
     # 5b = "輸出用の荷物を積み終わったところで\u0015あの噴火だろ。\u0015一文無しだ。"
-    "~We'd just finished loading the cargo for export when that volcano erupted... Financially, we're doomed.",
+    "~We'd just finished loading cargo for export when that volcano erupted... Financially, we're doomed.",
 
     # 5c = "あ、おかげでタマオリン大当り。\u0015感謝してます。"
     "~Thanks to you, I'm rolling in Tamaorin money. You're a life-saver!",
@@ -291,7 +291,7 @@
     "",
 
     # 61 = "おかしな夢を見たもんだ。\u0015どんな夢かって?\u0015まあ、秘密にする程の内容じゃないけど…"
-    "~I had a strange dream. What was it, you ask? Well, I'll divulge it to you...",
+    "~I had a strange dream. What was it, you ask? Okay, fine, I'll divulge it to you...",
 
     # 62 = "火の海の中に空港があってね…\u0015建物の中に入って行くとロボットがいて\u0015そのうしろに見えない階段があるんだが−"
     "I saw an airport in a sea of flames...\x15I entered a building, and there was an\x15invisible staircase behind a robot.",
@@ -330,7 +330,7 @@
     "~I'm no match for the monsters at this rate--let alone the spell walls.",
 
     # 6e = "自信のある人は、クム研の２階に\u0015きも試しに行くんだが−\u0015なかなか難しくってね。"
-    "~Those who dare can go test their skills on the 2nd floor of Key U. But it won't be easy...",
+    "~Those who dare can go test their mettle on the 2nd floor of Key U. But it won't be easy...",
 
     # 6f = "えーと Eは左手の親指じゃなくって\u0015…どの指で打つんだっけ。"
     "~Which finger is used to type E again... the thumb?",
@@ -369,52 +369,52 @@
     "~This is the Royal Institute for Keytree Research... known as \"Key U\" for short.",
 
     # 7b = "きも試しに来たんですけど…\u0015え 税務署の２階を済ましてから?"
-    "きも試しに来たんですけど…\u0015え 税務署の２階を済ましてから?",
+    "~I came here to test my mettle… Oh, I should go to the 2nd floor of the tax office first?",
 
     # 7c = "コンピュータが動かないもんで\u0015みんなで筆算をしてるんだが−\u0015どうも能率が悪いようだ。"
-    "コンピュータが動かないもんで\u0015みんなで筆算をしてるんだが−\u0015どうも能率が悪いようだ。",
+    "~All the computers broke, so we're doing the calculations on paper. It's not very efficient...",
 
     # 7d = "足し算は何とか判るんだが…\u0015引き算ってどうやるんだっけ。"
-    "足し算は何とか判るんだが…\u0015引き算ってどうやるんだっけ。",
+    "~I can handle addition, but... how do you do subtraction by hand again?",
 
     # 7e = "２階には建国以来 150年分の\u0015クムの木の資料があったんだが…\u0015ごっそり無くなっちゃったよ。"
-    "２階には建国以来 150年分の\u0015クムの木の資料があったんだが…\u0015ごっそり無くなっちゃったよ。",
+    "~The second floor used to store 150 years of research data on keytrees. But it all just vanished.",
 
     # 7f = "５０＋（６−２０）?\u0015こんな計算に30分もかけるなよ。\u0015答は６４だ。\u0011え 違う?"
-    "５０＋（６−２０）?\u0015こんな計算に30分もかけるなよ。\u0015答は６４だ。\u0011え 違う?",
+    "~50+(6-20)? C'mon, don't spend 30 minutes working that out, it's 64. ...Isn't it?",
 
     # 80 = "80"
-    "80",
+    "",
 
     # 81 = "話しかけないでくれ!\u0015２×３は６で、６＋４は…\u0015ううっ 分んなくなっちゃた。"
-    "話しかけないでくれ!\u0015２×３は６で、６＋４は…\u0015ううっ 分んなくなっちゃた。",
+    "~Wait, don't talk to me now! Times 6, carry the 4, no... See, you distracted me!",
 
     # 82 = "クムの木が石化した原因を調べているんだが…\u0015固くてサンプルを持って来れないんだ。"
-    "クムの木が石化した原因を調べているんだが…\u0015固くてサンプルを持って来れないんだ。",
+    "~I want to analyze the petrified trees, but the bark is too hard to even sample.",
 
     # 83 = "石化したクムの木を−\u0015丸ごと持って来ようとしたんだが、\u0015いくら深く掘っても根っ子があるんだよ。"
-    "石化したクムの木を−\u0015丸ごと持って来ようとしたんだが、\u0015いくら深く掘っても根っ子があるんだよ。",
+    "~I tried to uproot a whole petrified keytree, but there was no end to the roots.",
 
     # 84 = "タマオ博士は一体どこへ行ったんだろ。\u0015この忙しい時に。"
-    "タマオ博士は一体どこへ行ったんだろ。\u0015この忙しい時に。",
+    "~Where'd Dr. Tamao go off to at a busy time like this?",
 
     # 85 = "タマオ博士?\u0015ああ、クムの木と話をする研究をしてた人だ。\u0015そう言えば最近見かけないねえ。"
-    "タマオ博士?\u0015ああ、クムの木と話をする研究をしてた人だ。\u0015そう言えば最近見かけないねえ。",
+    "~Dr. Tamao? He was studying how to talk to keytrees. Haven't seen him around lately.",
 
     # 86 = "５年分の予算を投入して買った機械なのに\u0015この大事な時になって動かないとは。"
-    "５年分の予算を投入して買った機械なのに\u0015この大事な時になって動かないとは。",
+    "~We spent 5 years of budget on these machines, and now here they are, not working.",
 
     # 87 = "１階の職員に頼んだ計算だけど…\u0015ちっとも持って来ないなあ。"
-    "１階の職員に頼んだ計算だけど…\u0015ちっとも持って来ないなあ。",
+    "~The calculation team are taking their sweet time.",
 
     # 88 = "１分間 ９ワードを達成したぞ!\u0015でも、呪文の壁はまだ無理かな。"
-    "１分間 ９ワードを達成したぞ!\u0015でも、呪文の壁はまだ無理かな。",
+    "~I hit 9 words per minute! I still can't handle spell walls, though...",
 
     # 89 = "研究はやめにして、\u0015私もタイプの練習しようかしら。"
-    "研究はやめにして、\u0015私もタイプの練習しようかしら。",
+    "~Maybe I'll quit my research and practice typing.",
 
     # 8a = "クムの木の石化と噴火は−\u0015やっぱり関係あるんだろうなあ。"
-    "クムの木の石化と噴火は−\u0015やっぱり関係あるんだろうなあ。",
+    "~The keytree petrification and volcano eruption must be connected somehow.",
 
     # 8b = "宮殿の対策本部では\u0015何かいい案を考えついたかな…\u0015やっぱり、無理だろうな。"
     "宮殿の対策本部では\u0015何かいい案を考えついたかな…\u0015やっぱり、無理だろうな。",
@@ -468,7 +468,7 @@
     "他人の家を通らないと出入り出来ない\u0015って言うのは−\u0015ちょっと問題のような気がするけど…。",
 
     # 9c = "ハイテクが駄目なはずなのに\u0015動いているロボットがいるのはおかしいって?\u0011\u0015要するに、いい加減なだけじゃないのか。"
-    "ハイテクが駄目なはずなのに\u0015動いているロボットがいるのはおかしいって?\u0011\u0015要するに、いい加減なだけじゃないのか。",
+    "",
 
     # 9d = "9D"
     "",
