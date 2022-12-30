@@ -11,8 +11,8 @@
     '',  # 09 = '09'
     '',  # 0a = '0A'
     '',  # 0b = '0B'
-    'Save the end of the game? (Y/N)',  # 0c = 'ゲームの終了をセーブしますか? (Y/N)'
-    '     Press Return to start.',  # 0d = 'リターンキーを押してください。'
+    'Save the completion of the game? (Y/N)',  # 0c = 'ゲームの終了をセーブしますか? (Y/N)'
+    '        Press Enter to start.',  # 0d = 'リターンキーを押してください。'
     'Game saved.',  # 0e = 'セーブ完了。'
     'Remove the disk and turn off or reboot the device.',  # 0f = 'ディスクを抜き、電源を切ってください。\x15（またはリセットスイッチを押してください。）'
     '10',  # 10 = '10'
@@ -99,18 +99,18 @@
     'Backspace',  # 61 = 'BS'
     'Esc',  # 62 = 'ESC'
     'Shift',  # 63 = 'SHIFT'
-    'Return',  # 64 = 'リターン'
-    ', reads the key lying here.\x15Take it?\x18',  # 65 = 'キーが落ちている。\x15拾いますか?\x18'
+    'Enter',  # 64 = 'リターン'
+    ' key is lying here.\x15Take it?\x18',  # 65 = 'キーが落ちている。\x15拾いますか?\x18'
     ' key added to your keyboard.\x18',  # 66 = 'キーを拾いキーボードに取り付けた。\x18'
     '~\x18[SAVE POINT]... But you can\'t save with less than one box of HP.',  # 67 = '\x18[SAVE ZONE]... \x15しかし体力が一箱分以下ではセーブ出来ない。'
-    'うーー、ばし ばし ばしっ!!\x15\x17（あなたは、いきなり殴りかかった。）',  # 68 = 'うーー、ばし ばし ばしっ!!\x15\x17（あなたは、いきなり殴りかかった。）'
-    'な \x11な \x11何するんだ、こいつ。\x15負けないぞー、ばしばしばしーっ!',  # 69 = 'な \x11な \x11何するんだ、こいつ。\x15負けないぞー、ばしばしばしーっ!'
-    'ウワワ ワン。がぶっ!!\x15\x17（あなたは、いきなり相手にかみついた。）',  # 6a = 'ウワワ ワン。がぶっ!!\x15\x17（あなたは、いきなり相手にかみついた。）'
-    'うわっ いててて。\x15仕返しだっ がぶがぶがぶっ。\x15キャイン キャイン!',  # 6b = 'うわっ いててて。\x15仕返しだっ がぶがぶがぶっ。\x15キャイン キャイン!'
-    'へーぜん。',  # 6c = 'へーぜん。'
-    '\x18激しい水流に噴き上げられた。',  # 6d = '\x18激しい水流に噴き上げられた。'
-    '\x18水流に巻き込まれた。',  # 6e = '\x18水流に巻き込まれた。'
-    '\x18水が噴き上げてくるので、潜れない。',  # 6f = '\x18水が噴き上げてくるので、潜れない。'
+    'Uwaaah, t-t-take this!!\x15\x17(You suddenly throw a punch.)',  # 68 = 'うーー、ばし ばし ばしっ!!\x15\x17（あなたは、いきなり殴りかかった。）'
+    '~Hey, what are you doing?! \x15Oh, I\'ll get you! *flail flail*',  # 69 = 'な \x11な \x11何するんだ、こいつ。\x15負けないぞー、ばしばしばしーっ!'
+    'Woof, woof!! Grrrr!! \x15\x17(You suddenly bite them.)',  # 6a = 'ウワワ ワン。がぶっ!!\x15\x17（あなたは、いきなり相手にかみついた。）'
+    '~Ow, ow, ow! It\'s payback time, grrr!',  # 6b = 'うわっ いててて。\x15仕返しだっ がぶがぶがぶっ。\x15キャイン キャイン!'
+    'You calm down.',  # 6c = 'へーぜん。'
+    '\x18A strong current pulls you up.',  # 6d = '\x18激しい水流に噴き上げられた。'
+    '\x18You are caught in a current.',  # 6e = '\x18水流に巻き込まれた。'
+    '\x18The upward current\'s too strong to dive.',  # 6f = '\x18水が噴き上げてくるので、潜れない。'
     '70',  # 70 = '70'
     '71',  # 71 = '71'
     '\x18The chatfish\'s effects wore off.',  # 72 = '\x18チャト効果が無くなった。'
@@ -176,18 +176,32 @@
     'Lake Town',  # ae = '湖底村'
     'AF',  # af = 'AF'
     'B0',  # b0 = 'B0'
-    '惑星クムドールに異変が起きたA.P.(ポーラ暦)405年。',  # b1 = '惑星クムドールに異変が起きたA.P.(ポーラ暦)405年。'
-    '何処からともなく湧出する魔獣を蹴散らし、',  # b2 = '何処からともなく湧出する魔獣を蹴散らし、'
-    '幾多の障壁を打ち破って再びクムドールに平和を取り戻したのは',  # b3 = '幾多の障壁を打ち破って再びクムドールに平和を取り戻したのは'
-    '一人の地球人であったと伝えられている。',  # b4 = '一人の地球人であったと伝えられている。'
-    'しかしハイテク兵器すら物ともしない魔獣達に対して使われた',  # b5 = 'しかしハイテク兵器すら物ともしない魔獣達に対して使われた'
-    '唯一の武器と言えば、もちろん魔法の剣などではなく',  # b6 = '唯一の武器と言えば、もちろん魔法の剣などではなく'
-    'あなたもよくご存知かと思うが…',  # b7 = 'あなたもよくご存知かと思うが…'
-    '最近そこいらでよく見かける、パソコンなどに付いている、',  # b8 = '最近そこいらでよく見かける、パソコンなどに付いている、'
-    'あのありふれたキーボードだったのだ。',  # b9 = 'あのありふれたキーボードだったのだ。'
-    '人々は異変の後、誰言うともなくキーボードの事を',  # ba = '人々は異変の後、誰言うともなくキーボードの事を'
-    '「クムドールの剣」と呼ぶようになった。',  # bb = '「クムドールの剣」と呼ぶようになった。'
-    'BB',  # bc = 'BB'
-    'BC',  # bd = 'BC'
-    'BD',  # be = 'BD'
+
+    # 惑星クムドールに異変が起きたA.P.(ポーラ暦)405年。
+    # 何処からともなく湧出する魔獣を蹴散らし、
+    # 幾多の障壁を打ち破って再びクムドールに平和を取り戻したのは
+    # 一人の地球人であったと伝えられている。
+    # しかしハイテク兵器すら物ともしない魔獣達に対して使われた
+    # 唯一の武器と言えば、もちろん魔法の剣などではなく
+    # あなたもよくご存知かと思うが…
+    # 最近そこいらでよく見かける、パソコンなどに付いている、
+    # あのありふれたキーボードだったのだ。
+    # 人々は異変の後、誰言うともなくキーボードの事を
+    # 「クムドールの剣」と呼ぶようになった。
+
+    '  It was the year 405 AP when the anomalies struck Kumdor.',
+    'It is said that the hero who vanquished the monsters that',
+    'appeared out of nowhere, broke through numerous barriers,',
+    'and restored peace to Kumdor, was a single Earthling.',
+    '  However, the only weapon that could defeat these beasts,',
+    'unharmed as they were by even the most high-tech weaponry,',
+    'was no magical sword or staff. Rather, it was a common',
+    'piece of computer equipment you know as the keyboard.',
+    '  After the anomalies--though it\'s unclear how this spread--',
+    'the planet\'s inhabitants came to refer to the keyboard',
+    'as "the Sword of Kumdor."',
+
+    '',  # bc = 'BB'
+    '',  # bd = 'BC'
+    '',  # be = 'BD'
 ]

@@ -60,10 +60,10 @@
     "~Sometimes you'll end up west or east, but for some reason you just can't go north.",
 
     # 14 = "水晶の磁石があれば…\u0011\u0015そんなもんある訳ないって?"
-    "If you had a crystal compass...\u0011\u0015What? Isn't that a thing?",
+    "If only you had a crystal compass...\u0011\u0015What? You don't think that's a thing?",
 
     # 15 = "それが…\u0011\u0015あるんです。\u0011\u0015どこにあるか知らないけど。"
-    "It... is a thing.\u0011\u0015But I dunno where you'd find one.",
+    "I know for a fact... it exists.\u0011\u0015But I dunno where you'd find one.",
 
     # 16 = "あのおっさん、子供を魔獣にやられてから\u0015言う事がちょっとおかしいんだ。"
     "~That old guy's been saying weird stuff ever since his kid got done in by the monsters.",
@@ -486,29 +486,29 @@
     " (type ')",
 
     # a2 = "リターンキーは…"
-    "リターンキーは…",
+    "To press Enter...",
 
     # a3 = "右手の小指を伸ばして打つが、\u0015右手をホームポジションから外さないよう\u0015注意。（リターンキーを打て）"
-    "右手の小指を伸ばして打つが、\u0015右手をホームポジションから外さないよう\u0015注意。（リターンキーを打て）",
+    "~Stretch our your right pinky, hit Enter, and return it to the home row! (press Enter)",
 
     # a4 = "まあ、ミド!! 帰って来たのね。\u0011\u0015"
-    "まあ、ミド!! 帰って来たのね。\u0011\u0015",
+    "Oh, Mido! You came back!\u0011\u0015",
 
     # a5 = "さん、本当にありがとう。\u0015火山も溶岩も夢のように消えてしまったし−"
-    "さん、本当にありがとう。\u0015火山も溶岩も夢のように消えてしまったし−",
+    ", thank you so much. The volcano\x15and the lava vanished like a dream.",
 
     # a6 = "ヨゴンナの人達もみんな戻って来るわね。\u0015でも、でも… 今度の事でミドは−\u0011\u0015おとがめを受ける事になるんでしょうか?"
-    "ヨゴンナの人達もみんな戻って来るわね。\u0015でも、でも… 今度の事でミドは−\u0011\u0015おとがめを受ける事になるんでしょうか?",
+    "Everyone from Fivetown will return too.\u0015But... won't the people blame Mido?",
 
     # a7 = "心配イラナイ。\u0011\u0015事態ガ モット悪ク ナラナイヨウニ\u0015ミド ハ ムシロ ヨク 戦ッタンダ。"
-    "心配イラナイ。\u0011\u0015事態ガ モット悪ク ナラナイヨウニ\u0015ミド ハ ムシロ ヨク 戦ッタンダ。",
+    "~WORRY NOT. MIDO FOUGHT HARD NOT TO LET THE SITUATION GET ANY WORSE THAN IT DID.",
 
     # a8 = "ソレニ 悪イ事バカリジャナイ。\u0011\u0015今度ノ異変デ 僕達ロボットノ知能ガ−\u0015少シ レベルアップ シタヨウダシ…"
-    "ソレニ 悪イ事バカリジャナイ。\u0011\u0015今度ノ異変デ 僕達ロボットノ知能ガ−\u0015少シ レベルアップ シタヨウダシ…",
+    "~AND THINGS ARE NOT ALL BAD. IT SEEMS US ROBOTS GOT SOMEWHAT MORE INTELLIGENT SINCE THE ANOMALY...",
 
     # a9 = "A9"
-    "A9",
+    "",
 
     # aa = "AA"
-    "AA",
+    "",
 ]
