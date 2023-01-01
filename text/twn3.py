@@ -249,7 +249,7 @@
     "~I came here to see the lava, but it's too hot to get any closer.",
 
     # 53 = "落ちたら大変だよ。"
-    "~Imagine falling here...",
+    "~Imagine falling in that stuff...",
 
     # 54 = "鯨のスリッパ? さあ…\u0015ホテルに宿泊している調査員とかいう方には\u0015聞いてみました?"
     "~Whale slippers? Hmm... have you asked that investigator who's staying in the hotel?",
@@ -267,7 +267,7 @@
     "It's the room right ahead.",
 
     # 59 = "大変な世の中になりましたねえ。"
-    "Boy, what a world this is, eh?",
+    "Some state the world is in, eh?",
 
     # 5a = "ア 鯨ノ スリッパダ\u0011 イイナ。"
     "WOW. WHALE SLIPPERS. SO STYLISH.",
@@ -396,7 +396,7 @@
     "To type V, ",
 
     # 84 = "Fに置いてある左手の人差指を使って打つ。\u0015"
-    "move your left index finger\x15away from F.",
+    "move your left index\x15finger away from F.",
 
     # 85 = "（vを打て）"
     " (press v)",
@@ -411,7 +411,7 @@
     "To type N, ",
 
     # 89 = "Jに置いてある右手の人差指を使って打つ。\u0015"
-    "move your right index finger\x15away from J.",
+    "move your right index\x15finger away from J.",
 
     # 8a = "（nを打て）"
     " (press n)",

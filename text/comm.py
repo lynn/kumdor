@@ -35,7 +35,7 @@
     '~\x18You are pulled away from the wall by a great force.',  # 21 = '\x18あなたは、大きな力で壁から引き離された。'
     '\x18The spell is broken.',  # 22 = '\x18呪文は消え去った。'
     '\x18As you flee, you get bitten for\x15',  # 23 = '\x18しかし、かみつかれて\x15'
-    ' point(s) of damage.',  # 24 = 'pt.のダメージを受けた。'
+    'pt. of damage.',  # 24 = 'pt.のダメージを受けた。'
     '\x18You get poisoned while fleeing.',  # 25 = '\x18しかし、毒を受けてしまった。'
     '\x18You feel healthy.',  # 26 = '\x18体に異常は無い。'
     '\x18The poison dissipates from your body.',  # 27 = '\x18体から毒が消えた。'

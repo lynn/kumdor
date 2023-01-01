@@ -15,10 +15,10 @@
     "You're a little short...",
 
     # 05 = "残念ながら もう持ち切れませんね。"
-    "Oh, you're carrying too much.",
+    "You're carrying too much.",
 
     # 06 = "ありがとうございます。又どうぞ。"
-    "Thank you, come again.",
+    "Thanks, come again.",
 
     # 07 = "07"
     "",
@@ -60,7 +60,7 @@
     "~Please browse our collection.",
 
     # 14 = "キー、買ってください。"
-    "キー、買ってください。",
+    "Please buy our keys.",
 
     # 15 = "キーは全部揃いましたか。"
     "~Do you have a full set of keys?",
@@ -69,7 +69,7 @@
     "Welcome to Hotel Kumiel.",
 
     # 17 = "お泊まりでございましょうか。\u0015一泊 40スパイスです。"
-    "~Can I offer you a one-person room at 40spc/night?",
+    "~A one-person room is 40spc/night.",
 
     # 18 = "ありがとうございます。\u0015では "
     "Thank you. Please use room #",
@@ -78,7 +78,7 @@
     ".",
 
     # 1a = "あ おはようございます。"
-    "Ah, good morning.",
+    "Good morning.",
 
     # 1b = "1B"
     "",
@@ -105,7 +105,7 @@
     "To type 1, ",
 
     # 23 = "Aに置いてある左手の小指を使って打つ。\u0015"
-    "use the left pinky (on A).\u0015",
+    "use the left pinky.\u0015",
 
     # 24 = "（1を打て）"
     "(press 1)",
@@ -114,7 +114,7 @@
     "To type 2, ",
 
     # 26 = "Sに置いてある左手の薬指を使って打つ。\u0015"
-    "use your ring finger (on S).\u0015",
+    "use your ring finger.\u0015",
 
     # 27 = "(press 2)"
     "(press 2)",
@@ -123,7 +123,7 @@
     "To type 3, ",
 
     # 29 = "Dに置いてある左手の中指を使って打つ。\u0015"
-    "use your middle finger (on D).\u0015",
+    "use your middle finger.\u0015",
 
     # 2a = "(press 3)"
     "(press 3)",
@@ -159,7 +159,7 @@
     "To type 8, ",
 
     # 35 = "Kに置いてある右手の中指を使って打つ。\u0015"
-    "use your right middle finger.\u0015",
+    "use the right middle finger.\u0015",
 
     # 36 = "（8を打て）"
     "(press 8)",
@@ -168,7 +168,7 @@
     "To type 9, ",
 
     # 38 = "Lに置いてある右手の薬指を使って打つ。\u0015"
-    "use your right ring finger.\u0015",
+    "use the right ring finger.\u0015",
 
     # 39 = "（9を打て）"
     "(press 9)",
@@ -177,7 +177,7 @@
     "To type 0, ",
 
     # 3b = ";に置いてある右手の小指を使って打つ。\u0015"
-    "use your right pinky.\u0015",
+    "use the right pinky.\u0015",
 
     # 3c = "（0を打て）"
     "（0を打て）",
@@ -207,7 +207,7 @@
     "~Using Tamaorin, we may even discover the cause of the petrification.",
 
     # 45 = "この研究所も、長年クムの木を調べてきたが\u0015当の本人に聞く−\u0015という方法は考えつかなかったな。"
-    "~This facility has been researching keytrees for years, but we never thought to simply ask them stuff.",
+    "~Our lab has been researching keytrees for years. But we never thought to simply ask them stuff.",
 
     # 46 = "タマオ博士が? ウスカ記念公園で研究を?\u0011\u0015なる程、あそこのクムの木は\u0015イキがいいからな。"
     "~Dr. Tamao is doing research at Usuka Memorial Park? That makes sense...\x15The keytrees are in good shape there.",
@@ -219,7 +219,7 @@
     "~We have everything on hand for one vial,\u0015so I'll make a trial dose right away.",
 
     # 49 = "これでいいのかな…。\u0011\u0015出来ました、メモの配合通りです。薬の名前−\u0015「タマオリン」と言うのはどうですか。"
-    "~Let's see...\u0011\u0015There, just what the doctor ordered.\u0015I call it: \"Tamaorin\"!",
+    "~Let's see...\u0011\u0015There! Just what the doctor ordered.\u0015I call it: \"Tamaorin\"!",
 
     # 4a = "これは提供しますが、材料が高価なので\u0015次からは実費で 500スパイス程かかりますよ。\u0011\u0015\u0017（タマオリンを受け取った。）"
     "You can have this one for free, but\u0015other doses will be 500 spice.\u0011\u0015\u0017(Obtained Tamaorin.)",
@@ -246,7 +246,7 @@
     "I have good news about Tamaorin!\u0011\u0015I talked to a pharmaceutical company,\u0015and they'd like to mass-produce it.",
 
     # 52 = "大量生産するから、ずっと安くなるそうです。\u0015二、三日したらマーケットに\u0015出荷出来ると言ってました。"
-    "That means it'll become a lot cheaper.\u0015You'll find it at the local market\u0015starting 2-3 days from now.",
+    "So, it'll become a lot cheaper.\u0015You'll find it at the local market\u0015starting 2-3 days from now.",
 
     # 53 = "\u0017（その他大勢のようだ。）"
     "~\u0017(He looks like your average man in the street.)",
@@ -261,7 +261,7 @@
     "G'day.",
 
     # 57 = "このマンションは、\u0015その他大勢の人しかいないよ。"
-    "~Everyone in this condo is just your average man in the street.",
+    "~Everyone in here is just your average man in the street.",
 
     # 58 = "この町は大きいからね、\u0015その他大勢の人に話しかけても\u0015時間のムダかもね。"
     "~This is the big city. Talking to your average man in the street might be a waste of time.",
@@ -273,7 +273,7 @@
     "~First, my whole village sinks into a lake. Then I evacuate here, and a volcano erupts! I can't get a break.",
 
     # 5b = "輸出用の荷物を積み終わったところで\u0015あの噴火だろ。\u0015一文無しだ。"
-    "~We'd just finished loading cargo for export when that volcano erupted... Financially, we're doomed.",
+    "~We'd just finished loading cargo when that volcano erupted... Financially, we're doomed.",
 
     # 5c = "あ、おかげでタマオリン大当り。\u0015感謝してます。"
     "~Thanks to you, I'm rolling in Tamaorin money. You're a life-saver!",
@@ -324,13 +324,13 @@
     "~Welcome to the National Defense Typing Class.",
 
     # 6c = "1分間に 6ワード!?\u0015どうしてクムドール人って\u0015こうも不器用なんだろ。"
-    "~Six words per minute!? Maybe our people just aren't cut out for this.",
+    "~Six words per minute!? Maybe Kumdorians just aren't cut out for this.",
 
     # 6d = "これじゃ、呪文の壁を破るどころか\u0015魔獣とも戦えないよ。"
     "~I'm no match for the monsters at this rate--let alone the spell walls.",
 
     # 6e = "自信のある人は、クム研の２階に\u0015きも試しに行くんだが−\u0015なかなか難しくってね。"
-    "~Those who dare can go test their mettle on the 2nd floor of Key U. But it won't be easy...",
+    "~Those who dare can go test their mettle on the 2nd floor of KeyLabs. But it won't be easy...",
 
     # 6f = "えーと Eは左手の親指じゃなくって\u0015…どの指で打つんだっけ。"
     "~Which finger is used to type E again... the thumb?",
@@ -366,7 +366,7 @@
     "~You'll want the 123 and 890 keys to face the spell wall to the east. But who even uses the -^\\ and [:]_ keys?",
 
     # 7a = "ここは王立クムの木研究所−\u0015略して「クム研」です。"
-    "~This is the Royal Institute for Keytree Research... known as \"Key U\" for short.",
+    "~This is the Royal Keytree Research Laboratory... known as \"KeyLabs\" for short.",
 
     # 7b = "きも試しに来たんですけど…\u0015え 税務署の２階を済ましてから?"
     "~I came here to test my mettle… Oh, I should go to the 2nd floor of the tax office first?",
@@ -393,7 +393,7 @@
     "~I want to analyze the petrified trees, but the bark is too hard to even sample.",
 
     # 83 = "石化したクムの木を−\u0015丸ごと持って来ようとしたんだが、\u0015いくら深く掘っても根っ子があるんだよ。"
-    "~I tried to uproot a whole petrified keytree, but there was no end to the roots.",
+    "~I tried to uproot a whole petrified keytree, but the roots just kept going and going.",
 
     # 84 = "タマオ博士は一体どこへ行ったんだろ。\u0015この忙しい時に。"
     "~Where'd Dr. Tamao go off to at a busy time like this?",
@@ -417,58 +417,58 @@
     "~The keytree petrification and volcano eruption must be connected somehow.",
 
     # 8b = "宮殿の対策本部では\u0015何かいい案を考えついたかな…\u0015やっぱり、無理だろうな。"
-    "宮殿の対策本部では\u0015何かいい案を考えついたかな…\u0015やっぱり、無理だろうな。",
+    "~I wonder if that royal task force has any good plans... but I kinda doubt it.",
 
     # 8c = "光学式の顕微鏡は使えるよ。\u0015これはハイテク品じゃないって事なのか。"
-    "光学式の顕微鏡は使えるよ。\u0015これはハイテク品じゃないって事なのか。",
+    "~I can still use this optical microscope. So does that not count as high-tech...?",
 
     # 8d = "こんな所でお酒を飲んでる場合じゃない\u0015って事は知ってるんだけど…\u0015他にどうしようもないしな。"
-    "こんな所でお酒を飲んでる場合じゃない\u0015って事は知ってるんだけど…\u0015他にどうしようもないしな。",
+    "~I know I shouldn't turn to alcohol at times like this, but... what else is there to do?",
 
     # 8e = "大異変のショックのせいか−\u0015最近、みんな妙な夢を見るらしいよ。"
-    "大異変のショックのせいか−\u0015最近、みんな妙な夢を見るらしいよ。",
+    "~Maybe it's due to the anomalies that everyone's had weird dreams lately.",
 
     # 8f = "来年はどうなるか分かんないからね、\u0015今の内にクム酒を飲んどかなきゃ。"
-    "来年はどうなるか分かんないからね、\u0015今の内にクム酒を飲んどかなきゃ。",
+    "~We can't know what next year will bring, so we better drink all the keywine we can.",
 
     # 90 = "90"
-    "90",
+    "",
 
     # 91 = "酒を飲んだら、いい解決策が\u0015浮かぶんじゃないかと思ったんだが…\u0015だんだん どうでも良くなってきちゃった。"
-    "酒を飲んだら、いい解決策が\u0015浮かぶんじゃないかと思ったんだが…\u0015だんだん どうでも良くなってきちゃった。",
+    "~I thought I'd hit on a master plan with a few drinks in me, but they're only making me worry less.",
 
     # 92 = "税務署とクム研は\u0015「ビッグハンド」にやられたそうですね。"
-    "税務署とクム研は\u0015「ビッグハンド」にやられたそうですね。",
+    "~The \"Big Hands\" got to the tax office and KeyLabs...",
 
     # 93 = "\u0018「エレベーターは動きません。\u0015階段をご使用ください。」"
-    "\u0018「エレベーターは動きません。\u0015階段をご使用ください。」",
+    "\u0018\"Elevator out of order. \x15 Please use the stairs.\"",
 
     # 94 = "エレベーターは使えませんよ。"
-    "エレベーターは使えませんよ。",
+    "The elevator is broken.",
 
     # 95 = "家もマンションも全部売れちゃった。\u0015クムドール空港から大勢避難してきたからね。"
-    "家もマンションも全部売れちゃった。\u0015クムドール空港から大勢避難してきたからね。",
+    "~All our housing got sold out to evacuees from the airport.",
 
     # 96 = "お客さん、地球からですか?\u0011\u0015実は一つ いい物件があるんですよ。\u0015家具付きで 2,000スパイスですが…"
-    "お客さん、地球からですか?\u0011\u0015実は一つ いい物件があるんですよ。\u0015家具付きで 2,000スパイスですが…",
+    "Ah, a customer from Earth! Actually,\x15we have one great property left for you.\x15It's furnished, and just 2000spc.",
 
     # 97 = "ありがとうございます。\u0015場所はマーケットの裏ですので。\u0015これが家の鍵です。"
-    "ありがとうございます。\u0015場所はマーケットの裏ですので。\u0015これが家の鍵です。",
+    "~An excellent decision! The property is right behind the market. Here are the keys.",
 
     # 98 = "気が変わったら−\u0015またぜひ おいでください。"
-    "気が変わったら−\u0015またぜひ おいでください。",
+    "~If you change your mind, don't hesitate to reach out.",
 
     # 99 = "あの家は絶対お買得ですよ。"
-    "あの家は絶対お買得ですよ。",
+    "~That place is an absolute bargain.",
 
     # 9a = "クムドール空港からの避難民用に\u0015体育館を仕切って仮住居を作ったんですがね。"
-    "クムドール空港からの避難民用に\u0015体育館を仕切って仮住居を作ったんですがね。",
+    "~They partitioned off the gym to house evacuees from Kumdor Airport.",
 
     # 9b = "他人の家を通らないと出入り出来ない\u0015って言うのは−\u0015ちょっと問題のような気がするけど…。"
-    "他人の家を通らないと出入り出来ない\u0015って言うのは−\u0015ちょっと問題のような気がするけど…。",
+    "~It's a bit annoying that I have to go through other people's homes to get in and out...",
 
     # 9c = "ハイテクが駄目なはずなのに\u0015動いているロボットがいるのはおかしいって?\u0011\u0015要するに、いい加減なだけじゃないのか。"
-    "",
+    "~You say it's weird how our robots still work when high-tech stuff is all broken? Well, they're just not that high-tech.",
 
     # 9d = "9D"
     "",

@@ -92,6 +92,12 @@ save4 = rom[0xD800:0xE000]
 # Give myself a bunch of money when testing.
 if saved:
     write(0xC020, struct.pack("<L", 100000))
+    soba = "\x06\x00"
+    mati = "\x14\x00"
+    smokemoss = "\x21\x00"
+    crystal = "\x31\x00"
+    tamaorin = "\x33\x00"
+    write(0xC080, smokemoss*8 + soba*6 + mati*6)
 
 padding(0x0E000, 0x10000, b"\xe5")
 
