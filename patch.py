@@ -105,6 +105,11 @@ title_data = rom[0x10000:0x13000]
 gfx_maybe = rom[0x14000:0x35000]
 # protagonist at 0x28000
 
+# Use a nicer apostrophe glyph:
+font_data = rom[0x12000:0x12800]
+apostrophe = rom[0x12270:0x12280]
+write(0x12270, b"\0\0\0\x18\x18\x08\x10\0\0\0\0\0\0\0\0\0")
+
 title_bmp = rom[0x2B000:0x2BB94]
 
 # from PIL import Image
