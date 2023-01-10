@@ -153,10 +153,10 @@
     "Ah, ",
 
     # 33 = "様。"
-    ".",
+    ". You're ",
 
     # 34 = "様ですよね。\u0011\u0015ええ、よく存じておりますとも。\u0015ど どうぞ、お入りください。"
-    ", right?\u0011\u0015W-why of course! You're a celebrity.\x15P-please, come right in.",
+    ", right?\u0011\u0015I-I mean, of course! You're a celebrity.\x15P-please, come right in.",
 
     # 35 = "あんた、本物だったの。"
     "So you really are the one and only.",

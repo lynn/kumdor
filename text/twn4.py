@@ -363,13 +363,13 @@
     "~If you have a \"whithervane\", you can cross the chasms. Well, that's how it worked in my dream.",
 
     # 79 = "南東の壁に挑戦しようとして−\u0015123と890のキーを買っていくらしいんだが、\u0015-^\\と[:]_キーは一体どこで使うんだろう。"
-    "~You'll want the 123 and 890 keys to face the spell wall to the east. But who even uses the -^\\ and [:]_ keys?",
+    "~You'll want the 123 and 890 keys to face the spell wall to the east. But what are the -^\\ and [:]_ keys for?",
 
     # 7a = "ここは王立クムの木研究所−\u0015略して「クム研」です。"
     "~This is the Royal Keytree Research Laboratory... known as \"KeyLabs\" for short.",
 
     # 7b = "きも試しに来たんですけど…\u0015え 税務署の２階を済ましてから?"
-    "~I came here to test my mettle… Oh, I should go to the 2nd floor of the tax office first?",
+    "~I came here to test my mettle... Oh, I should go to the 2nd floor of the tax office first?",
 
     # 7c = "コンピュータが動かないもんで\u0015みんなで筆算をしてるんだが−\u0015どうも能率が悪いようだ。"
     "~All the computers broke, so we're doing the calculations on paper. It's not very efficient...",
