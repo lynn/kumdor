@@ -156,8 +156,8 @@ unknown_data2 = rom[0x4B780:0x4BC00]
 strings("item", 0x4BC00, 0x4BFF0)
 strings("glob", 0x4C000, 0x4CBF0)
 padding(0x4CBF0, 0x4D000, b"U")
-strings("comm", 0x4D000, 0x4DFF0)
-padding(0x4E000, 0x50000, b"\xe5")
+strings("comm", 0x4D000, 0x4DFF0 + 256)
+# padding(0x4E000, 0x50000, b"\xe5")
 
 check(0x50000, b"MAP TOWN01/02")
 map_town12 = rom[0x50000:0x54000]

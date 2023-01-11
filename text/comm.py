@@ -130,7 +130,7 @@
     'that turns you transparent.',
 
     # 2b = '\x18しかし、マドマドの呪文をかけられて\x15あなたは発狂してしまった。'
-    '\x18Your foe casts a MADMAD spell\x15that drives you to madness!',
+    '\x18Your foe casts a spell\x15that drives you to madness!',
 
     # 2c = '\x18しかし、暗闇の暗示をかけられた。'
     '\x18You are shrouded in darkness.',
@@ -202,7 +202,7 @@
     '\x18You don\'t have such a scroll.',
 
     # 43 = 'を唱えた。\x18'
-    '!\x18',
+    '...!\x18',
 
     # 44 = '\x18呪文書を拾った。'
     '\x18Got a scroll.',
@@ -244,83 +244,83 @@
     '50',
 
     # 51 = '\x17クムの木は語り始めた。'
-    '\x17クムの木は語り始めた。',
+    '\x17The keytree starts talking.',
 
     # 52 = 'ドリームポイントが目覚めている。\x15誰かが、その場所に侵入したようだ。\x15そこは、あらゆる事が可能になる場所だ。'
-    'ドリームポイントが目覚めている。\x15誰かが、その場所に侵入したようだ。\x15そこは、あらゆる事が可能になる場所だ。',
+    "~The Dreampoint has awakened... Someone seems to have invaded it. It is a place where anything is possible.",
 
-    # 53 = 'まだ思うようにコントロール出来ないようだが\x15その人間の想像力が、取るに足らない物\x15である事を願っているだけでは不十分だ。'
-    'まだ思うようにコントロール出来ないようだが\x15その人間の想像力が、取るに足らない物\x15である事を願っているだけでは不十分だ。',
+    # 53 = "まだ思うようにコントロール出来ないようだが\x15その人間の想像力が、取るに足らない物\x15である事を願っているだけでは不十分だ。"
+    "~We mustn't idly hope this person's imagination is too weak to harness the full power of Dreampoint.",
 
-    # 54 = 'その人間が何を企んでいるのか判らないし−\x15早くその場所に行って、そいつを倒さねば。\x11\x15まず、この北東にある湖に…'
-    'その人間が何を企んでいるのか判らないし−\x15早くその場所に行って、そいつを倒さねば。\x11\x15まず、この北東にある湖に…',
+    # 54 = "その人間が何を企んでいるのか判らないし−\x15早くその場所に行って、そいつを倒さねば。\x11\x15まず、この北東にある湖に…"
+    "~There's no telling what this person is planning, but we have to take them down. Go north-east to the lake, and...",
 
-    # 55 = '石化したクムの木と話すのは命がけさ。\x11\x15でも、危ないと思った時は\x15ESCキーを押せばいいんだ。'
-    '石化したクムの木と話すのは命がけさ。\x11\x15でも、危ないと思った時は\x15ESCキーを押せばいいんだ。',
+    # 55 = "石化したクムの木と話すのは命がけさ。\x11\x15でも、危ないと思った時は\x15ESCキーを押せばいいんだ。"
+    "~Talking to the keytrees can be risky. When you feel it's getting dangerous, press Esc.",
 
-    # 56 = 'エスケープキーは左手の小指で押すんだよ。\x15やり方はBSキーと同じようにね。'
-    'エスケープキーは左手の小指で押すんだよ。\x15やり方はBSキーと同じようにね。',
+    # 56 = "エスケープキーは左手の小指で押すんだよ。\x15やり方はBSキーと同じようにね。"
+    "~The Esc key is pressed with the left pinky. It's a bit like Backspace.",
 
-    # 57 = 'ここは、変な魔獣が出てこないんだ。'
-    'ここは、変な魔獣が出てこないんだ。',
+    # 57 = "ここは、変な魔獣が出てこないんだ。"
+    "~Those weird monsters don't come here.",
 
-    # 58 = '異変が始まった頃、みんなでここに\x15エスケープして来たんだよ。'
-    '異変が始まった頃、みんなでここに\x15エスケープして来たんだよ。',
+    # 58 = "異変が始まった頃、みんなでここに\x15エスケープして来たんだよ。"
+    "~When the anomalies started, we all escaped here together.",
 
-    # 59 = 'クム クム クム。'
-    'クム クム クム。',
+    # 59 = "クム クム クム。"
+    "Kumu, kumu, kumu.",
 
-    # 5a = '町の人達は全員、避難しちゃったよ。'
-    '町の人達は全員、避難しちゃったよ。',
+    # 5a = "町の人達は全員、避難しちゃったよ。"
+    "~All the townsfolk have evacuated.",
 
-    # 5b = 'ヒトデ型の箱を開けると、中から\x15'
-    'ヒトデ型の箱を開けると、中から\x15',
+    # 5b = "ヒトデ型の箱を開けると、中から\x15"
+    "Inside the starfish-shaped box is a\x15",
 
-    # 5c = 'が出てきた。拾いますか?\x18'
-    'が出てきた。拾いますか?\x18',
+    # 5c = "が出てきた。拾いますか?\x18"
+    ". Take it?\x18",
 
-    # 5d = '呪文書'
-    '呪文書',
+    # 5d = "呪文書"
+    "scroll",
 
-    # 5e = 'スパイス'
-    'スパイス',
+    # 5e = "スパイス"
+    "spc amount of cash", # i.e. "Inside the box is a" + "123spc amount of cash" (ugh, grammar).
 
-    # 5f = 'スパイス拾った。\x18'
-    'スパイス拾った。\x18',
+    # 5f = "スパイス拾った。\x18"
+    "spc was obtained.\x18",
 
-    # 60 = '60'
-    '60',
+    # 60 = "60"
+    "",
 
-    # 61 = 'クムドールにいる人々全員の意識が−\x15ドリームポイントに集められている。\x15それらの意識が…'
-    'クムドールにいる人々全員の意識が−\x15ドリームポイントに集められている。\x15それらの意識が…',
+    # 61 = "クムドールにいる人々全員の意識が−\x15ドリームポイントに集められている。\x15それらの意識が…"
+    "~The consciousness of all Kumdorians is gathered at Dreampoint. Their consciousness is...",
 
-    # 62 = '雑多な意識− 願望や欲求、不安などが\x15ドリームポイントの中で一つの方向に\x15まとめられた時…'
-    '雑多な意識− 願望や欲求、不安などが\x15ドリームポイントの中で一つの方向に\x15まとめられた時…',
+    # 62 = "雑多な意識− 願望や欲求、不安などが\x15ドリームポイントの中で一つの方向に\x15まとめられた時…"
+    "~When these various hopes, dreams, and anxieties are aligned inside Dreampoint...",
 
-    # 63 = 'ドリームポイントの力は\x15そこに存在する人間を媒体にして\x15飛躍的に高まっているが、まだ…'
-    'ドリームポイントの力は\x15そこに存在する人間を媒体にして\x15飛躍的に高まっているが、まだ…',
+    # 63 = "ドリームポイントの力は\x15そこに存在する人間を媒体にして\x15飛躍的に高まっているが、まだ…"
+    "~Any person inside Dreampoint is used as a medium to greatly amplify its powers, but...",
 
-    # 64 = 'ドリームポイントはまだ迷っている。\x15はっきりとした一つの方向を\x15決められないまま…'
-    'ドリームポイントはまだ迷っている。\x15はっきりとした一つの方向を\x15決められないまま…',
+    # 64 = "ドリームポイントはまだ迷っている。\x15はっきりとした一つの方向を\x15決められないまま…"
+    "~Dreampoint is still wavering, unable to decide on a single clear direction...",
 
-    # 65 = 'ドリームポイントにいるのは\x15ミドという名前の少年だ。\x15ミドは…'
-    'ドリームポイントにいるのは\x15ミドという名前の少年だ。\x15ミドは…',
+    # 65 = "ドリームポイントにいるのは\x15ミドという名前の少年だ。\x15ミドは…"
+    "~The person in Dreampoint right now is a boy called Mido. Mido was...",
 
-    # 66 = 'ミドは道に迷った末、偶然に\x15ドリームポイントに入ってしまったらしい。\x15しかし…'
-    'ミドは道に迷った末、偶然に\x15ドリームポイントに入ってしまったらしい。\x15しかし…',
+    # 66 = "ミドは道に迷った末、偶然に\x15ドリームポイントに入ってしまったらしい。\x15しかし…"
+    "~It seems Mido got lost and accidentally entered Dreampoint. However...",
 
-    # 67 = 'ミドは今、ドリームポイントの中で\x15自分の意識と戦っている。\x15ミドを責めてはいけない…'
-    'ミドは今、ドリームポイントの中で\x15自分の意識と戦っている。\x15ミドを責めてはいけない…',
+    # 67 = "ミドは今、ドリームポイントの中で\x15自分の意識と戦っている。\x15ミドを責めてはいけない…"
+    "~Right now, Mido is facing his own consciousness inside Dreampoint. You mustn't blame him...",
 
-    # 68 = 'ミドと親しい人間−\x15その人間の強い思念が必要だ。\x15もしかしたら…'
-    'ミドと親しい人間−\x15その人間の強い思念が必要だ。\x15もしかしたら…',
+    # 68 = "ミドと親しい人間−\x15その人間の強い思念が必要だ。\x15もしかしたら…"
+    "~We need somebody close to Mido to lend a strong thought. Perhaps...",
 
-    # 69 = '力が足りない時は、\x15すかさず何度も立ち向かっていけば\x15必ず…'
-    '力が足りない時は、\x15すかさず何度も立ち向かっていけば\x15必ず…',
+    # 69 = "力が足りない時は、\x15すかさず何度も立ち向かっていけば\x15必ず…"
+    "~When your strength seems insufficient, do stand up again unwaveringly, and...",
 
     # 6a = '6A'
-    '6A',
+    '',
 
     # 6b = '6B'
-    '6B',
+    '',
 ]
