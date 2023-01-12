@@ -18,7 +18,7 @@
     "You're carrying too much.",
 
     # 06 = "ありがとうございます。又どうぞ。"
-    "Thanks, come again.",
+    "Thanks, come again!",
 
     # 07 = "07"
     "",

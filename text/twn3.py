@@ -27,16 +27,16 @@
     "Oh! Did you find Mido!?\u0011\u0015Dreampoint??\u0015Is that place... real?",
 
     # 09 = "夢の中から?\u0011\u0015ミドに言い聞かせろって−\u0015そんな事…"
-    "夢の中から?\u0011\u0015ミドに言い聞かせろって−\u0015そんな事…",
+    "~You want me to connect with his psyche in the dream world...?",
 
     # 0a = "でも、それでミドが助かるのなら−\u0015何とかやってみるわ。"
-    "でも、それでミドが助かるのなら−\u0015何とかやってみるわ。",
+    "~If that's what it takes to rescue Mido, I'll try.",
 
     # 0b = "\u0018一生懸命 眠っている。"
-    "\u0018He's fast asleep.",
+    "\u0018She's fast asleep.",
 
     # 0c = "ミド 早ク 帰レルト イイネ。"
-    "ミド 早ク 帰レルト イイネ。",
+    "~I HOPE MIDO COMES HOME SOON.",
 
     # 0d = "0D"
     "",
