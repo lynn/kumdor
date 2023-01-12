@@ -72,7 +72,7 @@
     'Good morning.',  # 46 = 'あ、お早うございます。'
     '~Departures are further to the south.',  # 47 = '発着場なら、この先−\x15空港の南端にありますよ。'
     '~I can\'t get a hold of Kumdor. What\'s going on up there?',  # 48 = '何度やってもだめだ。\x15クムドールはどうなってるんだろ。'
-    '~! Maintenance just wrapped up.\x15The flight to Kumdor will take 20 hours on autopilot.',  # 49 = '様ですね。整備は終わってます。\x15自動操縦式ですから、20時間ほどで−\x15クムドールに着けるでしょう。'
+    '! Maintenance just wrapped up.\x15The flight to Kumdor will take 20 hours\x15on autopilot.',  # 49 = '様ですね。整備は終わってます。\x15自動操縦式ですから、20時間ほどで−\x15クムドールに着けるでしょう。'
     '\x18This ship is bound for:\x15Planet Kumdor / Kumdor Airport.\x15Depart?',  # 4a = '\x18本船、クム3号の目的地は−\x15惑星クムドール、クムドール空港です。\x15出発しますか?'
     'Arrival on Kumdor in:\x15',  # 4b = 'クムドール空港には−\x15'
     ' hours and ',  # 4c = '時間'

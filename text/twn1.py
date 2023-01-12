@@ -16,10 +16,10 @@
     '',  # 0e = '0E'
     '',  # 0f = '0F'
     '',  # 10 = '10'
-    '~That ship looks like the one Solface sent for...\x15So what were you doing in it?',  # 11 = '落ちたのは王室がソルフェスに\x15派遣した船のようだが…\x15なんであんたが乗ってたんだい。'
+    '~That ship seems to be the one the royals summoned from Solface... So what were you doing in there?',  # 11 = '落ちたのは王室がソルフェスに\x15派遣した船のようだが…\x15なんであんたが乗ってたんだい。'
     '~I hear the typist the royals sent here to help us has over 900 EXP.',  # 12 = '王室が助けを求めようとしたそのお方は\x15EXP.が 900以上もあると聞いている。'
     '~Jeez, you made quite the dent. The chief won\'t be happy.',  # 13 = 'あーあー、こんなでかい穴を作っちゃって。\x15村長にしかられるぞ。'
-    '~Petrified Keytrees, strange monsters running wild... What\'s happening to Kumdor?',  # 14 = 'クムの木は石化しちゃうし\x15変な魔獣はうろついてるし…\x15クムドールは一体どうしちゃったんだろ。'
+    '~Petrified keytrees, strange monsters running wild... What\'s happening to Kumdor?',  # 14 = 'クムの木は石化しちゃうし\x15変な魔獣はうろついてるし…\x15クムドールは一体どうしちゃったんだろ。'
     '~The petrified trees are blocking the way, so the only way north is through that cave.',  # 15 = '石化したクムの木が道をふさいでるから\x15北へ抜けるためには\x15洞窟を通らなきゃならないんだ。'
     '~If you\'re going to the cave, you\'ll want both the ASD and KL; keys.',  # 16 = '洞窟に入るなら、A,S,Dの他に\x15K,L,;キーも揃えた方がいいぜ。'
     '~The key shop is on the second floor.',  # 17 = 'キーショップなら2階だよ。'
@@ -44,7 +44,7 @@
     '~All the TVs have stopped working.',  # 2a = 'あれ以来テレビが映らなくなっちゃったよ。'
     '~The airwaves are disturbed. All our devices stopped working.',  # 2b = '電波は狂ってるし−\x15機械類はほとんど使えなくなっちゃった。'
     '~Oh, you\'re the one that made that hole. You\'d better apologize. The chief is upstairs.',  # 2c = 'あら、村の真ん中に大穴を開けちゃった人ね。\x15早めに謝っといた方がいいわよ。\x15村長なら上に居るから。'
-    '~Kid, I believe you. You\'re the hero the Solface royals are expecting.',  # 2d = 'わしは信じるよ。\x15あんたは、王室がソルフェスから\x15迎えようとしていた人に違いない。'
+    '~Kid, I believe you. You\'re the hero the royals are expecting from Solface.',  # 2d = 'わしは信じるよ。\x15あんたは、王室がソルフェスから\x15迎えようとしていた人に違いない。'
     '~I know you lost your abilities in the crash... But don\'t worry!',  # 2e = '落下のショックで\x15能力を失ってしまったようだが…\x15心配する事はない。'
     "~You can recover them, if you set your mind to it.\x15I suggest you visit the 'Big Hands'.",  # 2f = "その気があるなら、いずれ全部\x15取り戻す事が出来るだろう。\x15'大きな手'の所に行くといい。"
     '',  # 30 = '30'
@@ -55,7 +55,7 @@
     '~If a fight looks bad for you, run away sooner rather than later. You might escape with only minor injuries.',  # 35 = 'かなわないと思ったら、\x15早めに逃げた方がいいね。\x15軽傷を負うくらいで済むかもしれない。'
     '~Are you that weirdo that fell out of the sky?',  # 36 = 'あんたかい?\x15空から降ってきたっていう人は。'
     "~It's hard work doing such fine craftsmanship by hand.",  # 37 = '手作業で、こんな細かい仕事をするのって\x15疲れるなあ。'
-    '~Those things are definitely not from this world. I\'ve defeated dozens, but they all disappear without a trace.',  # 38 = 'あれは絶対、この世の生き物じゃないぜ。\x15三十体ほどやっつけたけど…\x15結局、跡形も無く消えてしまうんだ。'
+    '~Those monsters are definitely not from this world. I\'ve defeated a few, but they just vanish without leaving a body.',  # 38 = 'あれは絶対、この世の生き物じゃないぜ。\x15三十体ほどやっつけたけど…\x15結局、跡形も無く消えてしまうんだ。'
     "~Guns, swords, cannons... we've tried them all, but the only thing that has any effect on them is 'spell mirroring'.",  # 39 = "ピストル、剣、大砲、ミサイル…\x15なんかはダメだね。全部試した訳じゃないけど\x15使えるのは'呪文返し'だけさ。"
     '~It\'s 5 spice to stay the night.\x15Please rest up if you\'re feeling weak.',  # 3a = 'ご宿泊は 5スパイスです。\x15体力が減ったら、お泊まりください。'
     '3B',  # 3b = '3B'
@@ -69,7 +69,7 @@
     "~You can't tell male and female Kumdorians apart? Weird. You Earthlings wear clothes! That's way harder!",  # 43 = 'クムドール人は男女の区別が付かないって?\x15失礼ね。\x15地球人なんか服着てるからもっと判んないわ。'
     '~With *that* amount of EXP...\x11\x15Wow, you must have improved a lot.',  # 44 = 'そのEXP.を見りゃ…\x11\x15ずい分腕を上げたね。'
     "~Well, that certainly can't be you.",  # 45 = 'ま、それがあんたじゃない事だけは確かだね。'
-    'What? There is!?',  # 46 = 'えっ あるって???'
+    'What? It is!?',  # 46 = 'えっ あるって???'
     "What's going on!?\x11\x15A spaceship came crashing down!\x11\x15Oh my stars, look at that hole!",  # 47 = "なんだ なんだ。\x11\x15船が墜落したらしい。\x11\x15うわっ、でかい穴!!"
     "Look, there's someone in there.\x11\x15Are they alive?\x11\x15......",  # 48 = "おい、誰かいるぜ。\x11\x15生きてるのかい?\x11\x15…………。"
     "Sorry. We're all sold out.",  # 49 = "すみません。\x15全部売り切れちゃいました。"
@@ -77,15 +77,15 @@
     "~It's dangerous to leave town without a full set of ASDF keys.",  # 4b = "A,S,D,Fキーを持たずに、町の外に出るのは\x15危険だぜ。"
     "~I've heard there's a useful key out there called 'Backspace'.",  # 4c = "世の中には、BSキーとか言う\x15便利なキーもあるらしいね。"
     "~You're thinking, \"there aren't any hotties on Kumdor\", right? That's the problem with you Earthlings: no taste!",  # 4d = 'あなた今、クムドールには美人がいない−\x15なんて思ったでしょ。\x11\x15地球人って審美眼が無いから困るわ。'
-    "~It's customary to keep your Caps and Kana Lock off around here.",  # 4e = "ここではCAPSやカナのロックは\x15外しとくのが習慣だよ。"
-    "\x17\x18 (It seems to be broken.)",  # 4f = "\x17\x18（故障しているようだ。）"
+    "~It's customary to keep your Caps Lock off around here.",  # 4e = "ここではCAPSやカナのロックは\x15外しとくのが習慣だよ。"
+    "\x17\x18(It seems to be broken.)",  # 4f = "\x17\x18（故障しているようだ。）"
     "",  # 50 = "50"
     "STAR CHEESE, 15 SPC, BLUBLUB.\x11\x15PURCHASE, BLUBLUB?",  # 51 = "星チーズ 一個 15スパイス。 ブク ブクッ\x11\x15イカガ デショウ。 ブク ブク ブク"
     "DROP SOMETHING.",  # 52 = "モテナイ。"
     "NEED MONEY.",  # 53 = "オカネ。 オカネ。"
     "\x18Bought Star Cheese.",  # 54 = "\x18星チーズを買った。"
     "~Oh, you came back. Do you think we'll get past this anomaly stuff?",  # 55 = "おお、よく戻ったな。\x11\x15ところで−\x15この異変は、どうにかなりそうかね。"
-    "~What? You can talk to Keytrees now? That's unbelievable!",  # 56 = "何、クムの木と話が出来るようになったと?\x11\x15それはすごい。"
+    "~What? You can talk to keytrees now? That's unbelievable!",  # 56 = "何、クムの木と話が出来るようになったと?\x11\x15それはすごい。"
     "~Not that you'd go there, though, right?",  # 57 = "まさか 行く気じゃないとは思うけど。"
     "~Wow, there's a passageway to the south now!?",  # 58 = "え 南に通路が出来ちゃった!?"
     "",  # 59 = "59"
@@ -110,7 +110,7 @@
     "And the right pinky on ;. (press ;)",  # 6c = "右手の小指は;の上に置く。（;を押せ）"
     "The right thumb rests on the space bar.\x15(press space)",  # 6d = "右手の親指はスペースバーの上に置く。\x15（スペースバーを押せ）"
     "~The five fingers on the right hand always return to this position.",  # 6e = "右手の5本の指は−\x15いつも、この位置で待機せよ。"
-    "To type +, hold Shift with the left pinky, then press ; with the other one. (press +)",  # 6f = "なお、+をタイプする時は−\x15左手の小指でSHIFTキーを押しながら\x15右手の小指で;キーを押す。（+をタイプせよ）"
+    "~To type +, hold Shift with the left pinky, then press ; with the other one. (press +)",  # 6f = "なお、+をタイプする時は−\x15左手の小指でSHIFTキーを押しながら\x15右手の小指で;キーを押す。（+をタイプせよ）"
     "",  # 70 = "70"
     "Welcome to Juklun.",  # 71 = "ジュクルン村です。 はい。"
     "~Fighting the monsters in the cave is one thing, but I can't get through the spell walls.",  # 72 = "洞窟の魔獣はなんとかなるけど、\x15呪文の壁を突破出来ないんだよ。"

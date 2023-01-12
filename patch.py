@@ -2,6 +2,7 @@ import struct
 import json
 import os.path
 import textwrap
+import sys
 
 with open("The Sword of Kumdor.hdm", "rb") as f:
     rom = f.read()
@@ -9,7 +10,7 @@ with open("The Sword of Kumdor.hdm", "rb") as f:
 rom = memoryview(rom)
 
 # For text insertion, work off the tutorial.py output:
-saved = os.path.exists("saved.hdm")
+saved = os.path.exists("saved.hdm") and not "--release" in sys.argv
 source = "saved.hdm" if saved else "tutorial/output.hdm"
 
 with open(source, "rb") as f:
@@ -171,7 +172,7 @@ strings("comm", 0x4D000, 0x4DFF0 + 256)
 check(0x50000, b"MAP TOWN01/02")
 map_town12 = rom[0x50000:0x54000]
 
-strings("twn1", 0x54000, 0x555F0)
+strings("twn1", 0x54000, 0x555F0 + 256)
 strings("twn2", 0x56000, 0x574F0)
 
 check(0x58000, b"TWN03 MAP")
@@ -278,14 +279,14 @@ class Patch:
 # Insert "There is a " before picking up a key.
 gettext = 0x733C
 there_is_a = Patch(0xABFA)
-there_is_a.mov_dl_cl()
+there_is_a.mov_dl_cl()  # Store key name
 there_is_a.mov_cl(0x70)  # "There is a "
 there_is_a.call(gettext)  # gettext
-there_is_a.mov_cl_dl()
+there_is_a.mov_cl_dl()  # Retrieve key name
 there_is_a.call(gettext)  # gettext
 there_is_a.ret()
 
-# Call the there_is_a hook.
+# Call the there_is_a hook instead of printing the key name.
 check(0xA8C9, b"\xe8\x70\xca")
 in_pickup_code = Patch(0xA8C9)
 in_pickup_code.call(there_is_a.label)
