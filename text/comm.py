@@ -64,7 +64,7 @@
     '\x18Vanquished the monster.',
 
     # 15 = 'pt.のダメージを与えた。\x18'
-    ' points of damage to your foe!\x18',
+    'pt. of damage to your opponent!\x18',
 
     # 16 = 'は呪文を放った。\x18'
     ' is casting a spell.\x18',
@@ -196,7 +196,7 @@
     '40',
 
     # 41 = '\x18呪文書は唱える事により、効力を発揮する。'
-    '\x18Scrolls are used by chanting spells.',
+    '\x18Scrolls are used by casting spells.',
 
     # 42 = '\x18その呪文書は持っていない。'
     '\x18You don\'t have such a scroll.',

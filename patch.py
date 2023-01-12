@@ -16,7 +16,9 @@ with open(source, "rb") as f:
     patched = bytearray(f.read())
 
 
-def check(start: int, bs: bytes):
+def check(start: int, bs: bytes | str):
+    if isinstance(bs, str):
+        bs = bs.encode("shift-jis")
     assert rom[start : start + len(bs)] == bs
 
 
@@ -89,15 +91,22 @@ save4 = rom[0xD800:0xE000]
 
 # print("Save 1 spice:", u32(0xC000 + 0x20))
 
-# Give myself a bunch of money when testing.
 if saved:
+    # Give myself a bunch of money and items when testing.
     write(0xC020, struct.pack("<L", 100000))
+    write(0xC028, struct.pack("<L", 9999))
+    write(0xC02C, struct.pack("<L", 9999))
     soba = "\x06\x00"
     mati = "\x14\x00"
+    akari = "\x18\x00"
     smokemoss = "\x21\x00"
     crystal = "\x31\x00"
     tamaorin = "\x33\x00"
-    write(0xC080, smokemoss*8 + soba*6 + mati*6)
+    write(0xC080, smokemoss * 8 + soba * 6 + mati * 4 + akari * 6 + crystal * 8)
+
+    # Add a shortcut in the last dungeon.
+    write(0x69A1A, b" " * 128)
+
 
 padding(0x0E000, 0x10000, b"\xe5")
 
@@ -187,23 +196,23 @@ monsters = [
     "Jay",
     "Kay",
     "Ell",
-    "Semicolo",
+    "Semicolon",
     "Plus",
     "Arr",
     "Wye",
     "Yew",
     "Zee",
-    "Queueue",
+    "Queue",
     "Iye",
     "Atsine",
-    "Eckxs",
+    "Ex",
     "Cee",
     "Slash",
     "Vee",
     "Emm",
     "7even",
     "1ne",
-    "Zero",
+    "Zer0",
     "Hyphen",
     "Bracket",
     "Asterisk",
@@ -228,7 +237,58 @@ assert ptr == 0xD9000
 padding(0xD8F80, 0x134000, b"\xe5")
 assert len(rom) == 0x134000
 
-write(0x13270, "Talk/Look\rInventory\rSpell\rKeyboard\rScore\rSystem\0")
+write(0x13270, b"Talk/Look\rInventory\rSpell\rKeyboard\rScore\rSystem\0")
+
+
+def exact(addr: int, source: str, target: str):
+    source = source.encode("shift-jis")
+    target = target.encode("shift-jis")
+    assert len(source) == len(target)
+    check(addr, source)
+    write(addr, target)
+
+
+exact(0x13353, "(F=方向変更)", " (F=rotate)\0")
+exact(0x13364, "終了", "exit")
+exact(0x1338E, "終了", "exit")
+exact(0x133C0, "所持品使用(F:\x1e)", "Use item  (F:\x1e)")
+exact(0x133D5, "終了", "exit")
+exact(0x13430, "呪文を唱える(f=中止)", "Cast a spell(f=quit)")
+exact(0x134E0, "町へ(f=中止)", "Warp(f=stay)")
+
+
+class Patch:
+    def __init__(self, addr):
+        self.label = self.addr = addr
+
+    def raw(self, bs: bytes):
+        patched[self.addr : self.addr + len(bs)] = bs
+        self.addr += len(bs)
+
+    def call(self, target):
+        rel = (target - (self.addr + 3)) & 0xFFFF
+        self.raw(bytes([0xE8, rel & 0xFF, rel >> 8]))
+
+    mov_cl = lambda self, imm: self.raw(bytes([0xB1, imm]))
+    mov_dl_cl = lambda self: self.raw(b"\x88\xca")
+    mov_cl_dl = lambda self: self.raw(b"\x88\xd1")
+    ret = lambda self: self.raw(b"\xc3")
+
+
+# Insert "There is a " before picking up a key.
+gettext = 0x733C
+there_is_a = Patch(0xABFA)
+there_is_a.mov_dl_cl()
+there_is_a.mov_cl(0x70)  # "There is a "
+there_is_a.call(gettext)  # gettext
+there_is_a.mov_cl_dl()
+there_is_a.call(gettext)  # gettext
+there_is_a.ret()
+
+# Call the there_is_a hook.
+check(0xA8C9, b"\xe8\x70\xca")
+in_pickup_code = Patch(0xA8C9)
+in_pickup_code.call(there_is_a.label)
 
 # Patch out the copy protection check in the final dungeon.
 check(0xB85AE, b"\x75\x03")  # jnz $+5

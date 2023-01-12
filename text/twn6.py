@@ -105,7 +105,7 @@
     "~For a second, I thought you were a human... What, you're from Earth!? I wonder how Earth's Dreampoint is doing.",
 
     # 23 = "とにかく下に行きゃいいのさ。\u0015下に行くために上に行く場合もあるけどさ。"
-    "~All you really have to do is go down. But there may be points where you have to go up to go down.",
+    "~All you really have to do is go down. But there may be times when you have to go up to go down.",
 
     # 24 = "再び暗闇の観念にとらわれたら\u0015一旦外に出るか、或いは−\u0015'明り'の呪文を唱えるしかないね。"
     "~If you're blinded by a foe, you'll either have to go outside or cast the AKARI spell.",
@@ -162,7 +162,7 @@
     "I am Dreampoint.\u0015If you insist on invading,\u0011\u0015I have no choice but to stop you.",
 
     # 36 = " お願いです、帰ってください。\u0015ドリームポイントに立ち向かうのは\u0015不可能です。"
-    " Please, please go back.\u0015It's impossible to oppose Dreampoint.",
+    ", please, go back.\u0015It's impossible to oppose Dreampoint.",
 
     # 37 = "今 クムドールは−\u0015楽園に生まれ変わろうとしている。\u0011\u0015クムドールを愛す者なら立ち去れ。"
     "~Kumdor will soon be reborn into Paradise. If you love Kumdor, back down.",

@@ -16,7 +16,7 @@
     '',  # 0e = '0E'
     '',  # 0f = '0F'
     '',  # 10 = '10'
-    '~That ship looks like the one Solface sent for... So what were you doing in it?',  # 11 = '落ちたのは王室がソルフェスに\x15派遣した船のようだが…\x15なんであんたが乗ってたんだい。'
+    '~That ship looks like the one Solface sent for...\x15So what were you doing in it?',  # 11 = '落ちたのは王室がソルフェスに\x15派遣した船のようだが…\x15なんであんたが乗ってたんだい。'
     '~I hear the typist the royals sent here to help us has over 900 EXP.',  # 12 = '王室が助けを求めようとしたそのお方は\x15EXP.が 900以上もあると聞いている。'
     '~Jeez, you made quite the dent. The chief won\'t be happy.',  # 13 = 'あーあー、こんなでかい穴を作っちゃって。\x15村長にしかられるぞ。'
     '~Petrified Keytrees, strange monsters running wild... What\'s happening to Kumdor?',  # 14 = 'クムの木は石化しちゃうし\x15変な魔獣はうろついてるし…\x15クムドールは一体どうしちゃったんだろ。'
@@ -46,7 +46,7 @@
     '~Oh, you\'re the one that made that hole. You\'d better apologize. The chief is upstairs.',  # 2c = 'あら、村の真ん中に大穴を開けちゃった人ね。\x15早めに謝っといた方がいいわよ。\x15村長なら上に居るから。'
     '~Kid, I believe you. You\'re the hero the Solface royals are expecting.',  # 2d = 'わしは信じるよ。\x15あんたは、王室がソルフェスから\x15迎えようとしていた人に違いない。'
     '~I know you lost your abilities in the crash... But don\'t worry!',  # 2e = '落下のショックで\x15能力を失ってしまったようだが…\x15心配する事はない。'
-    "~You can recover them, if you set your mind to it. I suggest you visit the 'Big Hands'.",  # 2f = "その気があるなら、いずれ全部\x15取り戻す事が出来るだろう。\x15'大きな手'の所に行くといい。"
+    "~You can recover them, if you set your mind to it.\x15I suggest you visit the 'Big Hands'.",  # 2f = "その気があるなら、いずれ全部\x15取り戻す事が出来るだろう。\x15'大きな手'の所に行くといい。"
     '',  # 30 = '30'
     "~The weirdest of these anomalies are these 'hands' that sprouted in the comms room.\x15They're always mumbling stuff.",  # 31 = "異変の中でも一番不気味なのは\x15通信室に生えてきた'手'だね。\x15いつも偉そうに、何かブツブツ言ってるぜ。"
     '~At this rate, there\'ll be no more keywine by next year.',  # 32 = 'このまんまじゃ、来年は−\x15クム酒が飲めなくなるかもなー。'
