@@ -67,7 +67,7 @@
     '~We\'ll just explain the situation to tourists and ask them to go back home.',  # 41 = '観光客の方々には、事情を説明して\x15帰って貰うしかないようだな。'
     '~So far for the few tourists that even visit here...',  # 42 = 'ただでさえソルフェスには、\x15観光客が少ないのに... もったいない。'
     'Ah, ',  # 43 = 'あ'
-    '~! We just got cleared for\x15departure to Kumdor. But it\'s worrisome how we can\'t contact them...',  # 44 = '様ですか、クムドール行きの\x15認可手続きは全部済んでますよ。ただ...\x15クムドールと交信できないのが不安ですね。'
+    '! We just got cleared for\x15departure to Kumdor. But it\'s worrisome\x15how we can\'t contact them...',  # 44 = '様ですか、クムドール行きの\x15認可手続きは全部済んでますよ。ただ...\x15クムドールと交信できないのが不安ですね。'
     'Type type type...',  # 45 = 'ガチャ ガチャ ガチャ...'
     'Good morning.',  # 46 = 'あ、お早うございます。'
     '~Departures are further to the south.',  # 47 = '発着場なら、この先−\x15空港の南端にありますよ。'
@@ -84,7 +84,7 @@
     '\x18<The Kingdom of Kumdor>\x15It occupies all of planet Kumdor.\x15The population is 420,000.',  # 52 = '\x18＜クムドール王国＞\x15クムドール星（直径900Km）の全域を占める。\x15人口420,000。'
     '\x18Reigned for decades by the Lund dynasty,\x15its current queen is Marqua Lund.\x15The capital Kumiel hosts the country\'s',
     '~\x18largest airport. The climate is temperate to subarctic. Its forests are popular with tourists.',  # 54 = '\x18クムドール最大の空港である。\x15気候は温帯〜亜寒帯相当。地上は森林で覆われ\x15観光地としても、有数の惑星である。'
-    '~\x18It is known for producing "keywine", made from the "key limes" that grow on 50% of the planet surface.',  # 55 = '\x18樹木の約半数を占めるクムの木から採れる\x15クムの実で作られたクム酒の産地としても\x15知られる。'
+    '~\x18It is known for producing "keywine", made from the "keylimes" that grow on 50% of the planet surface.',  # 55 = '\x18樹木の約半数を占めるクムの木から採れる\x15クムの実で作られたクム酒の産地としても\x15知られる。'
     '\x18Arriving on Kumdor in 2 minutes.',  # 56 = '\x18クムドール空港到着まであと02分です。'
     '\x18Landing without a response from ATC.',  # 57 = '\x18管制塔からの応答が無いため強行着陸します。'
     '\x18Emergency. Radar is not available.',  # 58 = '\x18緊急事態発生。レーダーが使用できません。'
