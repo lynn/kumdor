@@ -132,7 +132,7 @@
     "To type !, ",
 
     # 2c = "右手の小指でSHIFTキーを押しながら\u0015"
-    "hold Shift with your right pinky and\u0015",
+    "hold down Shift and\u0015",
 
     # 2d = "（!を打て）"
     "(press !)",
@@ -186,7 +186,7 @@
     "To type (, ",
 
     # 3e = "左手の小指でSHIFTキーを押しながら\u0015"
-    "hold Shift with the left pinky and\u0015",
+    "hold down Shift and\u0015",
 
     # 3f = "（(を打て）"
     "(press ()",
@@ -405,7 +405,7 @@
     "~We spent 5 years of budget on these machines, and now here they are, not working.",
 
     # 87 = "１階の職員に頼んだ計算だけど…\u0015ちっとも持って来ないなあ。"
-    "~The calculation team are taking their sweet time.",
+    "~I asked the staff on the 1st floor to run some calculations, but they're taking their sweet time...",
 
     # 88 = "１分間 ９ワードを達成したぞ!\u0015でも、呪文の壁はまだ無理かな。"
     "~I hit 9 words per minute! I still can't handle spell walls, though...",

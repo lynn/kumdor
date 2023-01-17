@@ -225,7 +225,7 @@
     "~The boss of the market in Rtyu collects rare slippers from all over the galaxy.",
 
     # 4b = "王室から派遣され調査員ですが…\u0015えっ、あなたが"
-    "I'm investigator sent by the palace...\u0015Wait, aren't you ",
+    "I'm an investigator sent by the palace...\u0015Wait, aren't you ",
 
     # 4c = "様ですか。\u0015無事、クムドールへ来られていたんですね。"
     "?!\u0015So you made it to Kumdor after all!",

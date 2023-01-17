@@ -283,7 +283,7 @@
     "scroll",
 
     # 5e = "スパイス"
-    "spc amount of cash", # i.e. "Inside the box is a" + "123spc amount of cash" (ugh, grammar).
+    "wad of cash",
 
     # 5f = "スパイス拾った。\x18"
     "spc was obtained.\x18",

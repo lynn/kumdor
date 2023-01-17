@@ -16,7 +16,7 @@
     '',  # 0e = '0E'
     '',  # 0f = '0F'
     '',  # 10 = '10'
-    "~Those hands have popped up in our rooms. Oh well, we don't get much guests, anyway.",  # 11 = '部屋に、例の手が生えてきちゃってね…\x15どうせ客が少ないからいいけどさ。'
+    "~Those hands have popped up in our rooms. Oh well. We don't get too many guests, anyway.",  # 11 = '部屋に、例の手が生えてきちゃってね…\x15どうせ客が少ないからいいけどさ。'
     "~Want a room? It's 10 spice per night.",  # 12 = 'お泊まりになります? 10スパイスですけど。'
     "Please use the second room to your left.",  # 13 = 'じゃ、左手から行って−\x152番目の部屋を使ってください。'
     "Ah, it's the second room.",  # 14 = '2番目の部屋ですよ。'
@@ -242,7 +242,7 @@
     "I finally finished my report on Kumdor.\x15I'm going back to Earth tomorrow!\x11\x15What? All spaceships grounded? Come on.",
 
     # 5e = "レイクダイビングなんてつまらないから\u0015私たちはパパ抜きで霧の谷へハイキングに\u0015行くのよ。…ロマンチックでしょ。"
-    "~We don't care for lake diving, so we're going hiking in the fog valley without dad. How romantic.",
+    "~We don't care for lake diving, so we're going hiking in the fog valley without my husband. How romantic.",
 
     # 5f = "何ですって、クムの木が石になっちゃった?\u0015そんなマンガみたいな話、信じられないわ。"
     "~\"Petrified keytrees\"? Oh, please. You read too many comic books.",
