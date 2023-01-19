@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Fansite of Kumdor</title>
+    <style>
+      body {
+        /* image-rendering: pixelated; */
+        -webkit-font-smoothing: none;
+        font-size: 20px;
+        /* font-family: PC98, monospace; */
+        font-family: Meiryo, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro",
+          Osaka, sans-serif;
+        background: url("assets/light.png") repeat;
+      }
+      h1:first-child, h2:first-child {
+        margin-top: 0;
+      }
+      .container {
+        max-width: 850px;
+        margin: auto;
+      }
+      .box {
+        position: relative;
+        padding: 2rem 3rem;
+        margin: 3rem 0rem;
+        background: #fafafa;
+        border: 2px solid black;
+      }
+      img {
+        image-rendering: pixelated;
+      }
+      figure > img {
+        image-rendering: inherit;
+      }
+      p > img {
+        float: left;
+        padding: 0px 16px 0px 0px;
+      }
+      p > img.r {
+        float: right;
+        padding: 0px 0px 0px 16px;
+      }
+      code {
+        background: #dddddd;
+        padding: 2px 8px;
+      }
+      pre {
+        background: #dddddd;
+        padding: 8px 24px;
+      }
+
+      .box::after {
+        content: "";
+        position: absolute;
+        left: 16px;
+        top: 16px;
+        z-index: -1;
+        width: 100%;
+        height: 100%;
+        background: url("assets/dark.png") repeat;
+      }
+
+      figure {
+        text-align: center;
+      }
+
+      figure > img {
+        border: 2px solid black;
+      }
+
+      ruby > rt {
+        font-size: 14px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box">
+        <h1>The Sword of Kumdor</h1>
+        <!-- <a href="#patch">(To the English patch)</a> -->
+        <p>
+          <img class="l" src="assets/hmm.png" height="64" /> “The Sword of
+          Kumdor” (クムドールの剣) is a touch-typing JRPG for the PC-98 created
+          by Michiaki Tsubaki in 1991. You play as the Milky&nbsp;Way's
+          #1&nbsp;typist, summoned to planet Kumdor to fight mysterious monsters
+          causing havoc on the planet — but you lose all your keyboard keys
+          <em>and</em> your typing skills in a crash landing. Can you recover
+          your skills and save the world??
+        </p>
+        <p>
+          <img class="r" src="assets/ship.png" height="128" /> The game has a
+          surreal atmosphere, quirky dialogue, and a distinctive visual style.
+          Japanese fansites call it “my&nbsp;favorite childhood RPG” and
+          “an&nbsp;underrated masterpiece.” I think it deserves more
+          recognition, so I translated the game to English.
+        </p>
+        <figure>
+          <img src="assets/screen3.png" width="640" />
+        </figure>
+      </div>
+      <div class="box">
+        <h2 id="patch">The patch</h2>
+        <p>
+          <img class="l" src="assets/hero.png" height="64" /> The translation is
+          released as a
+          <a href="https://46okumen.com/pachy98">Pachy98</a> patch. You can
+          download a bundle containing Pachy98 and the translation patch
+          <a href="#"><strong>here</strong></a
+          >. Here's how to apply it:
+        </p>
+        <ol>
+          <li>
+            Obtain a clean copy of
+            <code>The&nbsp;Sword&nbsp;of&nbsp;Kumdor.HDM</code>.
+          </li>
+          <li>Place it in the same directory as <code>Pachy98.exe</code>.</li>
+          <li>Run <code>Pachy98.exe</code>. This will patch the HDM file.</li>
+        </ol>
+        <p>
+          <img class="r" src="assets/machine.png" height="128" />
+          To run the patched game in an emulator, load it into FDD Slot #1 and
+          reboot. You will need BIOS files like <code>FONT.ROM</code> and
+          <code>SOUND.ROM</code> placed in the emulator folder, or else the game
+          crashes when you walk out of the tutorial.
+        </p>
+        <h2>On typing funny symbols</h2>
+        <p>
+          <img class="l" src="assets/rhand.png" height="64" />Your average ANSI
+          or ISO keyboard has fewer keys than the JIS keyboard used by the
+          PC-98. As such, when playing in an emulator, you may have trouble
+          typing <code>^</code> and <code>_</code>. In Neko Project II, you can
+          use the on-screen keyboard, or create a text file next to
+          <code>np21w.exe</code> called <code>key.txt</code> with the following
+          contents:
+        </p>
+        <pre>
+TAB = ^
+CTRL = SHIFT _</pre
+        >
+        <p>
+          Now you can type these symbols by pressing Tab and Ctrl. In general,
+          the layout of punctuation is different, so you may have to relearn
+          some of the locations.
+        </p>
+      </div>
+      <div class="box">
+        <h2>Links</h2>
+        <p>
+          <img class="r" src="assets/down.png" height="64" />My playtesting was
+          greatly assisted by
+          <a href="http://rocky75.web.fc2.com/kumu/">rocky75's fan site</a>,
+          which contains a thorough
+          <a href="http://rocky75.web.fc2.com/kumu/0.txt">tutorial</a> in
+          Japanese. If you're stuck, I suggest referring to it with the help of
+          your favorite machine translation service.
+        </p>
+        <p>
+          You can browse
+          <a href="https://archive.org/details/KumdolNoKenMac"
+            >the Mac version's manual</a
+          >: also in Japanese, but contains plenty of cute illustrations.
+          (Kumdor was released as a how-to-type book with floppies inside.)
+        </p>
+        <p>
+          <img class="l" src="assets/robot.png" height="64" />
+          There's my <a href="https://github.com/lynn/kumdor">code repository</a>, where
+          all the translating and patch-writing and sprite-dumping happens.
+        </p>
+      </div>
+      <div class="box">
+        <h2>Localization notes</h2>
+        <p>
+          <img class="l" src="assets/sit.png" height="64" />I had fun imagining
+          I was actually translating this game for an audience of English kids
+          in the 1990s. That meant avoiding the infelicitous syllable "Kum" in a
+          few in-game terms. To make a delicious keyboard/fruit pun, I
+          translated
+          <ruby>クムの木<rt>Kum tree</rt></ruby>
+          as "keytree", so that <ruby>クムの実<rt>Kum fruit</rt></ruby> could be
+          "keylime". That makes <ruby>クム酒<rt>Kum-shu</rt></ruby> "keywine",
+          which isn't really a pun.
+        </p>
+        <p>
+          <img class="r" src="assets/vane.png" height="64" />The "whithervane"
+          is called <i>kazami-danuki</i> (weather-seeing tanuki) in Japanese,
+          which is a play on the actual word for a weather-vane,
+          <i>kazami-dori</i> (weather-seeing chicken, like "weathercock").
+        </p>
+        <p>
+          Fivetown is called <ruby>ヨゴンナ<rt>Yogonna</rt></ruby> in Japanese,
+          which is
+          <a href="https://en.wikipedia.org/wiki/Japanese_wordplay#Goroawase"
+            >goroawase</a
+          >
+          for 4567, the keys found there.
+        </p>
+      </div>
+      <div class="box">
+        <h2>Music</h2>
+        <p>
+          <img class="l" src="assets/guy.png" height="64" />The game's
+          soundtrack is a bit <em>outré</em> so I turned it off after an hour or
+          so. I listened to suitably psychedelic electronic music instead and I
+          can highly recommend this. For example:
+        </p>
+        <ul style="margin-left: 100px">
+          <li>BBC Radiophonic Workshop</li>
+          <li>Boards of Canada</li>
+          <li>Gershon Kingsley</li>
+          <li>Mort Garson</li>
+          <li>Plone</li>
+          <li>Raymond Scott</li>
+        </ul>
+        <p>
+          <img class="r" src="assets/zzz.png" height="64" />Sorry, let me
+          collapse somewhere out of your way.
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
