@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=1000" />
     <title>The Fansite of Kumdor</title>
     <style>
       body {
@@ -14,8 +14,19 @@
         font-family: Meiryo, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro",
           Osaka, sans-serif;
         background: url("assets/light.png") repeat;
+        background-attachment: fixed;
       }
-      h1:first-child, h2:first-child {
+      a {
+        text-decoration: underline;
+      }
+      a:hover {
+        text-decoration: doubleunderline;
+      }
+      a:visited {
+        color: #c000c0;
+      }
+      h1:first-child,
+      h2:first-child {
         margin-top: 0;
       }
       .container {
@@ -44,11 +55,11 @@
         padding: 0px 0px 0px 16px;
       }
       code {
-        background: #dddddd;
+        background: #50000020;
         padding: 2px 8px;
       }
       pre {
-        background: #dddddd;
+        background: #50000020;
         padding: 8px 24px;
       }
 
@@ -61,6 +72,7 @@
         width: 100%;
         height: 100%;
         background: url("assets/dark.png") repeat;
+        background-attachment: fixed;
       }
 
       figure {
@@ -79,15 +91,15 @@
   <body>
     <div class="container">
       <div class="box">
+        <!-- <p style="float:right;background:#ffc;padding:1em"><a href="#patch">Gimme the patch!</a></p> -->
         <h1>The Sword of Kumdor</h1>
-        <!-- <a href="#patch">(To the English patch)</a> -->
         <p>
           <img class="l" src="assets/hmm.png" height="64" /> “The Sword of
           Kumdor” (クムドールの剣) is a touch-typing JRPG for the PC-98 created
           by Michiaki Tsubaki in 1991. You play as the Milky&nbsp;Way's
           #1&nbsp;typist, summoned to planet Kumdor to fight mysterious monsters
-          causing havoc on the planet — but you lose all your keyboard keys
-          <em>and</em> your typing skills in a crash landing. Can you recover
+          with typographic magic — but you lose all your keyboard keys
+          <em>and</em> your QWERTY skills in a crash landing. Can you recover
           your skills and save the world??
         </p>
         <p>
@@ -100,8 +112,17 @@
         <figure>
           <img src="assets/screen3.png" width="640" />
         </figure>
+        <p>
+          <img class="l" src="assets/ponder.png" height="64" /><i>Kumdor</i> has
+          the strangest control scheme ever. Outside of combat and
+          spell-casting, only the <code>F</code> <code>J</code>
+          <code>Space</code> keys are used, so as to keep even a novice typist's
+          hands in the home row position at all times. <code>F</code> walks
+          forward and <code>Space</code> turns you 90°. You get used to it,
+          sorta.
+        </p>
       </div>
-      <div class="box">
+      <div class="box" style="background: #ffc">
         <h2 id="patch">The patch</h2>
         <p>
           <img class="l" src="assets/hero.png" height="64" /> The translation is
@@ -123,8 +144,9 @@
           <img class="r" src="assets/machine.png" height="128" />
           To run the patched game in an emulator, load it into FDD Slot #1 and
           reboot. You will need BIOS files like <code>FONT.ROM</code> and
-          <code>SOUND.ROM</code> placed in the emulator folder, or else the game
-          crashes when you walk out of the tutorial.
+          <code>SOUND.ROM</code> placed in the emulator folder,
+          <strong>or else the game crashes</strong> when you walk out of the
+          tutorial.
         </p>
         <h2>On typing funny symbols</h2>
         <p>
@@ -145,12 +167,22 @@ CTRL = SHIFT _</pre
           the layout of punctuation is different, so you may have to relearn
           some of the locations.
         </p>
+        <figure>
+          <img src="assets/screen2.png" width="640" />
+        </figure>
       </div>
       <div class="box">
         <h2>Links</h2>
         <p>
-          <img class="r" src="assets/down.png" height="64" />My playtesting was
-          greatly assisted by
+          <img class="r" src="assets/down.png" height="64" />If you've never
+          emulated PC-98 games before,
+          <a href="https://gang-fight.com/projects/98faq/"
+            ><i>PC-98 Emulation For Beginners</i></a
+          >
+          is a great resource.
+        </p>
+        <p>
+          My playtesting was greatly assisted by
           <a href="http://rocky75.web.fc2.com/kumu/">rocky75's fan site</a>,
           which contains a thorough
           <a href="http://rocky75.web.fc2.com/kumu/0.txt">tutorial</a> in
@@ -158,30 +190,33 @@ CTRL = SHIFT _</pre
           your favorite machine translation service.
         </p>
         <p>
+          I found
+          <a href="assets/kumap.jpg">this overworld map (spoiler!)</a> floating
+          around on the Internet.
+        </p>
+        <p>
           You can browse
           <a href="https://archive.org/details/KumdolNoKenMac"
             >the Mac version's manual</a
           >: also in Japanese, but contains plenty of cute illustrations.
-          (Kumdor was released as a how-to-type book with floppies inside.)
+          (Kumdor was released as a book with the game floppies on the inside.)
         </p>
         <p>
           <img class="l" src="assets/robot.png" height="64" />
-          There's my <a href="https://github.com/lynn/kumdor">code repository</a>, where
+          Finally, there's my
+          <a href="https://github.com/lynn/kumdor">code repository</a>, where
           all the translating and patch-writing and sprite-dumping happens.
         </p>
       </div>
       <div class="box">
-        <h2>Localization notes</h2>
+        <h2>Translation notes</h2>
         <p>
-          <img class="l" src="assets/sit.png" height="64" />I had fun imagining
-          I was actually translating this game for an audience of English kids
-          in the 1990s. That meant avoiding the infelicitous syllable "Kum" in a
-          few in-game terms. To make a delicious keyboard/fruit pun, I
-          translated
+          <img class="l" src="assets/sit.png" height="64" />To make a delicious
+          keyboard/fruit pun, I translated
           <ruby>クムの木<rt>Kum tree</rt></ruby>
           as "keytree", so that <ruby>クムの実<rt>Kum fruit</rt></ruby> could be
           "keylime". That makes <ruby>クム酒<rt>Kum-shu</rt></ruby> "keywine",
-          which isn't really a pun.
+          which isn't a pun.
         </p>
         <p>
           <img class="r" src="assets/vane.png" height="64" />The "whithervane"
@@ -206,7 +241,7 @@ CTRL = SHIFT _</pre
           so. I listened to suitably psychedelic electronic music instead and I
           can highly recommend this. For example:
         </p>
-        <ul style="margin-left: 100px">
+        <ul>
           <li>BBC Radiophonic Workshop</li>
           <li>Boards of Canada</li>
           <li>Gershon Kingsley</li>
