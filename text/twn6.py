@@ -78,7 +78,7 @@
     "~You must've fallen down from above. Well, I don't think you're getting back up.",
 
     # 1a = "ドリームポイントはもっとずーっと下。\u0015水深計の針が一回りしそうな所だ。"
-    "~Dreampoint is way, way down from here. If you had a depth gauge, I bet it'd make a full lap.",
+    "~The Dreampoint is way, way down from here. If you had a depth gauge, I bet it'd make a full lap.",
 
     # 1b = "一言注意。\u0015アブクにはまり込むと助からないよ。"
     "~Watch out! Getting caught in the pulsating Foam is lethal.",
@@ -99,7 +99,7 @@
     "",
 
     # 21 = "ドリームポイントと言うのは\u0015生き物のようでもあるが−\u0015一種の空間的特性でしかないんだ。"
-    "~Dreampoint may seem like a living being, but it's really a spatial characteristic.",
+    "~The Dreampoint may seem like a living being, but it's really a spatial characteristic.",
 
     # 22 = "見たところ、人間のようだが…\u0015え、地球から?\u0011\u0015地球のドリームポイントは元気かね。"
     "~For a second, I thought you were a human... What, you're from Earth!? I wonder how Earth's Dreampoint is doing.",
@@ -159,10 +159,10 @@
     "\u0017\u0018You hear a baby crying\u0015from far away.",
 
     # 35 = "私はドリームポイント。\u0015どうしても侵入しようとするなら−\u0011\u0015阻止しなければならない。"
-    "I am Dreampoint.\u0015If you insist on invading,\u0011\u0015I have no choice but to stop you.",
+    "I am the Dreampoint.\u0015If you insist on invading,\u0011\u0015I have no choice but to stop you.",
 
     # 36 = " お願いです、帰ってください。\u0015ドリームポイントに立ち向かうのは\u0015不可能です。"
-    ", please, go back.\u0015It's impossible to oppose Dreampoint.",
+    ", please, go back.\u0015It's impossible to oppose the Dreampoint.",
 
     # 37 = "今 クムドールは−\u0015楽園に生まれ変わろうとしている。\u0011\u0015クムドールを愛す者なら立ち去れ。"
     "~Kumdor will soon be reborn into Paradise. If you love Kumdor, back down.",
@@ -201,7 +201,7 @@
     "\u0018Stunned by amazement, ",
 
     # 43 = "の目の前に\u0011\u0015ドリームポイントがあった。"
-    " stood\u0011\u0015facing Dreampoint.",
+    " stood\u0011\u0015facing the Dreampoint.",
 
     # 44 = "\u0018この領域に意識を重ね合わせた者は−\u0011\u0015どんな事も可能になると言われる。"
     "\u0018Those who fuse their consciousness\u0011\u0015with this realm become almighty.",
@@ -216,7 +216,7 @@
     "\u0018All of a sudden, the long fight\x15comes to a full stop.",
 
     # 48 = "\u0018目の前にドリームポイントがあり、\u0011\u0015そこではどんな事も可能になると言われる。"
-    "\u0018Right in front of you is Dreampoint:\u0011\u0015a place where anything is possible.",
+    "\u0018Right in front of you is the Dreampoint:\u0011\u0015a place where anything is possible.",
 
     # 49 = "\u0018しかし−\u0011\u0015あらゆる事が可能ならば、\u0011\u0015一体、何を望んだらよいのか…。"
     "\u0018But...\u0011\u0015if anything is possible,\u0011\u0015what should you wish for...?",

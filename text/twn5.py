@@ -183,7 +183,7 @@
     "~This is Usuka Memorial Park. The princess used to visit here together with a boy named Mido...",
 
     # 3d = "びしょ濡れじゃないか!\u0015水遊びしてたのかい?\u0011\u0015"
-    "~You're soaking wet! Were you playing in the water?",
+    "You're soaking wet! Were you playing in\x15the water?\x11\x15",
 
     # 3e = "見学に来たのなら謝るよ。このウスカ記念館は\u0015私が研究室がわりに使ってるんでね…。\u0011\u0015"
     "~If you're here for a tour, I'm sorry.\x15I've turned this Usuka Memorial building\x15into my lab...\u0011\u0015",

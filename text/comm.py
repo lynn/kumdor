@@ -244,13 +244,13 @@
     '50',
 
     # 51 = '\x17クムの木は語り始めた。'
-    '\x17The keytree starts talking.',
+    '\x15(The keytree starts talking.)',
 
     # 52 = 'ドリームポイントが目覚めている。\x15誰かが、その場所に侵入したようだ。\x15そこは、あらゆる事が可能になる場所だ。'
     "~The Dreampoint has awakened... Someone seems to have invaded it. It is a place where anything is possible.",
 
     # 53 = "まだ思うようにコントロール出来ないようだが\x15その人間の想像力が、取るに足らない物\x15である事を願っているだけでは不十分だ。"
-    "~We mustn't idly hope this person's imagination is too weak to harness the full power of Dreampoint.",
+    "~It's not enough to merely hope this person's imagination is too weak to harness the full power of the Dreampoint.",
 
     # 54 = "その人間が何を企んでいるのか判らないし−\x15早くその場所に行って、そいつを倒さねば。\x11\x15まず、この北東にある湖に…"
     "~There's no telling what this person is planning, but we have to take them down. Go north-east to the lake, and...",
@@ -292,25 +292,25 @@
     "",
 
     # 61 = "クムドールにいる人々全員の意識が−\x15ドリームポイントに集められている。\x15それらの意識が…"
-    "~The consciousness of all Kumdorians is gathered at Dreampoint. Their consciousness is...",
+    "~The consciousness of all Kumdorians is gathered at the Dreampoint. Their consciousness is...",
 
     # 62 = "雑多な意識− 願望や欲求、不安などが\x15ドリームポイントの中で一つの方向に\x15まとめられた時…"
-    "~When these various hopes, dreams, and anxieties are aligned inside Dreampoint...",
+    "~When these various hopes, dreams, and anxieties are aligned inside the Dreampoint...",
 
     # 63 = "ドリームポイントの力は\x15そこに存在する人間を媒体にして\x15飛躍的に高まっているが、まだ…"
-    "~Any person inside Dreampoint is used as a medium to greatly amplify its powers, but...",
+    "~Any person inside the Dreampoint is used as a medium to greatly amplify its powers, but...",
 
     # 64 = "ドリームポイントはまだ迷っている。\x15はっきりとした一つの方向を\x15決められないまま…"
-    "~Dreampoint is still wavering, unable to decide on a single clear direction...",
+    "~The Dreampoint is still wavering, unable to decide on a single clear direction...",
 
     # 65 = "ドリームポイントにいるのは\x15ミドという名前の少年だ。\x15ミドは…"
-    "~The person in Dreampoint right now is a boy called Mido. Mido was...",
+    "~The person in the Dreampoint right now is a boy called Mido. Mido was...",
 
     # 66 = "ミドは道に迷った末、偶然に\x15ドリームポイントに入ってしまったらしい。\x15しかし…"
-    "~It seems Mido got lost and accidentally entered Dreampoint. However...",
+    "~It seems Mido got lost and accidentally entered the Dreampoint. However...",
 
     # 67 = "ミドは今、ドリームポイントの中で\x15自分の意識と戦っている。\x15ミドを責めてはいけない…"
-    "~Right now, Mido is facing his own consciousness inside Dreampoint. You mustn't blame him...",
+    "~Right now, Mido is facing his own consciousness inside the Dreampoint. You mustn't blame him...",
 
     # 68 = "ミドと親しい人間−\x15その人間の強い思念が必要だ。\x15もしかしたら…"
     "~We need somebody close to Mido to lend a strong thought. Perhaps...",
