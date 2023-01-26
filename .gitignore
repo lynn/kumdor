@@ -1,4 +1,5 @@
-corrupt.hdm
-patched.hdm
+*.hdm
+*.HDM
+*.zip
 backup/
 __pycache__
