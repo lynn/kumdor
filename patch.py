@@ -103,6 +103,7 @@ if saved:
     smokemoss = "\x21\x00"
     crystal = "\x31\x00"
     tamaorin = "\x33\x00"
+    write(0xC100, b"\xff" * 64)
     write(0xC080, smokemoss * 8 + soba * 6 + mati * 4 + akari * 6 + crystal * 8)
 
     # Add a shortcut in the last dungeon.
@@ -178,7 +179,7 @@ strings("twn2", 0x56000, 0x574F0)
 check(0x58000, b"TWN03 MAP")
 map_town3 = rom[0x58000:0x5C000]
 strings("twn3", 0x5C000, 0x5D6F0)
-strings("twn4", 0x5E000, 0x5FAF0)
+strings("twn4", 0x5E000, 0x5FAF0 + 256)
 
 check(0x60000, b"MAP:TWN04/06")
 strings("twn5", 0x64000, 0x656F0)
@@ -256,6 +257,11 @@ exact(0x133C0, "所持品使用(F:\x1e)", "Use item  (F:\x1e)")
 exact(0x133D5, "終了", "exit")
 exact(0x13430, "呪文を唱える(f=中止)", "Cast a spell(f=quit)")
 exact(0x134E0, "町へ(f=中止)", "Warp(f=stay)")
+
+with open(f"text/item.py") as f:
+    item_names = eval(f.read())
+    spells = "".join(x.strip("\x1a\x1b") + "\0" for x in item_names[0x11:0x1A])
+    write(0x13520, spells)
 
 
 class Patch:
