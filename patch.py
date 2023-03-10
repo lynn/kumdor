@@ -104,7 +104,7 @@ if saved:
     crystal = "\x31\x00"
     tamaorin = "\x33\x00"
     write(0xC100, b"\xff" * 64)
-    write(0xC080, smokemoss * 8 + soba * 6 + mati * 4 + akari * 6 + crystal * 8)
+    write(0xC080, smokemoss * 6 + soba * 6 + mati * 4 + akari * 6 + crystal * 8)
 
     # Add a shortcut in the last dungeon.
     write(0x69A1A, b" " * 128)
@@ -277,25 +277,42 @@ class Patch:
         self.raw(bytes([0xE8, rel & 0xFF, rel >> 8]))
 
     mov_cl = lambda self, imm: self.raw(bytes([0xB1, imm]))
+    mov_di = lambda self, imm: self.raw(bytes([0xBF, imm & 0xFF, imm >> 8]))
     mov_dl_cl = lambda self: self.raw(b"\x88\xca")
     mov_cl_dl = lambda self: self.raw(b"\x88\xd1")
+    push_ax = lambda self: self.raw(b"\x50")
+    pop_ax = lambda self: self.raw(b"\x58")
     ret = lambda self: self.raw(b"\xc3")
 
 
-# Insert "There is a " before picking up a key.
-gettext = 0x733C
+# Function that prints "There is a ", then glob[CL]:
+gettext_glob = 0x733C
+gettext_comm = 0x7341
 there_is_a = Patch(0xABFA)
 there_is_a.mov_dl_cl()  # Store key name
 there_is_a.mov_cl(0x70)  # "There is a "
-there_is_a.call(gettext)  # gettext
+there_is_a.call(gettext_glob)
 there_is_a.mov_cl_dl()  # Retrieve key name
-there_is_a.call(gettext)  # gettext
+there_is_a.call(gettext_glob)
 there_is_a.ret()
 
-# Call the there_is_a hook instead of printing the key name.
+# Call the there_is_a patch when examining a key on the ground.
 check(0xA8C9, b"\xe8\x70\xca")
 in_pickup_code = Patch(0xA8C9)
 in_pickup_code.call(there_is_a.label)
+
+# Function that sets DI to 0xc000 then prints "You got a ":
+you_got_a = Patch(0xAC10)
+you_got_a.mov_di(0xC000)
+you_got_a.push_ax()
+you_got_a.mov_cl(0x60)  # "You got a "
+you_got_a.call(gettext_comm)
+you_got_a.pop_ax()
+you_got_a.ret()
+
+# Call the you_got_a patch when picking up an item.
+check(0x6A44, b"\xbf\x00\xc0")
+Patch(0x6A44).call(you_got_a.label)
 
 # Patch out the copy protection check in the final dungeon.
 check(0xB85AE, b"\x75\x03")  # jnz $+5

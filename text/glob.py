@@ -26,7 +26,7 @@
     'You don\'t have enough spice.',  # 18 = 'スパイスが足りないようですね。'
     '\x18You can\'t carry that.',  # 19 = '\x18持ちきれない。'
     '...???',  # 1a = '………???'
-    ' was obtained.\x18',  # 1b = 'を拾った。\x18'
+    '.\x18',  # 1b = 'を拾った。\x18'
     '1C',  # 1c = '1C'
     'SCORE',  # 1d = 'SCORE'
     '(f=quit)',  # 1e = '(f=中止)'

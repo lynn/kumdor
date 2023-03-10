@@ -289,7 +289,7 @@
     "spc was obtained.\x18",
 
     # 60 = "60"
-    "",
+    "You got a ",
 
     # 61 = "クムドールにいる人々全員の意識が−\x15ドリームポイントに集められている。\x15それらの意識が…"
     "~The consciousness of all Kumdorians is gathered at the Dreampoint. Their consciousness is...",
