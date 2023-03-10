@@ -114,7 +114,7 @@
     "",  # 70 = "70"
     "Welcome to Juklun.",  # 71 = "ジュクルン村です。 はい。"
     "~Fighting the monsters in the cave is one thing, but I can't get through the spell walls.",  # 72 = "洞窟の魔獣はなんとかなるけど、\x15呪文の壁を突破出来ないんだよ。"
-    "~On the other side of the village is the lakeside village of Rtyu.",  # 73 = "洞窟を抜けると湖の手前にある\x15ルチュ村に行けるんだが…"
+    "~On the other side of the cave is the lakeside village of Rtyu.",  # 73 = "洞窟を抜けると湖の手前にある\x15ルチュ村に行けるんだが…"
     "~Ever since the anomaly, we've stopped getting customers.",  # 74 = "異変以来、客がさっぱりだよ。"
     "~Will you spend the night for 5 spice?",  # 75 = "5スパイスですが、お泊まりになります?"
     "Hoho! Thaaank you.\x15Your room is right up ahead.",  # 76 = "ははっ、ありがとーございます。\x15手前のお部屋へどーぞ。"
