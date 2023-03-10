@@ -129,7 +129,7 @@
     "\u0018Jumped down.",
 
     # 2b = "\u0018何か落ちている。拾いますか?"
-    "\u0018Something's here. Take it?",
+    "\u0018There's something here. Take it?",
 
     # 2c = "\u0018風見タヌキを手に入れた。"
     "\u0018Got a whithervane.",
@@ -501,10 +501,10 @@
     "Everyone from Fivetown will return too.\u0015But... won't the people blame Mido?",
 
     # a7 = "心配イラナイ。\u0011\u0015事態ガ モット悪ク ナラナイヨウニ\u0015ミド ハ ムシロ ヨク 戦ッタンダ。"
-    "~WORRY NOT. MIDO FOUGHT HARD NOT TO LET THE SITUATION GET ANY WORSE THAN IT DID.",
+    "~DON'T WORRY. IF ANYTHING, MIDO FOUGHT HARD NOT TO LET THE SITUATION GET ANY WORSE THAN IT DID.",
 
     # a8 = "ソレニ 悪イ事バカリジャナイ。\u0011\u0015今度ノ異変デ 僕達ロボットノ知能ガ−\u0015少シ レベルアップ シタヨウダシ…"
-    "~AND THINGS ARE NOT ALL BAD. IT SEEMS US ROBOTS GOT SOMEWHAT MORE INTELLIGENT SINCE THE ANOMALY...",
+    "~AND THINGS AREN'T ALL BAD. IT SEEMS US ROBOTS GOT SOMEWHAT MORE INTELLIGENT SINCE THE ANOMALY...",
 
     # a9 = "A9"
     "",
