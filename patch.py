@@ -191,7 +191,7 @@ check(0x68000, b"MAP TOWN 07")
 ptr = 0xC0000
 
 monsters = [
-    "Regular Slime",
+    "Slime",
     "Ay",
     "Dee",
     "Eff",
@@ -229,7 +229,7 @@ assert ptr == 0xCD800
 padding(0xCD800, 0xD0000, b"\xe5")
 
 ptr = 0xD0000
-bosses = "Hidama Bou Senju Kasumi Uzumaneki Modoki Oonetsu Ishime Ryuu".split()
+bosses = "Firesoul Stix Thoushand Mist Spiralure Mimicky Heatwave Eyeron Qilin".split()
 assert len(bosses) == 9
 for i, name in enumerate(bosses):
     write(ptr + 0x70, name + "\0")

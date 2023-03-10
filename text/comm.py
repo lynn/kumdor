@@ -43,7 +43,7 @@
     '\x18You can see yourself again.',
 
     # 0e = '\x18正気を取り戻した。'
-    '\x18Your regain your composure.',
+    '\x18You regain your composure.',
 
     # 0f = '\x18普通のスピードの戻った。'
     '\x18Your speed is back to normal.',
