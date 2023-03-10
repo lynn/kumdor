@@ -6,10 +6,20 @@
     <meta name="viewport" content="width=1000" />
     <title>The Fansite of Kumdor</title>
     <style>
+      * {
+        box-sizing: border-box;
+      }
+      span.patch {
+        color: #0a0;
+      }
+      span.comment {
+        opacity: 0.4;
+      }
       body {
+        margin: 0px;
         /* image-rendering: pixelated; */
         -webkit-font-smoothing: none;
-        font-size: 20px;
+        font-size: 18px;
         /* font-family: PC98, monospace; */
         font-family: Meiryo, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro",
           Osaka, sans-serif;
@@ -61,6 +71,7 @@
       pre {
         background: #50000020;
         padding: 8px 24px;
+        font-size: 15px;
       }
 
       .box::after {
@@ -77,14 +88,41 @@
 
       figure {
         text-align: center;
+        margin: 2em 0;
       }
-
       figure > img {
-        border: 2px solid black;
+        outline: 2px solid black;
       }
-
       ruby > rt {
         font-size: 14px;
+      }
+      pre {
+        white-space: pre-wrap;
+      }
+      summary {
+        cursor: pointer;
+      }
+      summary:hover {
+        text-decoration: underline;
+      }
+
+      @media screen and (max-width: 900px) {
+        .box {
+          margin: 0;
+          border: none;
+          overflow: hidden;
+        }
+        .box::after {
+          width: 0px;
+          height: 0px;
+        }
+        .container {
+          max-width: inherit;
+        }
+        img {
+          max-width: 100%;
+          max-height: 100%;
+        }
       }
     </style>
   </head>
@@ -93,6 +131,12 @@
       <div class="box">
         <!-- <p style="float:right;background:#ffc;padding:1em"><a href="#patch">Gimme the patch!</a></p> -->
         <h1>The Sword of Kumdor</h1>
+        <blockquote
+          style="font-size: 14px; font-style: italic; text-align: right"
+        >
+          “What's going on!? A spaceship came crashing down! Oh my stars, look
+          at that hole!”
+        </blockquote>
         <p>
           <img class="l" src="assets/hmm.png" height="64" /> “The Sword of
           Kumdor” (クムドールの剣) is a touch-typing JRPG for the PC-98 created
@@ -110,7 +154,10 @@
           recognition, so I translated the game to English.
         </p>
         <figure>
-          <img src="assets/screen3.png" width="640" />
+          <img src="assets/screen3.png" width="640" alt="Arriving on planet
+          Kumdor. The player is in a crater created by their own crashed
+          spaceship. A villager says: 'Look, there's someone in there. Are they
+          alive? ...'"" />
         </figure>
         <p>
           <img class="l" src="assets/ponder.png" height="64" /><i>Kumdor</i> has
@@ -126,25 +173,21 @@
         <h2 id="patch">The patch</h2>
         <p>
           <img class="l" src="assets/hero.png" height="64" /> The translation is
-          released as a
-          <a href="https://46okumen.com/pachy98">Pachy98</a> patch. You can
-          download a bundle containing Pachy98 and the translation patch
-          <a href="#"><strong>here</strong></a
-          >. Here's how to apply it:
+          released as an <a href="http://xdelta.org/">xDelta</a> patch. You can
+          download the .xdelta file
+          <a href="kumdor-english.xdelta" download><strong>here</strong></a
+          >. To apply it, I suggest you use
+          <a href="https://www.romhacking.net/utilities/598/">xdelta&nbsp;UI</a
+          >, but if you prefer using the command line, try:
         </p>
-        <ol>
-          <li>
-            Obtain a clean copy of
-            <code>The&nbsp;Sword&nbsp;of&nbsp;Kumdor.HDM</code>.
-          </li>
-          <li>Place it in the same directory as <code>Pachy98.exe</code>.</li>
-          <li>Run <code>Pachy98.exe</code>. This will patch the HDM file.</li>
-        </ol>
+        <pre>
+xdelta -d -s "The Sword of Kumdor.hdm" kumdor-english.xdelta kumdor-english.hdm</pre
+        >
         <p>
           <img class="r" src="assets/machine.png" height="128" />
           To run the patched game in an emulator, load it into FDD Slot #1 and
-          reboot. You will need BIOS files like <code>FONT.ROM</code> and
-          <code>SOUND.ROM</code> placed in the emulator folder,
+          reboot. You will need BIOS files (specifically <code>SOUND.ROM</code>)
+          placed in the emulator folder,
           <strong>or else the game crashes</strong> when you walk out of the
           tutorial.
         </p>
@@ -168,7 +211,11 @@ CTRL = SHIFT _</pre
           some of the locations.
         </p>
         <figure>
-          <img src="assets/screen2.png" width="640" />
+          <img
+            src="assets/screen2.png"
+            width="640"
+            alt="Fighting a monster in Sword of Kumdor. Text on the screen reads, 'A monster appears! Eff is casting a spell. 9 points of damage to your opponent!' The player types back spells like 'dasafaa dasafaa' using the keyboard to defeat monsters."
+          />
         </figure>
       </div>
       <div class="box">
@@ -233,6 +280,133 @@ CTRL = SHIFT _</pre
           for 4567, the keys found there.
         </p>
       </div>
+      <div class="box">
+        <h2>How I made this</h2>
+        <details>
+          <summary>Technobabble</summary>
+          <h3 id="how">Tools</h3>
+          <p>
+            <img class="l" src="assets/diamond.png" height="64" />This
+            translation is my first ever romhacking project. I had a lot of fun!
+            I used <a href="https://github.com/nmlgc/np2debug">np2debug</a>,
+            <a href="https://ghidra-sre.org/">Ghidra</a>, a hex editor, and
+            Python. For translation, I relied on my own Japanese-reading and
+            English-writing skills.
+          </p>
+          <h3>Patching text</h3>
+          <p>
+            <i>Kumdor</i> has a weird custom file system, so I had to treat the
+            ROM as a unit rather than dumping files. Thankfully, the text is
+            almost all consolidated in uncompressed sections of null-separated
+            Shift-JIS strings, so finding and dumping and reimporting it was
+            super easy. Writing translations took about a month and a half.
+          </p>
+          <figure>
+            <img
+              src="assets/tl.png"
+              style="max-width: 100%"
+              alt="Translating text strings."
+            />
+          </figure>
+
+          <h3>"Touch typing" means...</h3>
+          <p>
+            The intro was difficult to translate. The handwritten text is stored
+            as an array of line segments. I programmed a tool for editing this
+            format and handwrote a translation with a tablet pen. (You can see
+            the process
+            <a href="https://twitter.com/chordbug/status/1598341221008687104"
+              >here</a
+            >.)
+          </p>
+          <figure>
+            <img
+              src="assets/intro.png"
+              style="max-width: 100%"
+              alt="Left: the untranslated tutorial. Right: my handwritten translation."
+            />
+          </figure>
+
+          <h3>Copy protection</h3>
+          <p>
+            The popular dump of this game that floats around online triggers a
+            copy protection check that freezes the game before the final
+            dungeon! My translation patches this check out. I used a debugger to
+            find the code responsible for locking up the game, and Ghidra's
+            control flow analysis and decompilation tools to figure out which
+            check to defuse:
+          </p>
+          <figure>
+            <img
+              src="assets/ghidra.png"
+              style="max-width: 100%"
+              alt="Looking at disassembled source code in Ghidra."
+            />
+          </figure>
+          <h3>An overly elaborate grammar fix</h3>
+          <p>
+            <img class="r" src="assets/computer.png" height="64" />
+            Toward the end of the translation process, I became dissatisfied
+            with the clunky grammar I'd been forced into by how the game builds
+            messages with numbers or item names in them. For example, when
+            picking up an item, the game runs code somewhat like this:
+          </p>
+          <pre>pick_up_item:
+  ...
+  ld di, 0xc000         <span class="comment">// Reset the message write pointer.</span>
+  <span style="color: #0af">ld cl, al
+  call write_item_name</span>
+  <span style="color: #a0f">ld cl, 0x18           <span class="comment">// "を拾った。"</span>
+  call write_common_string</span>
+  ...</pre>
+          <p>
+            This builds a string like
+            <code
+              >"<span style="color: #0af">呪文書</span
+              ><span style="color: #a0f">を拾った。</span>"</code
+            >, which I can only awkardly translate part-by-part as
+            <code
+              >"<span style="color: #0af">scroll</span
+              ><span style="color: #a0f"> was obtained.</span>"</code
+            >
+            (with no capitalization, ugh.) In Japanese, the verb comes at the
+            end of the sentence.
+          </p>
+          <p>
+            In the end, I got my hands dirty and wrote some x86 assembly to
+            print my own strings. I had to figure out a way to insert some code
+            of my own without moving any surrounding code, which would break a
+            bunch of pointers. I did this:
+          </p>
+          <pre>pick_up_item:
+  ...
+  <span class="patch">call you_got_a        <span class="comment">// Overwrite one instruction here.</span></span>
+  <span style="color: #0af">ld cl, al
+  call write_item_name</span>
+  <span style="color:#a0f">ld cl, 0x1b           <span class="comment">// "."  (was: "を拾った。")</span>
+  call write_common_string</span>
+  ...
+
+<span class="comment">// Far, far away, in a blank region of ROM:</span>
+
+<span class="patch">you_got_a:
+  <span style="color:black">ld di, 0xc000         <span class="comment">// The instruction we patched over</span></span>
+  push ax
+  ld cl, 0x60           <span class="comment">// "You got a "  (was: unused)</span>
+  call write_common_string
+  pop ax
+  ret</span></pre>
+          <p>
+            All to get nice messages like
+            <code
+              ><span class="patch">"You got a </span
+              ><span style="color: #0af">scroll</span
+              ><span style="color: #a0f">.</span>"</code
+            >. It was totally worth it.
+          </p>
+        </details>
+      </div>
+
       <div class="box">
         <h2>Music</h2>
         <p>
