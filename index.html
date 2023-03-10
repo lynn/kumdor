@@ -13,7 +13,8 @@
         color: #0a0;
       }
       span.comment {
-        opacity: 0.4;
+        opacity: 0.6;
+        font-style: italic;
       }
       body {
         margin: 0px;
@@ -191,7 +192,7 @@ xdelta -d -s "The Sword of Kumdor.hdm" kumdor-english.xdelta kumdor-english.hdm<
           <strong>or else the game crashes</strong> when you walk out of the
           tutorial.
         </p>
-        <h2>On typing funny symbols</h2>
+        <h3>On typing funny symbols</h3>
         <p>
           <img class="l" src="assets/rhand.png" height="64" />Your average ANSI
           or ISO keyboard has fewer keys than the JIS keyboard used by the
@@ -281,10 +282,10 @@ CTRL = SHIFT _</pre
         </p>
       </div>
       <div class="box">
-        <h2>How I made this</h2>
-        <details>
-          <summary>Technobabble</summary>
-          <h3 id="how">Tools</h3>
+        <h2 id="how">How I made this</h2>
+        <div>
+          <!-- <summary>Technobabble</summary> -->
+          <!-- <h3 id="how">Tools</h3> -->
           <p>
             <img class="l" src="assets/diamond.png" height="64" />This
             translation is my first ever romhacking project. I had a lot of fun!
@@ -298,8 +299,8 @@ CTRL = SHIFT _</pre
             <i>Kumdor</i> has a weird custom file system, so I had to treat the
             ROM as a unit rather than dumping files. Thankfully, the text is
             almost all consolidated in uncompressed sections of null-separated
-            Shift-JIS strings, so finding and dumping and reimporting it was
-            super easy. Writing translations took about a month and a half.
+            Shift-JIS data, so finding and dumping and reimporting it was super
+            easy. Writing translations took about a month and a half.
           </p>
           <figure>
             <img
@@ -312,9 +313,11 @@ CTRL = SHIFT _</pre
           <h3>"Touch typing" means...</h3>
           <p>
             The intro was difficult to translate. The handwritten text is stored
-            as an array of line segments. I programmed a tool for editing this
-            format and handwrote a translation with a tablet pen. (You can see
-            the process
+            as thousands of little line segment coordinates in a strange data
+            layout. I reverse-engineered the format by corrupting the data in
+            weird ways and seeing what happens. Then I programmed a tool for
+            editing this format, and handwrote a translation with a tablet pen.
+            (You can see the process
             <a href="https://twitter.com/chordbug/status/1598341221008687104"
               >here</a
             >.)
@@ -327,14 +330,15 @@ CTRL = SHIFT _</pre
             />
           </figure>
 
-          <h3>Copy protection</h3>
+          <h3>Removing copy protection</h3>
           <p>
             The popular dump of this game that floats around online triggers a
-            copy protection check that freezes the game before the final
-            dungeon! My translation patches this check out. I used a debugger to
-            find the code responsible for locking up the game, and Ghidra's
-            control flow analysis and decompilation tools to figure out which
-            check to defuse:
+            copy protection check that freezes the game right before the final
+            dungeon! I never really bothered to figure out what exactly it's
+            checking or why this ROM triggers it. I used a debugger to find the
+            code responsible for locking up the game, and Ghidra's control flow
+            analysis and decompilation tools to figure out which jump
+            instruction to defuse.
           </p>
           <figure>
             <img
@@ -347,7 +351,7 @@ CTRL = SHIFT _</pre
           <p>
             <img class="r" src="assets/computer.png" height="64" />
             Toward the end of the translation process, I became dissatisfied
-            with the clunky grammar I'd been forced into by how the game builds
+            with some clunky grammar I'd been forced into by how the game forms
             messages with numbers or item names in them. For example, when
             picking up an item, the game runs code somewhat like this:
           </p>
@@ -356,7 +360,7 @@ CTRL = SHIFT _</pre
   ld di, 0xc000         <span class="comment">// Reset the message write pointer.</span>
   <span style="color: #0af">ld cl, al
   call write_item_name</span>
-  <span style="color: #a0f">ld cl, 0x18           <span class="comment">// "を拾った。"</span>
+  <span style="color: #a0f">ld cl, 0x1b           <span class="comment">// "を拾った。"</span>
   call write_common_string</span>
   ...</pre>
           <p>
@@ -373,26 +377,26 @@ CTRL = SHIFT _</pre
             end of the sentence.
           </p>
           <p>
-            In the end, I got my hands dirty and wrote some x86 assembly to
-            print my own strings. I had to figure out a way to insert some code
-            of my own without moving any surrounding code, which would break a
-            bunch of pointers. I did this:
+            In the end, I got my hands dirty and wrote x86 assembly to print my
+            own bits of text. I had to figure out a way to insert code of my own
+            without moving any surrounding code, which would break a bunch of
+            pointers. I did this:
           </p>
           <pre>pick_up_item:
   ...
   <span class="patch">call you_got_a        <span class="comment">// Overwrite one instruction here.</span></span>
-  <span style="color: #0af">ld cl, al
+  <span style="">ld cl, al
   call write_item_name</span>
-  <span style="color:#a0f">ld cl, 0x1b           <span class="comment">// "."  (was: "を拾った。")</span>
+  <span style="">ld cl, 0x1b           <span class="comment">// "."  (was: "を拾った。")</span>
   call write_common_string</span>
   ...
 
 <span class="comment">// Far, far away, in a blank region of ROM:</span>
 
 <span class="patch">you_got_a:
-  <span style="color:black">ld di, 0xc000         <span class="comment">// The instruction we patched over</span></span>
+  <span style="color:black">ld di, 0xc000         <span class="comment">// The instruction we overwrote</span></span>
   push ax
-  ld cl, 0x60           <span class="comment">// "You got a "  (was: unused)</span>
+  ld cl, 0x60           <span class="comment">// "You got a "  (my new string)</span>
   call write_common_string
   pop ax
   ret</span></pre>
@@ -404,11 +408,23 @@ CTRL = SHIFT _</pre
               ><span style="color: #a0f">.</span>"</code
             >. It was totally worth it.
           </p>
-        </details>
+        </div>
+      </div>
+      <div class="box">
+        <h2>Thanks</h2>
+        <ul>
+          <li>PasokonDeacon, for playtesting and providing errata.</li>
+          <li>SpeedyNoelle, for helping me get the game running at all.</li>
+          <li>
+            The PC-9800 Series Central Discord, for encouraging me to finish
+            this thing.
+          </li>
+          <li>volty, for everything &lt;33</li>
+        </ul>
       </div>
 
       <div class="box">
-        <h2>Music</h2>
+        <h2>Bonus: Music</h2>
         <p>
           <img class="l" src="assets/guy.png" height="64" />The game's
           soundtrack is a bit <em>outré</em> so I turned it off after an hour or

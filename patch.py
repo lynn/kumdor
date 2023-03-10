@@ -77,6 +77,7 @@ def u32(addr: int):
 boot_sector = rom[0x00000:0x00200]
 check(0x0, b"\xeb\x7e")
 check(0x10, b"the SWORD OF KUMDOR")
+write(0x10, b"the SWORD OF KUMDOR (english v1)")
 
 padding(0x0300, 0x0400, b"U")
 padding(0x0400, 0x1400, b"\xff")
