@@ -285,34 +285,58 @@ class Patch:
     ret = lambda self: self.raw(b"\xc3")
 
 
-# Function that prints "There is a ", then glob[CL]:
 gettext_glob = 0x733C
 gettext_comm = 0x7341
-there_is_a = Patch(0xABFA)
+blank = 0xABFA
+
+# Function that prints "There is a ", then glob[CL]:
+there_is_a = Patch(blank)
 there_is_a.mov_dl_cl()  # Store key name
 there_is_a.mov_cl(0x70)  # "There is a "
 there_is_a.call(gettext_glob)
 there_is_a.mov_cl_dl()  # Retrieve key name
 there_is_a.call(gettext_glob)
 there_is_a.ret()
+blank = there_is_a.addr
 
 # Call the there_is_a patch when examining a key on the ground.
 check(0xA8C9, b"\xe8\x70\xca")
-in_pickup_code = Patch(0xA8C9)
-in_pickup_code.call(there_is_a.label)
+Patch(0xA8C9).call(there_is_a.label)
 
-# Function that sets DI to 0xc000 then prints "You got a ":
-you_got_a = Patch(0xAC10)
-you_got_a.mov_di(0xC000)
-you_got_a.push_ax()
-you_got_a.mov_cl(0x60)  # "You got a "
-you_got_a.call(gettext_comm)
-you_got_a.pop_ax()
-you_got_a.ret()
 
-# Call the you_got_a patch when picking up an item.
-check(0x6A44, b"\xbf\x00\xc0")
-Patch(0x6A44).call(you_got_a.label)
+def di_patch(addr: int, cl: int) -> None:
+    """
+    Patch a `mov di,0xc000` instruction with a call to `p() { di=0xc000; gettext_comm(cl) }`.
+
+    (`di` is used as a pointer for message-writing and `0xc000` is the start of a global message buffer.)
+
+    This is to insert text like "You got a " in front of messages that ordinarily start with variables.
+
+    Parameters:
+    * `addr` - the address of the instruction to patch.
+    * `cl` - the index of the comm.py string to print.
+    """
+    global blank
+    p = Patch(blank)
+    p.mov_di(0xC000)
+    p.push_ax()
+    p.mov_cl(cl)
+    p.call(gettext_comm)
+    p.pop_ax()
+    p.ret()
+    blank = p.addr
+    check(addr, b"\xbf\x00\xc0")
+    Patch(addr).call(p.label)
+
+
+# "You got a " when picking up an item:
+di_patch(0x6A44, 0x60)
+
+# "You deal " n pt. of damage:
+di_patch(0x86AE + 0x800, 0x20)
+
+# "Got " n spice at the end of a battle:
+di_patch(0x89EC + 0x800, 0x10)
 
 # Patch out the copy protection check in the final dungeon.
 check(0xB85AE, b"\x75\x03")  # jnz $+5

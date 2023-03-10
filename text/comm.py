@@ -49,7 +49,7 @@
     '\x18Your speed is back to normal.',
 
     # 10 = '10'
-    '10',
+    'Got ',
 
     # 11 = '魔獣出現!\x18'
     'A monster appears!\x18',
@@ -64,7 +64,7 @@
     '\x18Vanquished the monster.',
 
     # 15 = 'pt.のダメージを与えた。\x18'
-    'pt. of damage to your opponent!\x18',
+    'pt. of damage!\x18',
 
     # 16 = 'は呪文を放った。\x18'
     ' is casting a spell.\x18',
@@ -73,7 +73,7 @@
     '\x18EXP went up by ',
 
     # 18 = 'スパイス獲得。\x18'
-    ' spice obtained.\x18',
+    ' spice.\x18',
 
     # 19 = '卵は消えてしまった。\x18'
     'The egg vanishes.\x18',
@@ -97,7 +97,7 @@
     '~\x18You are frozen in place as your life force starts draining away.',
 
     # 20 = '20'
-    '20',
+    'You deal ',
 
     # 21 = '\x18あなたは、大きな力で壁から引き離された。'
     '~\x18You are pulled away from the wall by a great force.',
