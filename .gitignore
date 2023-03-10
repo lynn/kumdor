@@ -3,3 +3,4 @@
 *.zip
 backup/
 __pycache__
+*.exe
