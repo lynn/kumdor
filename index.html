@@ -357,10 +357,10 @@ CTRL = SHIFT _</pre
           </p>
           <pre>pick_up_item:
   ...
-  ld di, 0xc000         <span class="comment">// Reset the message write pointer.</span>
-  <span style="color: #0af">ld cl, al
+  mov di, 0xc000        <span class="comment">// Reset the message write pointer.</span>
+  <span style="color: #0af">mov cl, al
   call write_item_name</span>
-  <span style="color: #a0f">ld cl, 0x1b           <span class="comment">// "を拾った。"</span>
+  <span style="color: #a0f">mov cl, 0x1b          <span class="comment">// "を拾った。"</span>
   call write_common_string</span>
   ...</pre>
           <p>
@@ -385,18 +385,18 @@ CTRL = SHIFT _</pre
           <pre>pick_up_item:
   ...
   <span class="patch">call you_got_a        <span class="comment">// Overwrite one instruction here.</span></span>
-  <span style="">ld cl, al
+  <span style="">mov cl, al
   call write_item_name</span>
-  <span style="">ld cl, 0x1b           <span class="comment">// "."  (was: "を拾った。")</span>
+  <span style="">mov cl, 0x1b          <span class="comment">// "."  (was: "を拾った。")</span>
   call write_common_string</span>
   ...
 
 <span class="comment">// Far, far away, in a blank region of ROM:</span>
 
 <span class="patch">you_got_a:
-  <span style="color:black">ld di, 0xc000         <span class="comment">// The instruction we overwrote</span></span>
+  <span style="color:black">mov di, 0xc000        <span class="comment">// The instruction we overwrote</span></span>
   push ax
-  ld cl, 0x60           <span class="comment">// "You got a "  (my new string)</span>
+  mov cl, 0x60          <span class="comment">// "You got a "  (my new string)</span>
   call write_common_string
   pop ax
   ret</span></pre>
