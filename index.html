@@ -106,7 +106,19 @@
       summary:hover {
         text-decoration: underline;
       }
-
+      table {
+        border-collapse: collapse;
+      }
+      th {
+        border-top: 2px solid black;
+        border-bottom: 2px solid black;
+        padding: 6px 12px;
+      }
+      td {
+        border-top: 1px solid black;
+        border-bottom: 1px solid black;
+        padding: 6px 12px;
+      }
       @media screen and (max-width: 900px) {
         .box {
           margin: 0;
@@ -140,12 +152,12 @@
         </blockquote>
         <p>
           <img class="l" src="assets/hmm.png" height="64" /> “The Sword of
-          Kumdor” (クムドールの剣) is a touch-typing JRPG for the PC-98 created
-          by Michiaki Tsubaki in 1991. You play as the Milky&nbsp;Way's
-          #1&nbsp;typist, summoned to planet Kumdor to fight mysterious monsters
-          with typographic magic — but you lose all your keyboard keys
-          <em>and</em> your QWERTY skills in a crash landing. Can you recover
-          your skills and save the world??
+          Kumdor” (クムドールの剣) is a touch-typing RPG for the
+          NEC&nbsp;PC&#x2011;98 created by Michiaki Tsubaki in 1991. You play as
+          the Milky&nbsp;Way's #1&nbsp;typist, summoned to planet Kumdor to
+          fight mysterious monsters by typing spells — but you lose all your
+          keyboard keys <em>and</em> your QWERTY skills in a crash landing. Can
+          you recover your talents and save the world??
         </p>
         <p>
           <img class="r" src="assets/ship.png" height="128" /> The game has a
@@ -163,21 +175,24 @@
         <p>
           <img class="l" src="assets/ponder.png" height="64" /><i>Kumdor</i> has
           the strangest control scheme ever. Outside of combat and
-          spell-casting, only the <code>F</code> <code>J</code>
+          spell-casting, only the <code>F</code>, <code>J</code>, and
           <code>Space</code> keys are used, so as to keep even a novice typist's
           hands in the home row position at all times. <code>F</code> walks
-          forward and <code>Space</code> turns you 90°. You get used to it,
-          sorta.
+          forward and <code>Space</code> turns you 90° clockwise. You get used
+          to it, sorta.
         </p>
       </div>
       <div class="box" style="background: #ffc">
         <h2 id="patch">The patch</h2>
+        <p style="text-align: center; font-size: 24px">
+          Download the translation patch
+          <a href="kumdor-english.xdelta" download><strong>here</strong></a
+          >.
+        </p>
         <p>
           <img class="l" src="assets/hero.png" height="64" /> The translation is
-          released as an <a href="http://xdelta.org/">xDelta</a> patch. You can
-          download the .xdelta file
-          <a href="kumdor-english.xdelta" download><strong>here</strong></a
-          >. To apply it, I suggest you use
+          released as an <a href="http://xdelta.org/">xDelta</a> patch. To apply
+          it, I suggest you use
           <a href="https://www.romhacking.net/utilities/598/">xdelta&nbsp;UI</a
           >, but if you prefer using the command line, try:
         </p>
@@ -273,6 +288,11 @@ CTRL = SHIFT _</pre
           <i>kazami-dori</i> (weather-seeing chicken, like "weathercock").
         </p>
         <p>
+          I think the <ruby>ダイビング<rt>diving</rt></ruby> equipment shop that
+          pivots into a <ruby>タイピング<rt>typing</rt></ruby> equipment shop is
+          a visual kana pun, but there really isn't a way to translate it.
+        </p>
+        <p>
           Fivetown is called <ruby>ヨゴンナ<rt>Yogonna</rt></ruby> in Japanese,
           which is
           <a href="https://en.wikipedia.org/wiki/Japanese_wordplay#Goroawase"
@@ -280,6 +300,85 @@ CTRL = SHIFT _</pre
           >
           for 4567, the keys found there.
         </p>
+        <p>
+          Translating the spells was interesting, because there's no way to do
+          it without changing the game balance slightly. For example, to cast
+          <code>CURE</code>, you need a different set of keyboard keys than for
+          the original <code>NAOSU</code>. (Thankfully spells are just not very
+          useful anyway; shop items are easier to get and just as good.)
+        </p>
+        <!--<details>
+          <summary>Spoilers!</summary>
+          <p>
+            In the last dungeon, you meet nine strange foes that aren't named
+            after letters or punctuation. They have interesting names and
+            absolutely crazy designs. Translating their names was kind of like
+            translating Pokémon.
+          </p>
+          <figure>
+            <img src="kumdor-boss.png" alt="The Minibosses of Kumdor." />
+          </figure>
+          <table style="margin: auto">
+            <thead>
+              <tr>
+                <th>Row</th>
+                <th>Japanese</th>
+                <th>Interpretation</th>
+                <th>English</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td rowspan="3">Top</td>
+                <td>Hidama</td>
+                <td>火玉 "fireball"</td>
+                <td>Firesoul</td>
+              </tr>
+              <tr>
+                <td>Bō</td>
+                <td>棒 "stick"</td>
+                <td>Stix</td>
+              </tr>
+              <tr>
+                <td>Senju</td>
+                <td>千手 "thousand-armed bodhisattva"</td>
+                <td>Thoushand</td>
+              </tr>
+              <tr>
+                <td rowspan="3">Middle</td>
+                <td>Kasumi</td>
+                <td>霞 "mist, haze"</td>
+                <td>Haze</td>
+              </tr>
+              <tr>
+                <td>Uzumaneki</td>
+                <td>渦巻 "spiral" + 招き "beckon"</td>
+                <td>Spiralure</td>
+              </tr>
+              <tr>
+                <td>Modoki</td>
+                <td>もどき "mock, pseudo"</td>
+                <td>Mimicky</td>
+              </tr>
+              <tr>
+                <td rowspan="3">Bottom</td>
+                <td>Ōnetsu</td>
+                <td>大 "big" + 熱 "heat"</td>
+                <td>Heatwave</td>
+              </tr>
+              <tr>
+                <td>Ishime</td>
+                <td>石目 "grain (of rock)", lit. rock + eye</td>
+                <td>Eyeron</td>
+              </tr>
+              <tr>
+                <td>Ryū</td>
+                <td>龍 "dragon"</td>
+                <td>Qilin</td>
+              </tr>
+            </tbody>
+          </table>
+        </details>-->
       </div>
       <div class="box">
         <h2 id="how">How I made this</h2>
@@ -297,10 +396,11 @@ CTRL = SHIFT _</pre
           <h3>Patching text</h3>
           <p>
             <i>Kumdor</i> has a weird custom file system, so I had to treat the
-            ROM as a unit rather than dumping files. Thankfully, the text is
-            almost all consolidated in uncompressed sections of null-separated
-            Shift-JIS data, so finding and dumping and reimporting it was super
-            easy. Writing translations took about a month and a half.
+            ROM as a unit rather than dumping files from it. Thankfully, the
+            text is almost all consolidated in uncompressed sections of
+            null-separated Shift-JIS data, so finding and dumping and
+            reimporting it was super easy. Writing translations took about a
+            month and a half.
           </p>
           <figure>
             <img
@@ -335,10 +435,8 @@ CTRL = SHIFT _</pre
             The popular dump of this game that floats around online triggers a
             copy protection check that freezes the game right before the final
             dungeon! I never really bothered to figure out what exactly it's
-            checking or why this ROM triggers it. I used a debugger to find the
-            code responsible for locking up the game, and Ghidra's control flow
-            analysis and decompilation tools to figure out which jump
-            instruction to defuse.
+            checking. I used a debugger and Ghidra to find the instruction
+            responsible for locking up the game, and disabled it.
           </p>
           <figure>
             <img
@@ -350,17 +448,17 @@ CTRL = SHIFT _</pre
           <h3>An overly elaborate grammar fix</h3>
           <p>
             <img class="r" src="assets/computer.png" height="64" />
-            Toward the end of the translation process, I became dissatisfied
-            with some clunky grammar I'd been forced into by how the game forms
-            messages with numbers or item names in them. For example, when
-            picking up an item, the game runs code somewhat like this:
+            Toward the end of the translation process, I became increasingly
+            dissatisfied with some aspects of the text I couldn't easily edit.
+            For example, when picking up an item, the game joins two strings
+            together with code somewhat like this:
           </p>
           <pre>pick_up_item:
   ...
   mov di, 0xc000        <span class="comment">// Reset the message write pointer.</span>
   <span style="color: #0af">mov cl, al
   call write_item_name</span>
-  <span style="color: #a0f">mov cl, 0x1b          <span class="comment">// "を拾った。"</span>
+  <span style="color: #a0f">mov cl, 0x1b          <span class="comment">// Index of "を拾った。"</span>
   call write_common_string</span>
   ...</pre>
           <p>
@@ -368,26 +466,25 @@ CTRL = SHIFT _</pre
             <code
               >"<span style="color: #0af">呪文書</span
               ><span style="color: #a0f">を拾った。</span>"</code
-            >, which I can only awkardly translate part-by-part as
+            >, which I can only translate part-by-part as
             <code
               >"<span style="color: #0af">scroll</span
               ><span style="color: #a0f"> was obtained.</span>"</code
-            >
-            (with no capitalization, ugh.) In Japanese, the verb comes at the
-            end of the sentence.
+            >. The grammar is awkward, and as a full sentence, it's missing
+            capitalization.
           </p>
           <p>
             In the end, I got my hands dirty and wrote x86 assembly to print my
             own bits of text. I had to figure out a way to insert code of my own
-            without moving any surrounding code, which would break a bunch of
-            pointers. I did this:
+            without moving any of the surrounding code, as that would dislocate
+            a bunch of pointers.
           </p>
           <pre>pick_up_item:
   ...
   <span class="patch">call you_got_a        <span class="comment">// Overwrite one instruction here.</span></span>
-  <span style="">mov cl, al
+  <span>mov cl, al
   call write_item_name</span>
-  <span style="">mov cl, 0x1b          <span class="comment">// "."  (was: "を拾った。")</span>
+  <span>mov cl, 0x1b          <span class="comment">// Index of "."  (was: "を拾った。")</span>
   call write_common_string</span>
   ...
 
@@ -396,7 +493,7 @@ CTRL = SHIFT _</pre
 <span class="patch">you_got_a:
   <span style="color:black">mov di, 0xc000        <span class="comment">// The instruction we overwrote</span></span>
   push ax
-  mov cl, 0x60          <span class="comment">// "You got a "  (my new string)</span>
+  mov cl, 0x60          <span class="comment">// Index of "You got a "  (my new string)</span>
   call write_common_string
   pop ax
   ret</span></pre>
