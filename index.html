@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=1000" />
+    <meta name="viewport" content="width=device-width" />
     <title>The Fansite of Kumdor</title>
     <style>
       * {
@@ -13,7 +13,7 @@
         color: #0a0;
       }
       span.comment {
-        opacity: 0.6;
+        color: #888;
         font-style: italic;
       }
       body {
@@ -153,7 +153,7 @@
         <p>
           <img class="l" src="assets/hmm.png" height="64" /> “The Sword of
           Kumdor” (クムドールの剣) is a touch-typing RPG for the
-          NEC&nbsp;PC&#x2011;98 created by Michiaki Tsubaki in 1991. You play as
+          NEC&nbsp;PC&#x2011;98, created by Michiaki Tsubaki in 1991. You play as
           the Milky&nbsp;Way's #1&nbsp;typist, summoned to planet Kumdor to
           fight mysterious monsters by typing spells — but you lose all your
           keyboard keys <em>and</em> your QWERTY skills in a crash landing. Can
@@ -209,11 +209,11 @@ xdelta -d -s "The Sword of Kumdor.hdm" kumdor-english.xdelta kumdor-english.hdm<
         </p>
         <h3>On typing funny symbols</h3>
         <p>
-          <img class="l" src="assets/rhand.png" height="64" />Your average ANSI
-          or ISO keyboard has fewer keys than the JIS keyboard used by the
-          PC-98. As such, when playing in an emulator, you may have trouble
-          typing <code>^</code> and <code>_</code>. In Neko Project II, you can
-          use the on-screen keyboard, or create a text file next to
+          <img class="l" src="assets/rhand.png" height="64" />Your keyboard
+          likely has fewer keys than the JIS keyboard used by the PC-98. As
+          such, when playing in an emulator, you may have trouble typing
+          <code>^</code> and <code>_</code>. In Neko Project II, you can use the
+          on-screen keyboard, or create a text file next to
           <code>np21w.exe</code> called <code>key.txt</code> with the following
           contents:
         </p>
@@ -224,7 +224,9 @@ CTRL = SHIFT _</pre
         <p>
           Now you can type these symbols by pressing Tab and Ctrl. In general,
           the layout of punctuation is different, so you may have to relearn
-          some of the locations.
+          some of the locations. (This might be a bit frustrating, but by the
+          end, you will have actually mastered the PC-98 keyboard layout, which
+          is the point of the game!)
         </p>
         <figure>
           <img
@@ -272,25 +274,26 @@ CTRL = SHIFT _</pre
         </p>
       </div>
       <div class="box">
-        <h2>Translation notes</h2>
+        <h2>Translation points</h2>
         <p>
           <img class="l" src="assets/sit.png" height="64" />To make a delicious
           keyboard/fruit pun, I translated
           <ruby>クムの木<rt>Kum tree</rt></ruby>
           as "keytree", so that <ruby>クムの実<rt>Kum fruit</rt></ruby> could be
-          "keylime". That makes <ruby>クム酒<rt>Kum-shu</rt></ruby> "keywine",
-          which isn't a pun.
+          "keylime". That makes <ruby>クム酒<rt>Kum-shu</rt></ruby> "keywine".
         </p>
         <p>
           <img class="r" src="assets/vane.png" height="64" />The "whithervane"
-          is called <i>kazami-danuki</i> (weather-seeing tanuki) in Japanese,
-          which is a play on the actual word for a weather-vane,
-          <i>kazami-dori</i> (weather-seeing chicken, like "weathercock").
+          is called <ruby>風見ダヌキ<rt>kazami-danuki</rt></ruby>
+          (weather-seeing tanuki) in Japanese, which is a play on the actual
+          word for a weather-vane,
+          <ruby>風見鶏<rt>kazami-dori</rt></ruby> (weather-seeing chicken, like
+          "weathercock").
         </p>
         <p>
           I think the <ruby>ダイビング<rt>diving</rt></ruby> equipment shop that
           pivots into a <ruby>タイピング<rt>typing</rt></ruby> equipment shop is
-          a visual kana pun, but there really isn't a way to translate it.
+          a visual kana pun.
         </p>
         <p>
           Fivetown is called <ruby>ヨゴンナ<rt>Yogonna</rt></ruby> in Japanese,
@@ -301,11 +304,23 @@ CTRL = SHIFT _</pre
           for 4567, the keys found there.
         </p>
         <p>
-          Translating the spells was interesting, because there's no way to do
-          it without changing the game balance slightly. For example, to cast
+          Translating the spells was interesting: there's no way to do it
+          without affecting the game balance. For example, to cast
           <code>CURE</code>, you need a different set of keyboard keys than for
           the original <code>NAOSU</code>. (Thankfully spells are just not very
-          useful anyway; shop items are easier to get and just as good.)
+          useful anyway! Shop items are easier to get and just as good.)
+        </p>
+        <p>
+          <img class="l" src="assets/hero2.png" height="64" /> <i>Kumdor</i>
+          came out two years after the highly successful release of
+          <i>Mother</i> for the Famicom. There are some similar themes: an alien
+          invader causes chaos on a modern low-fantasy planet, RPG tropes are
+          subverted and riffed on, and all is resolved in a slightly psychedelic
+          final encounter. I can't say for certain what inspired Tsubaki, but
+          some of the "mundanely funny" dialogue in this game reminds me of
+          Shigesato Itoi's style. I often kept the quirky, matter-of-factly
+          voice of EarthBound's localization in the back of my mind when writing
+          this translation.
         </p>
         <!--<details>
           <summary>Spoilers!</summary>
@@ -400,7 +415,7 @@ CTRL = SHIFT _</pre
             text is almost all consolidated in uncompressed sections of
             null-separated Shift-JIS data, so finding and dumping and
             reimporting it was super easy. Writing translations took about a
-            month and a half.
+            month and a half. The game text is about 7,200 words in English.
           </p>
           <figure>
             <img
@@ -412,10 +427,10 @@ CTRL = SHIFT _</pre
 
           <h3>"Touch typing" means...</h3>
           <p>
-            The intro was difficult to translate. The handwritten text is stored
-            as thousands of little line segment coordinates in a strange data
-            layout. I reverse-engineered the format by corrupting the data in
-            weird ways and seeing what happens. Then I programmed a tool for
+            This intro was difficult to translate. The handwritten text is
+            stored as thousands of little line segment coordinates in a strange
+            data layout. I reverse-engineered the format by corrupting the data
+            in weird ways and seeing what happens. Then I programmed a tool for
             editing this format, and handwrote a translation with a tablet pen.
             (You can see the process
             <a href="https://twitter.com/chordbug/status/1598341221008687104"
@@ -447,61 +462,58 @@ CTRL = SHIFT _</pre
           </figure>
           <h3>An overly elaborate grammar fix</h3>
           <p>
-            <img class="r" src="assets/computer.png" height="64" />
-            Toward the end of the translation process, I became increasingly
-            dissatisfied with some aspects of the text I couldn't easily edit.
-            For example, when picking up an item, the game joins two strings
-            together with code somewhat like this:
+            <img class="r" src="assets/computer.png" height="64" /> When picking
+            up an item, the game joins two strings together with code somewhat
+            like this:
           </p>
           <pre>pick_up_item:
   ...
-  mov di, 0xc000        <span class="comment">// Reset the message write pointer.</span>
-  <span style="color: #0af">mov cl, al
-  call write_item_name</span>
-  <span style="color: #a0f">mov cl, 0x1b          <span class="comment">// Index of "を拾った。"</span>
-  call write_common_string</span>
+  mov di, 0xc000            <span class="comment">// Reset the message buffer</span>
+  <span style="color: #09f">mov cl, al                <span class="comment">// Load the item ID</span>
+  call write_item_name      <span class="comment">// Append its name to the buffer</span></span>
+  <span style="color: #a0f">mov cl, 0x1b              <span class="comment">// Index of "を拾った。"</span>
+  call write_common_string  <span class="comment">// Append to the buffer</span></span>
   ...</pre>
           <p>
             This builds a string like
             <code
-              >"<span style="color: #0af">呪文書</span
+              >"<span style="color: #09f">呪文書</span
               ><span style="color: #a0f">を拾った。</span>"</code
             >, which I can only translate part-by-part as
-            <code
-              >"<span style="color: #0af">scroll</span
-              ><span style="color: #a0f"> was obtained.</span>"</code
-            >. The grammar is awkward, and as a full sentence, it's missing
-            capitalization.
+            <code >"<span style="color: #09f">scroll</span ><span style="color:
+            #a0f"> was obtained.</span>"</code >. The grammar is awkward, and as
+            a full sentence, it's missing capitalization.
           </p>
           <p>
-            In the end, I got my hands dirty and wrote x86 assembly to print my
-            own bits of text. I had to figure out a way to insert code of my own
-            without moving any of the surrounding code, as that would dislocate
-            a bunch of pointers.
+            Dissatisfied, I got my hands dirty and wrote some assembly patches to
+            print my own bits of text. I had to figure out a way to inject code
+            of my own without moving any of the surrounding code, as that would
+            dislocate a bunch of pointers.
           </p>
           <pre>pick_up_item:
   ...
-  <span class="patch">call you_got_a        <span class="comment">// Overwrite one instruction here.</span></span>
-  <span>mov cl, al
+  <s style="color: #c00">mov di, 0xc000</s>            <span class="comment">// Overwrite a 3-byte instruction here</span>
+  <span class="patch">call you_got_a            <span class="comment">// Call my cool new subroutine instead</span></span>
+  <span style="color: #09f">mov cl, al
   call write_item_name</span>
-  <span>mov cl, 0x1b          <span class="comment">// Index of "."  (was: "を拾った。")</span>
+  <span style="color: #a0f">mov cl, 0x1b              <span class="comment">// I've translated "を拾った。" as "."</span>
   call write_common_string</span>
   ...
 
 <span class="comment">// Far, far away, in a blank region of ROM:</span>
 
 <span class="patch">you_got_a:
-  <span style="color:black">mov di, 0xc000        <span class="comment">// The instruction we overwrote</span></span>
+  <span style="color:black">mov di, 0xc000            <span class="comment">// The instruction we overwrote</span></span>
   push ax
-  mov cl, 0x60          <span class="comment">// Index of "You got a "  (my new string)</span>
-  call write_common_string
+  mov cl, 0x60              <span class="comment">// Index of "You got a "  (my new string)</span>
+  call write_common_string  <span class="comment">// Append to the buffer</span>
   pop ax
   ret</span></pre>
           <p>
             All to get nice messages like
             <code
               ><span class="patch">"You got a </span
-              ><span style="color: #0af">scroll</span
+              ><span style="color: #09f">scroll</span
               ><span style="color: #a0f">.</span>"</code
             >. It was totally worth it.
           </p>
@@ -516,7 +528,7 @@ CTRL = SHIFT _</pre
             The PC-9800 Series Central Discord, for encouraging me to finish
             this thing.
           </li>
-          <li>volty, for everything &lt;33</li>
+          <li>fluidvolt, for everything &lt;33</li>
         </ul>
       </div>
 
